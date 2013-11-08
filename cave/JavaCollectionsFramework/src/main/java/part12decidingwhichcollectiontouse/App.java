@@ -13,7 +13,6 @@ How to decide which collection to use. Not only is this the first thing anyone n
 * upon one collection or another.
  */
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;

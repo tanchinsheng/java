@@ -1,0 +1,35 @@
+package part8dowhile;
+
+/** *
+Do…while loops in Java, plus a look at variable scoping and multi-line comments. 
+* In this tutorial I tackle a task that’s often assigned to beginners on Java courses; 
+* looping until the user enters some particular input.
+ */
+
+import java.util.Scanner;
+ 
+ 
+public class App {
+ 
+    public static void main(String[] args) {
+    
+        Scanner scanner = new Scanner(System.in);        
+        /*
+        System.out.println("Enter a number: ");
+        int value = scanner.nextInt();
+         
+        while(value != 5) {
+            System.out.println("Enter a number: ");
+            value = scanner.nextInt();
+        }
+        */       
+        int value = 0;
+        do {
+            System.out.println("Enter a number: ");
+            value = scanner.nextInt();
+        }
+        while(value != 5);        
+        System.out.println("Got 5!");
+    }
+ 
+}

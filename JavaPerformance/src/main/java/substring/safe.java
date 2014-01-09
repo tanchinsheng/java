@@ -9,5 +9,6 @@ public class safe{
 
       System.out.print("Return Value :" );
       System.out.println(Str.substring(10, 150) );
+      Str.trim();
    }
 }

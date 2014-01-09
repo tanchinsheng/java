@@ -7,7 +7,6 @@ package substring;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class SubString {
@@ -20,14 +19,15 @@ public class SubString {
 
         System.out.printf("Allocated (before substring operation) : %.2f kb\nFree: %.2f kb\n\n", alloc, free);
         Scanner in = new Scanner(new File("my_file.txt"));
-        List<String> al = new ArrayList<>();
+        ArrayList<String> al = new ArrayList<String>();
 
         while (in.hasNextLine()) {
             String s = in.nextLine();
+            System.out.printf("\n" + s + "\n");
             /* Problem Code */
-            //al.add(s.substring(0, 200)); // extracts first 200 characters
+            //al.add(s.substring(0, 2)); // extracts first 200 characters
             /* Solution Code */
-            al.add(new String(s.substring(0,200))); 
+            al.add(new String(s.substring(0,2))); 
         }
 
         alloc = rt.totalMemory() / 1000.0;

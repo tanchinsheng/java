@@ -25,7 +25,7 @@ public class Static {
 
         System.out.printf("Allocated (before substring operation) : %.2f kb\nFree: %.2f kb\n\n", alloc, free);
         Scanner in = new Scanner(new File("my_file.txt"));
-        List<String> al = new ArrayList<>();
+        List<String> al = new ArrayList<String>();
 
         while (in.hasNextLine()) {
             String s = in.nextLine();

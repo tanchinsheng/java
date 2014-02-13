@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+    <appender name="dest" class="org.apache.log4j.RollingFileAppender">
+        <param name="file" value="app.log"/>
+        <param name="threshold" value="error"/>
+        <param name="immediateFlush" value="true"/>
+        <param name="append" value="true"/>
+        <param name="maxFileSize" value="10KB"/>
+        <param name="maxBackupIndex" value="2"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="conversionPattern" value="%m%n"/>
+        </layout>
+    </appender>
+    <logger name="com.apress.logging.log4j" additivity="false">
+        <level value="debug"/>
+        <appender-ref ref="dest"/>
+    </logger>
+</log4j:configuration>

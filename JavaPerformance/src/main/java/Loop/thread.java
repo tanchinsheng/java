@@ -1,6 +1,6 @@
 package Loop;
 
-public class Loop {
+public class thread {
 
     public static void main(String[] args) throws InterruptedException {
 

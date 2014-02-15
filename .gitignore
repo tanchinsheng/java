@@ -242,3 +242,4 @@ pip-log.txt
 /test/target/
 /test/nbproject/private/
 /cpu/nbproject/private/
+/hibernate/FirstHibernateProj/target/

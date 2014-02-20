@@ -247,3 +247,5 @@ pip-log.txt
 /hibernate/Hibernate16-ManyToMany/target/
 /hibernate/Hibernate16-CascadeTypes - Copy/target/
 /hibernate/Hibernate16-OtherThings/target/
+/hibernate/Hibernate21-CRUD/target/
+/hibernate/Hibernate21-TransientPersistent/target/

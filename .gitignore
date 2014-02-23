@@ -249,3 +249,4 @@ pip-log.txt
 /hibernate/Hibernate16-OtherThings/target/
 /hibernate/Hibernate21-CRUD/target/
 /hibernate/Hibernate21-TransientPersistent/target/
+/hibernate/Hibernate24-persistDetached/target/

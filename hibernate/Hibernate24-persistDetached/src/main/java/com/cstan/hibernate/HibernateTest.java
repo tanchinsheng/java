@@ -13,21 +13,33 @@ public class HibernateTest {
 
     public static void main(String[] args) {
 
-        UserDetails user = new UserDetails();
-        user.setUserName("Test User");//transient, or delete() can become transient too.
-
         Configuration cfg = new Configuration().configure();
         StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(cfg.getProperties());
         SessionFactory sessionFactory = cfg.buildSessionFactory(builder.build());
 
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        //user.setUserName("Updated User");
+        UserDetails user = new UserDetails();
+        user.setUserName("First User");
         session.save(user);
-        user.setUserName("Updated User");//persisted, or get() can get persisted too.
-        user.setUserName("Updated User Again");
         session.getTransaction().commit();
         session.close();
-        user.setUserName("Updated User After Session Close");//detached
+
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+        user = (UserDetails) session.get(UserDetails.class, 1);
+        System.out.println(user.getUserName());
+        session.getTransaction().commit();
+        session.close();
+
+        user.setUserName("Updated Username after session close");
+        System.out.println(user.getUserName());
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+        session.update(user);
+        user.setUserName("Updated Username after update");
+        System.out.println(user.getUserName());
+        session.getTransaction().commit();
+        session.close();
     }
 }

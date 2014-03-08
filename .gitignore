@@ -250,3 +250,4 @@ pip-log.txt
 /hibernate/Hibernate21-CRUD/target/
 /hibernate/Hibernate21-TransientPersistent/target/
 /hibernate/Hibernate24-persistDetached/target/
+/generics/generic-tutorial/target/

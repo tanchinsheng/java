@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>CUSTOM-clean install</actionName>
+        <displayName>clean install</displayName>
+        <goals>
+            <goal>org.jacoco:jacoco-maven-plugin:prepare-agent clean install</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-coverage</actionName>
+        <displayName>coverage</displayName>
+        <goals>
+            <goal>org.jacoco:jacoco-maven-plugin:prepare-agent clean install -Pcoverage-per-test</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-sonar</actionName>
+        <displayName>sonar</displayName>
+        <goals>
+            <goal>sonar:sonar</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-pdf</actionName>
+        <displayName>pdf</displayName>
+        <goals>
+            <goal>org.codehaus.sonar-plugins.pdf-report:maven-pdfreport-plugin:1.3:generate</goal>
+            <goal>-Dsonar.host.url=http://192.168.10.171:9000/sonarqube</goal>
+        </goals>
+    </action>
+</actions>

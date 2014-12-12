@@ -251,3 +251,4 @@ pip-log.txt
 /hibernate/Hibernate21-TransientPersistent/target/
 /hibernate/Hibernate24-persistDetached/target/
 /generics/generic-tutorial/target/
+/sonar/java-maven-simple/target/

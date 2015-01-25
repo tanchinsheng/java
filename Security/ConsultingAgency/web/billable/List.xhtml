@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ListBillableTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+        <h:form styleClass="jsfcrud_list_form">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:outputText escape="false" value="#{bundle.ListBillableEmpty}" rendered="#{billableController.items.rowCount == 0}"/>
+            <h:panelGroup rendered="#{billableController.items.rowCount > 0}">
+                <h:outputText value="#{billableController.pagination.pageFirstItem + 1}..#{billableController.pagination.pageLastItem + 1}/#{billableController.pagination.itemsCount}"/>&nbsp;
+                <h:commandLink action="#{billableController.previous}" value="#{bundle.Previous} #{billableController.pagination.pageSize}" rendered="#{billableController.pagination.hasPreviousPage}"/>&nbsp;
+                <h:commandLink action="#{billableController.next}" value="#{bundle.Next} #{billableController.pagination.pageSize}" rendered="#{billableController.pagination.hasNextPage}"/>&nbsp;
+                <h:dataTable value="#{billableController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_billableId}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.billableId}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_startDate}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.startDate}">
+                            <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                        </h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_endDate}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.endDate}">
+                            <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                        </h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_hours}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.hours}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_hourlyRate}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.hourlyRate}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_billableHourlyRate}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.billableHourlyRate}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_description}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.description}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_artifacts}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.artifacts}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_project}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.project}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="#{bundle.ListBillableTitle_consultantId}"/>
+                        </f:facet>
+                        <h:outputText value="#{item.consultantId}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="&nbsp;"/>
+                        </f:facet>
+                        <h:commandLink action="#{billableController.prepareView}" value="#{bundle.ListBillableViewLink}"/>
+                        <h:outputText value=" "/>
+                        <h:commandLink action="#{billableController.prepareEdit}" value="#{bundle.ListBillableEditLink}"/>
+                        <h:outputText value=" "/>
+                        <h:commandLink action="#{billableController.destroy}" value="#{bundle.ListBillableDestroyLink}"/>
+                    </h:column>
+                </h:dataTable>
+            </h:panelGroup>
+            <br />
+            <h:commandLink action="#{billableController.prepareCreate}" value="#{bundle.ListBillableCreateLink}"/>
+            <br />
+            <br />
+            <h:commandLink value="#{bundle.ListBillableIndexLink}" action="/index" immediate="true" />
+        </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

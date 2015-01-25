@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateUserTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h3>Please enter your name and password.</h3>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><h:inputText id="name" required="true" value="#{simpleValidationFormController.name}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><h:inputSecret value="#{simpleValidationFormController.password}"/></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Validated Name:</td>
+                        <td><h:outputText value="#{simpleValidationFormController.name}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Validated Password:</td>
+                        <td><h:outputText value="#{simpleValidationFormController.password}"/></td>
+                    </tr>
+                </table>
+                <p><h:commandButton value="Login"/></p>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewBillableTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewBillableLabel_billableId}"/>
+                    <h:outputText value="#{billableController.selected.billableId}" title="#{bundle.ViewBillableTitle_billableId}"/>
+                    <h:outputText value="#{bundle.ViewBillableLabel_startDate}"/>
+                    <h:outputText value="#{billableController.selected.startDate}" title="#{bundle.ViewBillableTitle_startDate}">
+                        <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                    </h:outputText>
+                    <h:outputText value="#{bundle.ViewBillableLabel_endDate}"/>
+                    <h:outputText value="#{billableController.selected.endDate}" title="#{bundle.ViewBillableTitle_endDate}">
+                        <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                    </h:outputText>
+                    <h:outputText value="#{bundle.ViewBillableLabel_hours}"/>
+                    <h:outputText value="#{billableController.selected.hours}" title="#{bundle.ViewBillableTitle_hours}"/>
+                    <h:outputText value="#{bundle.ViewBillableLabel_hourlyRate}"/>
+                    <h:outputText value="#{billableController.selected.hourlyRate}" title="#{bundle.ViewBillableTitle_hourlyRate}"/>
+                    <h:outputText value="#{bundle.ViewBillableLabel_billableHourlyRate}"/>
+                    <h:outputText value="#{billableController.selected.billableHourlyRate}" title="#{bundle.ViewBillableTitle_billableHourlyRate}"/>
+                    <h:outputText value="#{bundle.ViewBillableLabel_description}"/>
+                    <h:outputText value="#{billableController.selected.description}" title="#{bundle.ViewBillableTitle_description}"/>
+                    <h:outputText value="#{bundle.ViewBillableLabel_artifacts}"/>
+                    <h:outputText value="#{billableController.selected.artifacts}" title="#{bundle.ViewBillableTitle_artifacts}"/>
+                    <h:outputText value="#{bundle.ViewBillableLabel_project}"/>
+                    <h:outputText value="#{billableController.selected.project}" title="#{bundle.ViewBillableTitle_project}"/>
+                    <h:outputText value="#{bundle.ViewBillableLabel_consultantId}"/>
+                    <h:outputText value="#{billableController.selected.consultantId}" title="#{bundle.ViewBillableTitle_consultantId}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{billableController.destroyAndView}" value="#{bundle.ViewBillableDestroyLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="Edit" value="#{bundle.ViewBillableEditLink}"/>
+                <br />
+                <h:commandLink action="#{billableController.prepareCreate}" value="#{bundle.ViewBillableCreateLink}" />
+                <br />
+                <h:commandLink action="#{billableController.prepareList}" value="#{bundle.ViewBillableShowAllLink}"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.ViewBillableIndexLink}" action="/index" immediate="true" />
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

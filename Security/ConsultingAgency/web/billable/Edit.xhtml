@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditBillableTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditBillableLabel_billableId}" for="billableId" />
+                    <h:inputText id="billableId" value="#{billableController.selected.billableId}" title="#{bundle.EditBillableTitle_billableId}" required="true" requiredMessage="#{bundle.EditBillableRequiredMessage_billableId}"/>
+                    <h:outputLabel value="#{bundle.EditBillableLabel_startDate}" for="startDate" />
+                    <h:inputText id="startDate" value="#{billableController.selected.startDate}" title="#{bundle.EditBillableTitle_startDate}" >
+                        <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.EditBillableLabel_endDate}" for="endDate" />
+                    <h:inputText id="endDate" value="#{billableController.selected.endDate}" title="#{bundle.EditBillableTitle_endDate}" >
+                        <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.EditBillableLabel_hours}" for="hours" />
+                    <h:inputText id="hours" value="#{billableController.selected.hours}" title="#{bundle.EditBillableTitle_hours}" required="true" requiredMessage="#{bundle.EditBillableRequiredMessage_hours}"/>
+                    <h:outputLabel value="#{bundle.EditBillableLabel_hourlyRate}" for="hourlyRate" />
+                    <h:inputText id="hourlyRate" value="#{billableController.selected.hourlyRate}" title="#{bundle.EditBillableTitle_hourlyRate}" required="true" requiredMessage="#{bundle.EditBillableRequiredMessage_hourlyRate}"/>
+                    <h:outputLabel value="#{bundle.EditBillableLabel_billableHourlyRate}" for="billableHourlyRate" />
+                    <h:inputText id="billableHourlyRate" value="#{billableController.selected.billableHourlyRate}" title="#{bundle.EditBillableTitle_billableHourlyRate}" required="true" requiredMessage="#{bundle.EditBillableRequiredMessage_billableHourlyRate}"/>
+                    <h:outputLabel value="#{bundle.EditBillableLabel_description}" for="description" />
+                    <h:inputText id="description" value="#{billableController.selected.description}" title="#{bundle.EditBillableTitle_description}" />
+                    <h:outputLabel value="#{bundle.EditBillableLabel_artifacts}" for="artifacts" />
+                    <h:inputTextarea rows="4" cols="30" id="artifacts" value="#{billableController.selected.artifacts}" title="#{bundle.EditBillableTitle_artifacts}" />
+                    <h:outputLabel value="#{bundle.EditBillableLabel_project}" for="project" />
+                    <h:selectOneMenu id="project" value="#{billableController.selected.project}" title="#{bundle.EditBillableTitle_project}" required="true" requiredMessage="#{bundle.EditBillableRequiredMessage_project}">
+                        <f:selectItems value="#{projectController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditBillableLabel_consultantId}" for="consultantId" />
+                    <h:selectOneMenu id="consultantId" value="#{billableController.selected.consultantId}" title="#{bundle.EditBillableTitle_consultantId}" required="true" requiredMessage="#{bundle.EditBillableRequiredMessage_consultantId}">
+                        <f:selectItems value="#{consultantController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <h:commandLink action="#{billableController.update}" value="#{bundle.EditBillableSaveLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="View" value="#{bundle.EditBillableViewLink}" immediate="true"/>
+                <br />
+                <h:commandLink action="#{billableController.prepareList}" value="#{bundle.EditBillableShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.EditBillableIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

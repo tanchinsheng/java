@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateConsultantStatusTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateConsultantStatusLabel_statusId}" for="statusId" />
+                    <h:inputText id="statusId" value="#{consultantStatusController.selected.statusId}" title="#{bundle.CreateConsultantStatusTitle_statusId}" required="true" requiredMessage="#{bundle.CreateConsultantStatusRequiredMessage_statusId}"/>
+                    <h:outputLabel value="#{bundle.CreateConsultantStatusLabel_description}" for="description" />
+                    <h:inputText id="description" value="#{consultantStatusController.selected.description}" title="#{bundle.CreateConsultantStatusTitle_description}" required="true" requiredMessage="#{bundle.CreateConsultantStatusRequiredMessage_description}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{consultantStatusController.create}" value="#{bundle.CreateConsultantStatusSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{consultantStatusController.prepareList}" value="#{bundle.CreateConsultantStatusShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.CreateConsultantStatusIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

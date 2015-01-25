@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateUserTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h3>Please enter your name and password.</h3>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><h:inputText id="name" value="#{simpleFormController.name}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><h:inputSecret id="password" value="#{simpleFormController.password}"/></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Session Name:</td>
+                        <td><h:outputLabel for="name" value="#{simpleFormController.name}" escape="false"/></td>
+                    </tr>
+                    <tr>
+                        <td>Session Password:</td>
+                        <td><h:outputText value="#{simpleFormController.password}" escape="false"/></td>
+                    </tr>
+                </table>
+                <p><h:commandButton value="Login">
+                    <f:ajax execute="name password" render="out"/>
+                    </h:commandButton>
+                </p>
+                <h3><h:outputText id ="out" value="#{simpleFormController.name}" escape="false"/></h3>
+                
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

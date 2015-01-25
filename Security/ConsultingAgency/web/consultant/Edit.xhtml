@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditConsultantTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_consultantId}" for="consultantId" />
+                    <h:inputText id="consultantId" value="#{consultantController.selected.consultantId}" title="#{bundle.EditConsultantTitle_consultantId}" required="true" requiredMessage="#{bundle.EditConsultantRequiredMessage_consultantId}"/>
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_email}" for="email" />
+                    <h:inputText id="email" value="#{consultantController.selected.email}" title="#{bundle.EditConsultantTitle_email}" required="true" requiredMessage="#{bundle.EditConsultantRequiredMessage_email}"/>
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_password}" for="password" />
+                    <h:inputText id="password" value="#{consultantController.selected.password}" title="#{bundle.EditConsultantTitle_password}" required="true" requiredMessage="#{bundle.EditConsultantRequiredMessage_password}"/>
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_hourlyRate}" for="hourlyRate" />
+                    <h:inputText id="hourlyRate" value="#{consultantController.selected.hourlyRate}" title="#{bundle.EditConsultantTitle_hourlyRate}" required="true" requiredMessage="#{bundle.EditConsultantRequiredMessage_hourlyRate}"/>
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_billableHourlyRate}" for="billableHourlyRate" />
+                    <h:inputText id="billableHourlyRate" value="#{consultantController.selected.billableHourlyRate}" title="#{bundle.EditConsultantTitle_billableHourlyRate}" required="true" requiredMessage="#{bundle.EditConsultantRequiredMessage_billableHourlyRate}"/>
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_hireDate}" for="hireDate" />
+                    <h:inputText id="hireDate" value="#{consultantController.selected.hireDate}" title="#{bundle.EditConsultantTitle_hireDate}" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_resume}" for="resume" />
+                    <h:inputTextarea rows="4" cols="30" id="resume" value="#{consultantController.selected.resume}" title="#{bundle.EditConsultantTitle_resume}" />
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_recruiterId}" for="recruiterId" />
+                    <h:selectOneMenu id="recruiterId" value="#{consultantController.selected.recruiterId}" title="#{bundle.EditConsultantTitle_recruiterId}" >
+                        <f:selectItems value="#{recruiterController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditConsultantLabel_statusId}" for="statusId" />
+                    <h:selectOneMenu id="statusId" value="#{consultantController.selected.statusId}" title="#{bundle.EditConsultantTitle_statusId}" required="true" requiredMessage="#{bundle.EditConsultantRequiredMessage_statusId}">
+                        <f:selectItems value="#{consultantStatusController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <h:commandLink action="#{consultantController.update}" value="#{bundle.EditConsultantSaveLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="View" value="#{bundle.EditConsultantViewLink}" immediate="true"/>
+                <br />
+                <h:commandLink action="#{consultantController.prepareList}" value="#{bundle.EditConsultantShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.EditConsultantIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

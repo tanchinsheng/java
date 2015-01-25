@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-sonar</actionName>
+            <displayName>sonar</displayName>
+            <goals>
+                <goal>sonar:sonar</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-sonar.ctn004393</actionName>
+            <displayName>sonar.ctn004393</displayName>
+            <goals>
+                <goal>sonar:sonar</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>sonar.ctn004393</activatedProfile>
+            </activatedProfiles>
+        </action>
+    </actions>

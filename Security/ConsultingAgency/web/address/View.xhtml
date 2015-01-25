@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewAddressTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewAddressLabel_addressId}"/>
+                    <h:outputText value="#{addressController.selected.addressId}" title="#{bundle.ViewAddressTitle_addressId}"/>
+                    <h:outputText value="#{bundle.ViewAddressLabel_line1}"/>
+                    <h:outputText value="#{addressController.selected.line1}" title="#{bundle.ViewAddressTitle_line1}"/>
+                    <h:outputText value="#{bundle.ViewAddressLabel_line2}"/>
+                    <h:outputText value="#{addressController.selected.line2}" title="#{bundle.ViewAddressTitle_line2}"/>
+                    <h:outputText value="#{bundle.ViewAddressLabel_city}"/>
+                    <h:outputText value="#{addressController.selected.city}" title="#{bundle.ViewAddressTitle_city}"/>
+                    <h:outputText value="#{bundle.ViewAddressLabel_region}"/>
+                    <h:outputText value="#{addressController.selected.region}" title="#{bundle.ViewAddressTitle_region}"/>
+                    <h:outputText value="#{bundle.ViewAddressLabel_country}"/>
+                    <h:outputText value="#{addressController.selected.country}" title="#{bundle.ViewAddressTitle_country}"/>
+                    <h:outputText value="#{bundle.ViewAddressLabel_postalCode}"/>
+                    <h:outputText value="#{addressController.selected.postalCode}" title="#{bundle.ViewAddressTitle_postalCode}"/>
+                    <h:outputText value="#{bundle.ViewAddressLabel_client}"/>
+                    <h:outputText value="#{addressController.selected.client}" title="#{bundle.ViewAddressTitle_client}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{addressController.destroyAndView}" value="#{bundle.ViewAddressDestroyLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="Edit" value="#{bundle.ViewAddressEditLink}"/>
+                <br />
+                <h:commandLink action="#{addressController.prepareCreate}" value="#{bundle.ViewAddressCreateLink}" />
+                <br />
+                <h:commandLink action="#{addressController.prepareList}" value="#{bundle.ViewAddressShowAllLink}"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.ViewAddressIndexLink}" action="/index" immediate="true" />
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

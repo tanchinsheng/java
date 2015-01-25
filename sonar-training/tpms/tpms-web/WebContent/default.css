@@ -1,0 +1,141 @@
+.mainColor {
+	/* 
+		This class define the default TPMS color
+		test env  : background-color: #16a09a 
+		prod env  : background-color: #19559e
+		test env 2: background-color: #880099
+	*/
+    background-color: #19559e
+}
+
+.testohpnero {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.testobmenu {
+	FONT-SIZE: 10px; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; LINE-HEIGHT: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.testoH {
+    background-color: #C9E1FA; color: #000000 ; FONT-SIZE: 11pt; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif
+}
+
+.testoD {
+    background-color: #F2F2F2; color: #000000 ; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif
+}
+
+.testoDSmall {
+    background-color: #F2F2F2; FONT-SIZE: 10px; color: #000000 ; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif
+}
+
+.testoM {
+    FONT-SIZE: 11pt; COLOR: #FFFFFF; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+.testoSM {
+    background-color: #8860E0; FONT-SIZE: 14px; COLOR: #FFFFFF; FONT-FAMILY: Arial, Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+A.testoSM {
+    background-color: #8860E0; FONT-SIZE: 14px; COLOR: #FFFFFF; FONT-FAMILY: Arial, Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+A.testoSM:link {
+    background-color: #8860E0; FONT-SIZE: 14px; COLOR: #FFFFFF; FONT-FAMILY: Arial, Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+A.testoSM:visited {
+    background-color: #8860E0; FONT-SIZE: 14px; COLOR: #FFFFFF; FONT-FAMILY: Arial, Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+A.testoSM:active {
+    background-color: #8860E0; FONT-SIZE: 14px; COLOR: #FFFFFF; FONT-FAMILY: Arial, Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.testlocationbar {
+    FONT-SIZE: 11pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif
+}
+
+.testo {
+    COLOR: #000000; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif
+}
+
+.testonoline {
+    FONT-SIZE: 11pt; COLOR: #000000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+.title {
+    FONT-SIZE: 15px; COLOR: #4444FF; FONT-FAMILY: Arial
+}
+
+.title_detail {
+    FONT-SIZE: 13px; COLOR: #4444FF; FONT-FAMILY: Arial
+}
+
+.testopercorso {
+	FONT-SIZE: 13px; COLOR: #ffffff; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.testopercorso {
+	FONT-SIZE: 13px; COLOR: #ffffff; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.testopercorso:hover {
+	FONT-SIZE: 13px; COLOR: #E0E0E0; FONT-WEIGHT: bold; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.testopiccolo {
+	FONT-SIZE: 9px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.testoR { background-color: #C9E1FA; color: #FF0000 ; FONT-SIZE: 11pt; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif }
+
+.testoG { background-color: #C9E1FA; color: #008800 ; FONT-SIZE: 11pt; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif }
+
+.titverdifl { COLOR: #19559E; FONT-SIZE: 16px; FONT-FAMILY: Arial, Courier, Arial }
+
+
+
+.titverdi {
+	FONT-SIZE: 13px; COLOR: #19559E; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif, Geneva
+}
+
+.titred {
+	FONT-SIZE: 13px; COLOR: #FF0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif, Geneva
+}
+
+.waitbar {
+    FONT-SIZE: 16px; COLOR: #19559E; FONT-FAMILY: Verdana,  Arial, Helvetica, sans-serif, Geneva
+}
+
+.titverdibig {
+	FONT-SIZE: 15px; COLOR: #19559E; LINE-HEIGHT: 12px; FONT-FAMILY: Arial
+}
+
+.txt {
+    FONT-SIZE: 11pt; WIDTH: 170px; COLOR: #000000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+
+.txtlogo {
+    FONT-SIZE: 11pt; COLOR: #4444EE; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+
+.txtnob {
+    FONT-SIZE: 11pt; COLOR: #000000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+
+.txtlong{
+    FONT-SIZE: 11pt; WIDTH: 330px; COLOR: #000000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+
+.tendina {
+	   COLOR: #000000; FONT-SIZE: 14px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+
+.button {
+    color: #FFFFFF; text-decoration: none; FONT-SIZE: 11px; TEXT-TRANSFORM: uppercase; FONT-FAMILY: Arial
+}
+a.button:link {
+    color: #FFFFFF; text-decoration: none; FONT-SIZE: 11px; TEXT-TRANSFORM: uppercase; FONT-FAMILY: Arial
+}
+a.button:visited {
+    color: #FFFFFF; text-decoration: none; FONT-SIZE: 11px; TEXT-TRANSFORM: uppercase; FONT-FAMILY: Arial
+}
+a.button:active {
+    color: #FFFFFF; text-decoration: none; FONT-SIZE: 11px; TEXT-TRANSFORM: uppercase; FONT-FAMILY: Arial
+}
+

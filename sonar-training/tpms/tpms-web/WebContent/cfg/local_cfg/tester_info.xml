@@ -1,0 +1,540 @@
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by txt (txt) -->
+<TESTER_INFOS>
+    <PLANT name="TXT">
+        <TESTER_INFO>
+            <TESTER_FAMILY edit="Y">A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW edit="Y">A500 A565PP Image-6.4 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO edit="Y">A500 A5301 image1 6.41 svr41</TST_INFO>
+            <TESTER_MODEL edit="Y">A5301</TESTER_MODEL>
+            <SW_NAME edit="Y">image1</SW_NAME>
+            <SW_VERSION edit="Y">6.41</SW_VERSION>
+            <UNIX_OS edit="Y">svr41</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A585 Image-6.4 SunOs4.1.4</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A585PP Image-6.4 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 CATALYST Image-7.0 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>ITS</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>ITS9000 ASAP-6.3 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>ITS A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>SZ M3650 Space-4 SunOs5.6</TESTER_INFO_SHOW>
+            <TST_INFO>SZ A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>SZ M3650 Space-5 SunOs5.6</TESTER_INFO_SHOW>
+            <TST_INFO>SZ A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>new test show</TESTER_INFO_SHOW>
+            <TST_INFO>A500 aa bb cc dd</TST_INFO>
+            <TESTER_MODEL>aa</TESTER_MODEL>
+            <SW_NAME>bb</SW_NAME>
+            <SW_VERSION>cc</SW_VERSION>
+            <UNIX_OS>dd</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>new test 2 show</TESTER_INFO_SHOW>
+            <TST_INFO>A500 11 22 33 44</TST_INFO>
+            <TESTER_MODEL>11</TESTER_MODEL>
+            <SW_NAME>22</SW_NAME>
+            <SW_VERSION>33</SW_VERSION>
+            <UNIX_OS>44</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>tester show 2</TESTER_INFO_SHOW>
+            <TST_INFO>SZ model sw_name sw_ver unix_os</TST_INFO>
+            <TESTER_MODEL>model</TESTER_MODEL>
+            <SW_NAME>sw_name</SW_NAME>
+            <SW_VERSION>sw_ver</SW_VERSION>
+            <UNIX_OS>unix_os</UNIX_OS>
+        </TESTER_INFO>
+
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>nshow</TESTER_INFO_SHOW>
+            <TST_INFO>SZ model name version os</TST_INFO>
+            <TESTER_MODEL>model</TESTER_MODEL>
+            <SW_NAME>name</SW_NAME>
+            <SW_VERSION>version</SW_VERSION>
+            <UNIX_OS>os</UNIX_OS>
+        </TESTER_INFO>
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>aaaa</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>bbbbbbbb444</TESTER_INFO_SHOW>
+            <TST_INFO>aaaa ccccccccc ddddddddd eeeeeeeeeee ososososososos</TST_INFO>
+            <TESTER_MODEL>ccccccccc</TESTER_MODEL>
+            <SW_NAME>ddddddddd</SW_NAME>
+            <SW_VERSION>eeeeeeeeeee</SW_VERSION>
+            <UNIX_OS>ososososososos</UNIX_OS>
+        </TESTER_INFO>
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>b</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>b</TESTER_INFO_SHOW>
+            <TST_INFO>b b b b b</TST_INFO>
+            <TESTER_MODEL>b</TESTER_MODEL>
+            <SW_NAME>b</SW_NAME>
+            <SW_VERSION>b</SW_VERSION>
+            <UNIX_OS>b</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>z</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>z</TESTER_INFO_SHOW>
+            <TST_INFO>z z z z z</TST_INFO>
+            <TESTER_MODEL>z</TESTER_MODEL>
+            <SW_NAME>z</SW_NAME>
+            <SW_VERSION>z</SW_VERSION>
+            <UNIX_OS>z</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>dd</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>dd</TESTER_INFO_SHOW>
+            <TST_INFO>dd dd dd dd dd</TST_INFO>
+            <TESTER_MODEL>dd</TESTER_MODEL>
+            <SW_NAME>dd</SW_NAME>
+            <SW_VERSION>dd</SW_VERSION>
+            <UNIX_OS>dd</UNIX_OS>
+        </TESTER_INFO>
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>as</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>as</TESTER_INFO_SHOW>
+            <TST_INFO>as as as as as</TST_INFO>
+            <TESTER_MODEL>as</TESTER_MODEL>
+            <SW_NAME>as</SW_NAME>
+            <SW_VERSION>as</SW_VERSION>
+            <UNIX_OS>as</UNIX_OS>
+        </TESTER_INFO>
+    </PLANT>
+    <PLANT name="Plant1">
+        <TESTER_INFO>
+            <TESTER_FAMILY edit="Y">A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW edit="Y">A500 A565PP Image-6.4 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO edit="Y">A500 A5301 image1 6.41 svr41</TST_INFO>
+            <TESTER_MODEL edit="Y">A5301</TESTER_MODEL>
+            <SW_NAME edit="Y">image1</SW_NAME>
+            <SW_VERSION edit="Y">6.41</SW_VERSION>
+            <UNIX_OS edit="Y">svr41</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A585 Image-6.4 SunOs4.1.4</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A585PP Image-6.4 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 CATALYST Image-7.0 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>ITS</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>ITS9000 ASAP-6.3 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>ITS A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>SZ M3650 Space-4 SunOs5.6</TESTER_INFO_SHOW>
+            <TST_INFO>SZ A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>SZ M3650 Space-5 SunOs5.6</TESTER_INFO_SHOW>
+            <TST_INFO>SZ A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>new test show</TESTER_INFO_SHOW>
+            <TST_INFO>A500 aa bb cc dd</TST_INFO>
+            <TESTER_MODEL>aa</TESTER_MODEL>
+            <SW_NAME>bb</SW_NAME>
+            <SW_VERSION>cc</SW_VERSION>
+            <UNIX_OS>dd</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>new test 2 show</TESTER_INFO_SHOW>
+            <TST_INFO>A500 11 22 33 44</TST_INFO>
+            <TESTER_MODEL>11</TESTER_MODEL>
+            <SW_NAME>22</SW_NAME>
+            <SW_VERSION>33</SW_VERSION>
+            <UNIX_OS>44</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>tester show 2</TESTER_INFO_SHOW>
+            <TST_INFO>SZ model sw_name sw_ver unix_os</TST_INFO>
+            <TESTER_MODEL>model</TESTER_MODEL>
+            <SW_NAME>sw_name</SW_NAME>
+            <SW_VERSION>sw_ver</SW_VERSION>
+            <UNIX_OS>unix_os</UNIX_OS>
+        </TESTER_INFO>
+
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>nshow</TESTER_INFO_SHOW>
+            <TST_INFO>SZ model name version os</TST_INFO>
+            <TESTER_MODEL>model</TESTER_MODEL>
+            <SW_NAME>name</SW_NAME>
+            <SW_VERSION>version</SW_VERSION>
+            <UNIX_OS>os</UNIX_OS>
+        </TESTER_INFO>
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>aaaa</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>bbbbbbbb444</TESTER_INFO_SHOW>
+            <TST_INFO>aaaa ccccccccc ddddddddd eeeeeeeeeee ososososososos</TST_INFO>
+            <TESTER_MODEL>ccccccccc</TESTER_MODEL>
+            <SW_NAME>ddddddddd</SW_NAME>
+            <SW_VERSION>eeeeeeeeeee</SW_VERSION>
+            <UNIX_OS>ososososososos</UNIX_OS>
+        </TESTER_INFO>
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>b</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>b</TESTER_INFO_SHOW>
+            <TST_INFO>b b b b b</TST_INFO>
+            <TESTER_MODEL>b</TESTER_MODEL>
+            <SW_NAME>b</SW_NAME>
+            <SW_VERSION>b</SW_VERSION>
+            <UNIX_OS>b</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>z</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>z</TESTER_INFO_SHOW>
+            <TST_INFO>z z z z z</TST_INFO>
+            <TESTER_MODEL>z</TESTER_MODEL>
+            <SW_NAME>z</SW_NAME>
+            <SW_VERSION>z</SW_VERSION>
+            <UNIX_OS>z</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>dd</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>dd</TESTER_INFO_SHOW>
+            <TST_INFO>dd dd dd dd dd</TST_INFO>
+            <TESTER_MODEL>dd</TESTER_MODEL>
+            <SW_NAME>dd</SW_NAME>
+            <SW_VERSION>dd</SW_VERSION>
+            <UNIX_OS>dd</UNIX_OS>
+        </TESTER_INFO>
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>as</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>as</TESTER_INFO_SHOW>
+            <TST_INFO>as as as as as</TST_INFO>
+            <TESTER_MODEL>as</TESTER_MODEL>
+            <SW_NAME>as</SW_NAME>
+            <SW_VERSION>as</SW_VERSION>
+            <UNIX_OS>as</UNIX_OS>
+        </TESTER_INFO>
+    </PLANT>
+    <PLANT name="GNB">
+
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A585 Image-6.4 SunOs4.1.4 GNB1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A585PP Image-6.4 SunOs5.5.1 GNB2</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+    </PLANT>
+    <PLANT name="MUAR">
+
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A540 Image-6.4 SunOs5.4 muar1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 CATALYST Image-7.0 SunOs5.5.1 muar2</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+            <TESTER_MODEL>A530</TESTER_MODEL>
+            <SW_NAME>image</SW_NAME>
+            <SW_VERSION>6.4</SW_VERSION>
+            <UNIX_OS>svr4</UNIX_OS>
+        </TESTER_INFO>
+    </PLANT>
+    <PLANT name="AGRATE">
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>new test 2 show</TESTER_INFO_SHOW>
+            <TST_INFO>A500 11 22 33 44</TST_INFO>
+            <TESTER_MODEL>11</TESTER_MODEL>
+            <SW_NAME>22</SW_NAME>
+            <SW_VERSION>33</SW_VERSION>
+            <UNIX_OS>44</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>new test show</TESTER_INFO_SHOW>
+            <TST_INFO>A500 aa bb cc dd</TST_INFO>
+            <TESTER_MODEL>aa</TESTER_MODEL>
+            <SW_NAME>bb</SW_NAME>
+            <SW_VERSION>cc</SW_VERSION>
+            <UNIX_OS>dd</UNIX_OS>
+        </TESTER_INFO>
+    </PLANT>
+    <PLANT name="Grenoble">
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A580 Image-6.4 SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A580 image 6.4 SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A580 Image-7.0 SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A580 image 7.0 SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A565 Image-6.4 SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A565 image 6.4 SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A565 Image-7.0 SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A565 image 7.0 SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 CAT Image-6.4 SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 CAT image 6.4 SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 CAT Image-6.4.rf SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 CAT image 6.4.rf SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 CAT Image-7.0 SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 CAT image 7.0 SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>FUSION</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>FUSION_HT Envision-R10.8.0.WW1108 SunOS5.7</TESTER_INFO_SHOW>
+            <TST_INFO>FUSION FUSION_HT envision R10.8.0.WW1108 SunOS5.7</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>FUSION</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>FUSION_HF Envision-R10.8.5.2 SunOS5.7</TESTER_INFO_SHOW>
+            <TST_INFO>FUSION FUSION_HF envision R10.8.5.2 SunOS5.7</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>FUSION</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>FUSION_HF Envision-R11.0.DPR04.B1.1 SunOS5.7</TESTER_INFO_SHOW>
+            <TST_INFO>FUSION FUSION_HF envision R11.0.DPR04.B1.1 SunOS5.7</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>ITS</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>ITSEX asap-9000_630 SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>ITS ITSEX asap 9000_630 SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SAPPHIRE</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>SAPPHIRE XTOS-alpha_1nt</TESTER_INFO_SHOW>
+            <TST_INFO>SAPPHIRE SAPPHIRE XTOS alpha_1nt x</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>TMT</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>TMT visual_ate-4.62 nt</TESTER_INFO_SHOW>
+            <TST_INFO>TMT TMT visual_ate 4.62 nt</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>TMT</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>TMT visual_ate-4.82 nt</TESTER_INFO_SHOW>
+            <TST_INFO>TMT TMT visual_ate 4.82 nt</TST_INFO>
+        </TESTER_INFO>
+    </PLANT>
+    <PLANT name="Agrate-TPA">
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A530 Image-6.4 SunOs5.4</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A530 image 6.4 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A540 Image-6.4 SunOs5.4</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A540 image 6.4 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A565PP Image-6.4 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A565PP image 6.4 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A585 Image-6.4 SunOs4.1.4</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A585 image 6.4 sun4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 A585PP Image-6.4 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A585PP image 6.4 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>A500 CATALYST Image-7.0 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>A500 CATALYST image 7.0 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>ITS</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>ITS9000 ASAP-6.3 SunOs5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>ITS ITS9000 asap 6.3 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>SZ M3650 Space-4 SunOs5.6</TESTER_INFO_SHOW>
+            <TST_INFO>SZ M3650 space 4.09 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>SZ M3650 Space-5 SunOs5.6</TESTER_INFO_SHOW>
+            <TST_INFO>SZ M3650 space 5.06 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>SZ</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>SZ FALCON Space-6 SunOs5.8</TESTER_INFO_SHOW>
+            <TST_INFO>SZ M3650 space 6.03 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>FUSION</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>FUSION_HT Envision-R10.8.0.WW1108 SunOS5.7</TESTER_INFO_SHOW>
+            <TST_INFO>A500 A565PP image 6.4 svr4</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>FUSION</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>FUSION_HF Envision-R10.8.5.2 SunOS5.7</TESTER_INFO_SHOW>
+            <TST_INFO>FUSION FUSION_HF envision R10.8.5.2 SunOS5.7</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>ITS</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>ITSEX asap-9000_630 SunOS5.5.1</TESTER_INFO_SHOW>
+            <TST_INFO>ITS ITSEX asap 9000_630 SunOS5.5.1</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>FUSION</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>FUSION_HF Envision-R11.0.DPR04.B1.1 SunOS5.7</TESTER_INFO_SHOW>
+            <TST_INFO>FUSION FUSION_HF envision R11.0.DPR04.B1.1 SunOS5.7</TST_INFO>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>ADV</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>ADV T5375 SunOs5.8</TESTER_INFO_SHOW>
+            <TST_INFO>ADV T5375 x x svr4</TST_INFO>
+        </TESTER_INFO>
+    </PLANT>
+    <PLANT name="mokio">
+
+
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>new test 2 show</TESTER_INFO_SHOW>
+            <TST_INFO>A500 11 22 33 44</TST_INFO>
+            <TESTER_MODEL>11</TESTER_MODEL>
+            <SW_NAME>22</SW_NAME>
+            <SW_VERSION>33</SW_VERSION>
+            <UNIX_OS>44</UNIX_OS>
+        </TESTER_INFO>
+        <TESTER_INFO>
+            <TESTER_FAMILY>A500</TESTER_FAMILY>
+            <TESTER_INFO_SHOW>new test show</TESTER_INFO_SHOW>
+            <TST_INFO>A500 aa bb cc dd</TST_INFO>
+            <TESTER_MODEL>aa</TESTER_MODEL>
+            <SW_NAME>bb</SW_NAME>
+            <SW_VERSION>cc</SW_VERSION>
+            <UNIX_OS>dd</UNIX_OS>
+        </TESTER_INFO>
+    </PLANT>
+</TESTER_INFOS>

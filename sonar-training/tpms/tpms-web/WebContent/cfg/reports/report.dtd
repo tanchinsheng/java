@@ -1,0 +1,108 @@
+<!ELEMENT report (field*, section+)>
+<!-- 	It's the list of left panel database fields -->
+<!ELEMENT section (label?, tableName, grpByList*, orderList*, masterFields?, attr+)>
+<!-- 	this element represents a left panel fields -->
+<!ELEMENT field (label?, (fieldName | expr), tableName, whrCond*, grpByList*, orderList*, masterFields?, attr*)>
+<!-- 	this element represents a left panel fields -->
+<!ATTLIST section
+	name ID #REQUIRED
+>
+<!ATTLIST field
+	name ID #REQUIRED
+>
+<!-- 	it is the 'field' element identifier, employed for referencing 			left panel fields both within the 'datasel.xml' file and from 			application specific JSPs (by means of the 'dataSel' Java Bean) 	-->
+<!ATTLIST field
+	isMand (Y | N) #REQUIRED
+>
+<!-- 	Set to Y means that the given field is mandatory -->
+<!ATTLIST field
+	isMulti (Y | N) #REQUIRED
+>
+<!-- 	Set to Y means that the given field is meant to be assigned a range of values -->
+<!ATTLIST field
+	isRange (Y | N) #IMPLIED
+>
+<!-- 	The field initial value (if different from blank) -->
+<!ATTLIST field
+	initVal CDATA #IMPLIED
+>
+<!-- 	The field upper bound initial value (for range fields only) -->
+<!ATTLIST field
+	initVal2 CDATA #IMPLIED
+>
+<!--	Set to Y means that multiple value selection is allowed for the 			given field 	-->
+<!ATTLIST field
+	datatype (C | N | D) #REQUIRED
+>
+<!-- 	C stands for CHAR TYPE 			N stands for NUMERIC TYPE 			The datatype is considered for properly building SQL where condition 			Eventually enclosing field values with quotes, as required by SQL 			synthax  	-->
+<!ATTLIST field
+	editable (Y | N) #IMPLIED
+>
+<!--	Set to Y means that for the given field manual values insertion is 			allowed too 	-->
+<!ATTLIST field
+	maxNofSelKeys CDATA #IMPLIED
+>
+<!--	Set the maximum number of values which can be selected for the key L.O.V. -->
+<!ELEMENT label (#PCDATA)>
+<!-- 	the label is shown on reports headers and on data selection 			left panel 	-->
+<!ELEMENT fieldName (#PCDATA)>
+<!--	It's the database field name bound to this left panel field -->
+<!ELEMENT tableName (#PCDATA)>
+<!--	It's the database table which the database field above mentioned 			belongs to 			Remark: it can be omitted for attributes definition in case their 			associated database table is the same as the master 			field's one 	-->
+<!ELEMENT whrCond (#PCDATA)>
+<!--	Provides an alternative sql where-condition for a specific "alternative-table",  		specified by the "tableName" attribute.  		This element content specifically provides the "alternative-field" on which the  		current where condition must be imposed when 		querying the "alternative-table"  	-->
+<!ATTLIST whrCond
+	tableName CDATA #REQUIRED
+>
+<!ELEMENT grpByList (#PCDATA)>
+<!-- 	Defines the eventual 'GROUP BY' SQL clause employed in database  			values fetch for the given field. It consists of a comma-separated 			list of database field names (these database field names must be bound 			to the given left panel field either directly or by means of its 			primary attributes.  			Example: <grpByList>FIELD1, FIELD2, FIELD3</grpByList>  			Remark: The databa 	-->
+<!ATTLIST grpByList
+	level (1 | 2) #IMPLIED
+>
+<!--  	It is possible to define an additional 'grpByList' element 			with the 'level' attribute set to '2' in order to 			have an alternative 'GROUP BY' SQL clause for the 'detailed 			report'(ie: that featuring secondary attributes too). 	-->
+<!ELEMENT orderList (#PCDATA)>
+<!-- 	Defines the eventual 'ORDER BY'SQL clause employed in database  			values fetch for the given field. It consists of a comma-separated 			list of database field names (these database field names must be bound 			to the given left panel field either directly or by means of its 			primary attributes.  			Example: <orderList>FIELD1, FIELD2, FIELD3</orderList>  			Remark: The databa 	-->
+<!ATTLIST orderList
+	level (1 | 2) #IMPLIED
+>
+<!--  	It is possible to define an additional 'orderList' element 			with the 'level' attribute set to '2'in order to 			have an alternative 'ORDER BY' SQL clause for the 'detailed 			report'(ie: that featuring secondary attributes too). 			Remark: a level 2 'orderList'element can feature also database 			Field names bound to the given left panel field by means of its 			Secondary attributes 	-->
+<!ELEMENT masterFields EMPTY>
+<!--	It is meant for hierarchycal dependencies definition -->
+<!ATTLIST masterFields
+	names IDREFS #REQUIRED
+>
+<!--	It provides the list of that left panel fields which the given 			one hierarchically depends on. This is more precisely a 			comma-separated list of left panel fields names 			(see: 'name' attribute of 'field'element). 			Remark: in order to be listed within this attribute 		   	content, a field must have been already defined by 		   	means of a 'field' element. 	-->
+<!ELEMENT attr (name, label?, ((fieldName, tableName?) | (tableName?, fieldName) | (expr, tableName?) | (tableName?, expr) | (tableName? | funz)))>
+<!--	An 'attr' child element defines a given left panel field 			attribute (either primary or secondary according to the  			value provided for the'level'attribute) 	-->
+<!ELEMENT name (#PCDATA)>
+<!-- 	it is meant as optional identifier for attributes and can be employed 			by application specific JSPs in order to access a specific attribute 			(access is performed by means of the 'dataSel'Java Bean, which 			expect the attribute named as A1 of the maseter field named as F1 			to be referenced as F1/A1) 	-->
+<!ATTLIST attr
+	level (1 | 2) #REQUIRED
+>
+<!-- 	Set to either '1' or '2' specifying respectively a  			primary or a secondary attribute  	-->
+<!ATTLIST attr
+	datatype (C | N | D) #REQUIRED
+>
+<!--	It deals with attribute values formatting within the reports 			If set to 'D'(ie: date data-type) the date-to-text conversion 			Function is automatically applied (Oracle requires an explicit 			Conversion, whereas Ingres does not) 	-->
+<!ATTLIST attr
+	format CDATA #IMPLIED
+>
+<!--	It defines this attribute values representation format. 		Numeric formats: 		- #0       no decimal digits 		- #0.00    almost one digit and only 2 decimal digits 		- #,##0.00 the same as before but with ',' as groups separator char 		- 00.0%    percentage format (0.085 = 08.5) with 2 fixed digits and one decimal 		String formats 		- $13	   truncates a string so to make it 13 characters long                	-->
+<!ELEMENT expr (#PCDATA)>
+<!--	It allows to bound the given attribute with a SQL expression 			('expr' and 'fieldName' element are in fact mutual exclusive) 			referring database field names 			Remark:	 in case this expression refers to many database tables, 			one 'tableName' element must be provided for each 			Table other than the master field's one.  	-->
+<!ELEMENT funz ((arg, funz) | (funz, arg) | (funz, funz) | (arg, arg) | (funz) | (arg))>
+<!--	It maps a function object, and more precisely a unary or 		binary operator. It can have as arguments either a simple argument 		('arg' element), which is a constant or an attribute value, or 		the result of a nested function, ('funz' element).   	-->
+<!ATTLIST funz
+	name (mult | div) #REQUIRED
+>
+<!--	Identifies a specific function -->
+<!ELEMENT arg EMPTY>
+<!--	It maps a function object -->
+<!ATTLIST arg
+	name CDATA #IMPLIED
+>
+<!--	Identifies a specific attribute by its name (its logic name). 		This argument is then set to the referenced attribute value. 	 -->
+<!ATTLIST arg
+	val CDATA #IMPLIED
+>
+<!--	It is the value (numeric or string) which the given argument must 		be set to. 	-->

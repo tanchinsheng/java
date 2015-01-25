@@ -1,0 +1,107 @@
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by txt (txt) -->
+<VOBS>
+    <VOB>
+        <NAME>TPA_INDU</NAME>
+        <DESC>TPA INDU Vob</DESC>
+        <DIVISION>DIVIS33</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Agrate-TPA</PLANT>
+        <TYPE>D</TYPE>
+        <TVOB>TPA_TO_MUAR</TVOB>
+    </VOB>
+    <VOB>
+        <NAME>MPG_WIRELESS</NAME>
+        <DESC>MPG_WIRELESS Vob</DESC>
+        <DIVISION>DIVIS33</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Agrate-MPG</PLANT>
+        <TYPE>D</TYPE>
+        
+        
+		<TVOB>TEST_T_PLANT3</TVOB>
+<TVOB>MPG_TO_MUAR</TVOB>
+</VOB>
+    <VOB>
+        <NAME>TPA_TO_MUAR</NAME>
+        <DESC>TPA To Muar Vob</DESC>
+        <DIVISION>DIVIS33</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Muar</PLANT>
+        <TYPE>T</TYPE>
+    </VOB>
+    <VOB>
+        <NAME>TEST_T_PLANT3</NAME>
+        <DESC>To Plant3 Vob</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Agrate-TPA</PLANT>
+        <TYPE>T</TYPE>
+    </VOB>
+    <VOB>
+        <NAME>TEST_T_PLANT2</NAME>
+        <DESC>To Plant2 Vob</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Grenoble</PLANT>
+        <TYPE>T</TYPE>
+    </VOB>
+    <VOB>
+        <NAME>TEST_R_PLANT2</NAME>
+        <DESC>From Plant2 Vob</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Plant2</PLANT>
+        <TYPE>R</TYPE>
+    </VOB>
+    <VOB>
+        <NAME>TEST_MASTER</NAME>
+        <DESC>DVL Vob (TXT)</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>TXT</PLANT>
+        <TYPE>D</TYPE>
+        <TVOB>TEST_T_PLANT3</TVOB>
+        <TVOB>MPG_TO_MUAR</TVOB>
+    </VOB>
+    <VOB>
+        <NAME>MPG_TO_MUAR</NAME>
+        <DESC>MPG To Muar Vob</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS33</DIVISION>
+        <PLANT>Muar</PLANT>
+        <TYPE>T</TYPE>
+    </VOB>
+    <VOB>
+        <NAME>TPA_FROM_MUAR</NAME>
+        <DESC>TPA From Muar Vob</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Muar</PLANT>
+        <TYPE>R</TYPE>
+    </VOB>
+    <VOB>
+        <NAME>TPA_CAR_COMM</NAME>
+        <DESC>TPA CAR_COMM Vob</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Agrate-TPA</PLANT>
+        <TYPE>D</TYPE>
+        <TVOB>TPA_TO_MUAR</TVOB>
+    </VOB>
+    <VOB>
+        <NAME>REPLICA_GNB2AGR</NAME>
+        <DESC>Replica from GNB (TEST)</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS33</DIVISION>
+        <PLANT>GNBE</PLANT>
+        <TYPE>R</TYPE>
+    </VOB>
+    <VOB>
+        <NAME>MPG_FROM_MUAR</NAME>
+        <DESC>MPG From Muar Vob</DESC>
+        <DIVISION>DIVIS22</DIVISION>
+        <DIVISION>DIVIS11</DIVISION>
+        <PLANT>Muar</PLANT>
+        <TYPE>R</TYPE>
+    </VOB>
+</VOBS>

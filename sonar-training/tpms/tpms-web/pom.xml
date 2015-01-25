@@ -1,0 +1,28 @@
+<project>
+    
+    <parent>
+        <groupId>it.txt</groupId>
+        <artifactId>tpms</artifactId>
+        <version>5.03.05</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>it.txt</groupId>
+    <artifactId>tpms-web</artifactId>
+    <version>5.03.05</version>
+    
+    <name>TPMS :: Web</name>
+
+    <properties> 
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sonar.sources>WebContent</sonar.sources>
+        <sonar.language>web</sonar.language>
+        <sonar.profile>Sonar way</sonar.profile>
+    </properties> 
+    
+    <build>
+        <sourceDirectory>WebContent</sourceDirectory>
+    </build>
+    
+</project>

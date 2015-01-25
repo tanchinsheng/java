@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>CUSTOM-sonar java</actionName>
+        <displayName>sonar java</displayName>
+        <goals>
+            <goal>sonar:sonar</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-sonar jsp</actionName>
+        <displayName>sonar jsp</displayName>
+        <goals>
+            <goal>sonar:sonar</goal>
+        </goals>
+        <activatedProfiles>
+            <activatedProfile>JSP</activatedProfile>
+        </activatedProfiles>
+    </action>
+    <action>
+        <actionName>CUSTOM-sonar.ctn004393 java</actionName>
+        <displayName>sonar.ctn00439 java</displayName>
+        <goals>
+            <goal>sonar:sonar</goal>
+        </goals>
+        <activatedProfiles>
+            <activatedProfile>sonar.ctn004393</activatedProfile>
+        </activatedProfiles>
+    </action>
+    <action>
+        <actionName>CUSTOM-sonar.ctn004393 jsp</actionName>
+        <displayName>sonar.ctn00439 jsp</displayName>
+        <goals>
+            <goal>sonar:sonar</goal>
+        </goals>
+        <activatedProfiles>
+            <activatedProfile>sonar.ctn004393</activatedProfile>
+            <activatedProfile>JSP</activatedProfile>
+        </activatedProfiles>
+    </action>
+</actions>

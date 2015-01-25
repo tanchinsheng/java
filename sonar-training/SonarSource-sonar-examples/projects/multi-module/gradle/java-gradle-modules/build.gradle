@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'sonar-runner'
+
+allprojects {  
+  ext.baseVersion = "0.1"
+  ext.snapshotVersion = true
+  
+  group = "org.codehaus.sonar"
+  version = "$baseVersion" + (snapshotVersion ? "-SNAPSHOT" : "")
+}
+
+subprojects {
+  apply plugin: 'java'
+}

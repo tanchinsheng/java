@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-clean install</actionName>
+            <displayName>clean install</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-sonar.sglx487</actionName>
+            <displayName>sonar.sglx487</displayName>
+            <goals>
+                <goal>sonar:sonar</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>sonar.sglx487</activatedProfile>
+            </activatedProfiles>
+        </action>
+    </actions>

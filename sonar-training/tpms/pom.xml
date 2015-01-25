@@ -1,0 +1,14 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>it.txt</groupId>
+    <artifactId>tpms</artifactId>
+    <version>5.03.05</version>
+    <packaging>pom</packaging>
+
+    <name>Test Program Management System</name>
+
+    <modules>
+        <module>tpms-java</module>
+        <module>tpms-web</module>
+    </modules>
+</project>

@@ -1,0 +1,1 @@
+A simple gradle project (no modules) is availabe at ../../languages/java/gradle/java-gradle-simple

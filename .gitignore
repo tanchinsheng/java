@@ -252,3 +252,5 @@ pip-log.txt
 /hibernate/Hibernate24-persistDetached/target/
 /generics/generic-tutorial/target/
 /sonar/java-maven-simple/target/
+/sonar/ut-maven-cobertura/target/
+/sonar/ut-maven-jacoco/target/

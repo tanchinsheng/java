@@ -255,3 +255,7 @@ pip-log.txt
 /sonar/ut-maven-cobertura/target/
 /sonar/ut-maven-jacoco/target/
 /OCA/7324_01/target/
+/OCAJP7/7324_01/target/
+/OCAJP7/7324_02/target/
+/OCAJP7/7324_03/target/
+/OCAJP7/7324_04/target/

@@ -1,23 +1,30 @@
+/*This is a comment */
 package packt;
 
 import static java.lang.System.out;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.NumberFormat;
-import java.util.*;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class Chapter9Examples {
 
     public static void main(String[] args) {
-//        staticImportExample();
-//        garbageCollectionExample();
-//        localeExamples();
-//        resourceBundleExample();
+        staticImportExample();
+        garbageCollectionExample();
+        localeExamples();
+        resourceBundleExample();
         jdbcExamples();
-//        questionExamples();
+        questionExamples();
     }
 
     private static void questionExamples() {
@@ -63,7 +70,6 @@ public class Chapter9Examples {
 
 //        while ((i = 12) != 5) {
 //        }
-
         i = 0;
         do {
             System.out.println(i);
@@ -75,7 +81,6 @@ public class Chapter9Examples {
 //        if(i>j>k) {}
 //        if(i>j && i>k) {}
 //        if(i>j && >k) {}
-
         ArrayList<String> list = new ArrayList<>();
         list.add("cat");
         list.add("dog");
@@ -102,7 +107,6 @@ public class Chapter9Examples {
         someMethod2(s);
         System.out.println(s);
 
-
         s = "Hello";
         if (s instanceof String) {
             System.out.println("is a String");
@@ -111,7 +115,6 @@ public class Chapter9Examples {
         int num1 = 5;
         float num2 = 2.3f;
         num1 = (int) num2;
-
 
     }
 
@@ -138,9 +141,8 @@ public class Chapter9Examples {
 //                ClassNotFoundException e) {
 //            e.printStackTrace();
 //        }
-
         try (Connection connection = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/", "root", "explore");
+                "jdbc:mysql://localhost:3306/", "root", "root");
                 Statement statement = connection.createStatement()) {
             String query = "select first_name, last_name"
                     + " from sakila.customer "
@@ -156,22 +158,6 @@ public class Chapter9Examples {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-//        try (Connection connection = DriverManager.getConnection(
-//                        "jdbc:mysql://localhost:3306/", "root", "explore")) {
-//            try (Statement statement = connection.createStatement()) {
-//                String query = "select first_name, last_name"
-//                        + " from sakila.customer "
-//                        + "where address_id < 10";
-//                ResultSet resultset = statement.executeQuery(query);
-//                while (resultset.next()) {
-//                    String firstName = resultset.getString("first_name");
-//                    String lastName = resultset.getString("last_name");
-//                    System.out.println(firstName + " " + lastName);
-//                }
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
     }
 
     private static void resourceBundleExample() {
@@ -200,8 +186,7 @@ public class Chapter9Examples {
 //        String list[] = bundle.getStringArray("FILE_NOT_FOUND");
 //        System.out.println(list.length);
 //        System.out.println(list[0]);
-        bundle = ResourceBundle.getBundle("ResourceExamples",
-                new Locale("en"));
+        bundle = ResourceBundle.getBundle("ResourceExamples", new Locale("en"));
         System.out.println("en");
         keys = bundle.getKeys();
         while (keys.hasMoreElements()) {
@@ -217,8 +202,7 @@ public class Chapter9Examples {
         System.out.println(bundle.getString("UNKNOWN"));
         System.out.println();
 
-        bundle = ResourceBundle.getBundle("ResourceExamples",
-                new Locale("sp"));
+        bundle = ResourceBundle.getBundle("ResourceExamples", new Locale("sp"));
         System.out.println("sp - Using getString");
         System.out.println(bundle.getString("WINDOW_CAPTION"));
         System.out.println(bundle.getString("FILE_NOT_FOUND"));
@@ -250,6 +234,7 @@ public class Chapter9Examples {
 
         DateFormat dateFormatter = DateFormat.getDateInstance(DateFormat.LONG, Locale.US);
         System.out.println(dateFormatter.format(new Date()));
+
         dateFormatter = DateFormat.getDateInstance(DateFormat.LONG, Locale.FRANCE);
         System.out.println(dateFormatter.format(new Date()));
     }

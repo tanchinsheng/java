@@ -8,6 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Employee {
+
     // static variables
     private static int minimumAge;
 
@@ -27,6 +28,10 @@ public class Employee {
 
     public int getAge() {
         return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
 //    public void setAge(final int age) {
@@ -78,13 +83,17 @@ public class Employee {
         Date date = null;
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
         try {
-            date = df.parse("01/01/2000");
-
+            //date = df.parse("01/01/2000");
+            date = df.parse("01/012000");
             //this.dob = new Date();
         } catch (ParseException ex) {
             Logger.getLogger(Employee.class.getName()).log(Level.SEVERE, null, ex);
         }
         return date;
+    }
+
+    public Date getDOB() {
+        return getDefaultDate();
     }
 
     public Employee getInstance() {

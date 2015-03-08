@@ -18,7 +18,7 @@ public class SalaryEmployee extends Employee {
     }
 
     public SalaryEmployee(String name, int age, int zip, float stock) {
-//        super(name, age, zip);
+        // super(name, age, zip);
         this.setName(name);
         this.setAge(age);
         this.setZip(zip);
@@ -44,8 +44,8 @@ public class SalaryEmployee extends Employee {
         System.out.println("SalaryEmployee Data");
         System.out.println("Stock: " + this.stock);
     }
-     
+
 //    public int getAge() {
 //        return age;
-//    }    
+//    }
 }

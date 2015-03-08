@@ -14,86 +14,102 @@ public class Chapter4Examples {
     private static final int COLS = 3;
 
     public static void main(String[] args) {
-//        initialStuff();
-//        initializingArrayExamples();
-//        arrayOfObjectsExamples();
-//        multiDimensionalArrayExamples();
+        initialStuff();
+        initializingArrayExamples();
+        arrayOfObjectsExamples();
+        multiDimensionalArrayExamples();
 
         // Comparing arrays
-//        int arr1[];
-//        int arr2[];
-//        arr1 = new int[5];
-//        arr2 = new int[5];
-//
-//        for (int i = 0; i < 5; i++) {
-//            arr1[i] = 0;
-//            arr2[i] = 0;
-//        }
-//
-//        // Element-by-element comparison
+        int arr1[];
+        int arr2[];
+        arr1 = new int[5];
+        arr2 = new int[5];
+
+        for (int i = 0; i < 5; i++) {
+            arr1[i] = 0;
+            arr2[i] = 0;
+        }
+
+        // Element-by-element comparison
+        boolean areEqual = true;
+
+        int i;
+        for (i = 0; i < 5; i++) {
+            if (arr1[i] != arr2[i]) {
+                areEqual = false;
+            }
+        }
+        System.out.println(areEqual);
+
+        // Using the equality operator
 //        boolean areEqual = true;
-//
-//        int i;
-//        for (i = 0; i < 5; i++) {
-//            if (arr1[i] != arr2[i]) {
-//                areEqual = false;
-//            }
-//        }
-//        System.out.println(areEqual);
-//
-//        // Using the equality operator
-////        boolean areEqual = true;
-//        for (i = 0; i < 5; i++) {
-//            if (arr1[i] != arr2[i]) {
-//                areEqual = false;
-//            }
-//        }
-//        System.out.println(areEqual);
-//
-//        // Using the equality operator
-//        System.out.println(arr1 == arr2);
-//
-//        // Using the equals method
-//        System.out.println(arr1.equals(arr2));
-//
-//        // Using the deepEquals method
-//        System.out.println(Arrays.equals(arr1, arr2));
-//
-//        int grades[][] = new int[ROWS][COLS];
-//
-//        grades[0][0] = 0;
-//        grades[0][1] = 1;
-//        grades[0][2] = 2;
-//        grades[1][0] = 3;
-//        grades[1][1] = 4;
-//        grades[1][2] = 5;
-//
-//        int grades2[][];
-//        grades2 = new int[ROWS][];
-//        grades2[0] = new int[COLS];
-//        grades2[1] = new int[COLS];
-//
-//        grades2[0][0] = 0;
-//        grades2[0][1] = 1;
-//        grades2[0][2] = 2;
-//        grades2[1][0] = 3;
-//        grades2[1][1] = 4;
-//        grades2[1][2] = 5;
-//
-//
-//        System.out.println(grades == grades2);
-//        System.out.println(grades.equals(grades2));
-//        System.out.println(Arrays.equals(grades, grades2));
-//        System.out.println(Arrays.deepEquals(grades, grades2));
-        //      copyArraysExample();
-//        arraysClassExamples();
+        for (i = 0; i < 5; i++) {
+            if (arr1[i] != arr2[i]) {
+                areEqual = false;
+            }
+        }
+        System.out.println(areEqual);
+
+        // Using the equality operator
+        //arr1 and arr2, reference different objects in memory
+        // == operator just compare two pointers
+        System.out.println("arr1 == arr2 is " + Boolean.toString(arr1 == arr2));
+        // false
+
+        // Indicates whether some other object is "equal to" this one.
+        // equals inherits from Object
+        System.out.println("arr1.equals(arr2) is " + arr1.equals(arr2));
+        // false
+
+        // Using the deepEquals method
+        // Returns true if the two specified arrays of ints are equal to one another.
+        //  two arrays are equal if they contain the same elements in the same order.
+        System.out.println("Arrays.equals(arr1, arr2) is " + Arrays.equals(arr1, arr2));
+        // true
+
+        int grades[][] = new int[ROWS][COLS];
+
+        grades[0][0] = 0;
+        grades[0][1] = 1;
+        grades[0][2] = 2;
+        grades[1][0] = 3;
+        grades[1][1] = 4;
+        grades[1][2] = 5;
+
+        int grades2[][];
+        grades2 = new int[ROWS][];
+        grades2[0] = new int[COLS];
+        grades2[1] = new int[COLS];
+
+        grades2[0][0] = 0;
+        grades2[0][1] = 1;
+        grades2[0][2] = 2;
+        grades2[1][0] = 3;
+        grades2[1][1] = 4;
+        grades2[1][2] = 5;
+
+        // Tests arrays reference variables and not the arrays
+        System.out.println("grades == grades2 is " + Boolean.toString(grades == grades2));
+        // false
+        // Tests for object equivalent
+        System.out.println("grades.equals(grades2) is " + grades.equals(grades2));
+        // false
+        // Performs a comparsion using object identities, this will work for one-dimensional arrays.
+        System.out.println("Arrays.equals(grades, grades2) is " + Arrays.equals(grades, grades2));
+        // false
+        // Performs a more in depth examination of the elements for value equivalency using object's equals method
+        // this method is appropriate for use with nested arrays of arbitrary depth
+        System.out.println("Arrays.deepEquals(grades, grades2) is " + Arrays.deepEquals(grades, grades2));
+        // true
+        copyArraysExample();
+        arraysClassExamples();
         arrayListExamples();
     }
 
     private static void initialStuff() {
         // One dimension arrays
-//        int ages[];
-//	ages = new int[5];
+        // int ages[];
+        // ages = new int[5];
 
         int[] ages = new int[5];
 
@@ -195,6 +211,7 @@ public class Chapter4Examples {
     }
 
     private static void arrayListExamples() {
+        // default constructor is 10
         ArrayList list1 = new ArrayList();
         list1.add("item 1");
         list1.add("item 2");
@@ -205,11 +222,19 @@ public class Chapter4Examples {
 
         String arr3[] = {"Pine", "Oak", "Maple", "Walnut"};
         System.out.println(Arrays.asList(arr3));
+        arr3 = null;
+
         System.out.println(Arrays.toString(arr1));
+        // an array can hold primitive data types or objects
         Object arr2[] = {"item 3", new Integer(5), list1};
-        System.out.println(Arrays.deepToString(arr2));
-        System.out.println(Arrays.asList(arr2));
-        System.out.println(Arrays.toString(arr2));
+        list1 = null;
+
+        System.out.println("Arrays.asList(arr2)) is " + Arrays.asList(arr2));
+        System.out.println("Arrays.toString(arr2)) is " + Arrays.toString(arr2));
+        // intended to return a string representation of its array argument where the
+        // array is more complex.
+        System.out.println("Arrays.deepToString(arr2) is " + Arrays.deepToString(arr2));
+        arr2 = null;
 
         ArrayList<String> creatures = new ArrayList<>();
         creatures.add("Mutant");
@@ -317,10 +342,26 @@ public class Chapter4Examples {
         }
         displayArray(arr1);
 
-        // Simple array copy
+        // Simple array copy...tedious but can implement either a shallow or deep copy
         for (int i = 0; i < arr1.length; i++) {
             arr2[i] = arr1[i];
         }
+        // Tests arrays reference variables and not the arrays...
+        // arr1 and arr2 reference different objects in memory..
+        // The contents of these two reference variables are different...
+        // They dont' reference the same object
+        // This only works properly if the two reference variables reference the same object.
+        System.out.println("arr1 == arr2 is " + Boolean.toString(arr1 == arr2));
+        // false
+        // Tests for object equivalent and not object value equivalency
+        // Object value equivalency refers to the condition where two
+        // distinct objects are considered to be equivalent because their internal values are the same.
+        // This only works properly if the two reference variables reference the same object.
+        System.out.println("arr1.equals(arr2) is " + arr1.equals(arr2));
+        // false
+        // Performs a comparsion using object identities, this will work for one-dimensional arrays.
+        System.out.println("Arrays.equals(arr1, arr2) is " + Arrays.equals(arr1, arr2));
+        // true
         displayArray(arr2);
 
         // Initialize arr2 elements
@@ -334,6 +375,8 @@ public class Chapter4Examples {
         for (int i = 0; i < arr2.length; i++) {
             arr2[i] = 0;
         }
+
+        // shallow copy
         System.arraycopy(arr1, 0, arr2, 2, 3);
         displayArray(arr2);
 
@@ -344,18 +387,56 @@ public class Chapter4Examples {
         arr3[3] = new StringBuilder("Walnut");
 
         StringBuilder arr4[] = new StringBuilder[4];
+        // shallow copy...arr4 contains the same object reference variables used by arr3
         System.arraycopy(arr3, 0, arr4, 0, 4);
+        System.out.println("== of new StringBuilder is " + Boolean.toString(arr3 == arr4));
+        // false
+        System.out.println("arr3.equals(arr4) is " + arr3.equals(arr4));
+        // false
+        System.out.println("Arrays.equals of new StringBuilder is " + Arrays.equals(arr3, arr4));
+        // true
+        System.out.println("Arrays.deepEquals of System.arraycopy(arr3, 0, arr4, 0, 4) is " + Arrays.deepEquals(arr3, arr4));
+        // true
 
+        String arr3a[] = new String[4];
+        arr3a[0] = "Pine";
+        arr3a[1] = "Oak";
+        arr3a[2] = "Maple";
+        arr3a[3] = "Walnut";
+
+        String arr4a[] = new String[4];
+        // shallow copy...arr4a contains the same object reference variables used by arr3a
+        System.arraycopy(arr3a, 0, arr4a, 0, 4);
+        System.out.println("== of new String is " + Boolean.toString(arr3a == arr4a));
+        // false
+        System.out.println("arr3a.equals(arr4a) is " + arr3a.equals(arr4a));
+        // false
+        System.out.println("Arrays.equals of new String is " + Arrays.equals(arr3a, arr4a));
+        // true
+        System.out.println("Arrays.deepEquals of System.arraycopy(arr3a, 0, arr4a, 0, 4) is " + Arrays.deepEquals(arr3a, arr4a));
+        // true
+
+        StringBuilder arr5[] = new StringBuilder[4];
+        // deep copy...creation of an identical array with references to distinct strings
         for (int i = 0; i < arr3.length; i++) {
-            arr4[i] = new StringBuilder(arr3[i]);
+            arr5[i] = new StringBuilder(arr3[i]);
         }
+        System.out.println("== of new StringBuilder is " + Boolean.toString(arr3 == arr5)); // false
+        System.out.println("arr3.equals(arr5) is " + arr3.equals(arr5)); // false
+        System.out.println("Arrays.equals of new StringBuilder is " + Arrays.equals(arr3, arr5)); // false
+        System.out.println("Arrays.deepEquals of new StringBuilder is " + Arrays.deepEquals(arr3, arr5)); // false
+        // false ?
 
 //        System.arraycopy(arr1, 0, arr1, 3, 2);
 //        displayArray(arr1);
+        // deep copy...create a new array based on an existing array
         arr2 = Arrays.copyOf(arr1, 10);
+        // 0 1 2 3 4 0 0 0 0 0
         displayArray(arr2);
 
+        // deep copy...create a new array based on a sub-range of elements in an existing array
         arr2 = Arrays.copyOfRange(arr1, 3, 8);
+        // 3 4 0 0 0
         displayArray(arr2);
 
         //shallow copy...both arrays will reference the same objects

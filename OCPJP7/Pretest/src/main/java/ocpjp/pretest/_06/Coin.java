@@ -1,25 +1,15 @@
-package com.company.pretest;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ocpjp.pretest._06;
 
-interface Side {
-
-    String getSide();
-}
-
-class Head implements Side {
-
-    public String getSide() {
-        return "Head ";
-    }
-}
-
-class Tail implements Side {
-
-    public String getSide() {
-        return "Tail ";
-    }
-}
-
-class Coin {
+/**
+ *
+ * @author cstan
+ */
+public class Coin {
 
     public static void overload(Head side) {
         System.out.print(side.getSide());
@@ -38,26 +28,29 @@ class Coin {
     }
 
     public static void main(String[] args) {
-        // Overloading is based on the static type of the objects 
+        // Overloading is based on the static type of the objects
         // (while overriding and runtime resolution resolves to the
-        // dynamic type of the objects). Here is how the calls to the overload() 
+        // dynamic type of the objects). Here is how the calls to the overload()
         // method are resolved:
-        
+
         // Side Object Tail Side
-        
         Side firstAttempt = new Head();
         Tail secondAttempt = new Tail();
-        // overload(firstAttempt); --> firstAttempt is of type Side, 
+        // overload(firstAttempt); --> firstAttempt is of type Side,
         // hence it resolves to overload(Side).
         overload(firstAttempt);
-        //overload((Object)firstAttempt); -> firstAttempt is casted to Object, 
+
+        //overload((Object)firstAttempt); -> firstAttempt is casted to Object,
         // hence it resolves to overload(Object).
         overload((Object) firstAttempt);
+
         // overload(secondAttempt); -> secondAttempt is of type Tail, hence it resolves to
         // overload(Tail).
         overload(secondAttempt);
-        // overload((Side)secondAttempt); -> secondAttempt is casted to Side, 
+
+        // overload((Side)secondAttempt); -> secondAttempt is casted to Side,
         // hence it resolves to overload(Side).
         overload((Side) secondAttempt);
     }
+
 }

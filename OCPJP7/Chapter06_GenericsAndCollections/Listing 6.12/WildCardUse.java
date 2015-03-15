@@ -1,19 +1,14 @@
 /*------------------------------------------------------------------------------
- * Oracle Certified Professional Java SE 7 Programmer Exams 1Z0-804 and 1Z0-805:
+ * Oracle Certified Professional Java SE 7 Programmer Exams 1Z0-804 and 1Z0-805: 
  * A Comprehensive OCPJP 7 Certification Guide
  * by SG Ganesh and Tushar Sharma
 ------------------------------------------------------------------------------*/
 import java.util.*;
 // This program demonstrates the usage of wild card parameters
 class WildCardUse {
-	/*
 	static void printList(List<?> list){
 		for(Object l:list)
 			System.out.println("[" + l + "]");
-	}
-	*/
-	static void printList(List<?> list){
-			System.out.println(list);
 	}
 
 	public static void main(String []args) {

@@ -18,10 +18,12 @@ class Student implements Comparable<Student> {
         cgpa = studentCGPA;
     }
 
+    @Override
     public String toString() {
         return " \n " + id + "  \t  " + name + "  \t  " + cgpa;
     }
 
+    @Override
     public int compareTo(Student that) {
         return this.id.compareTo(that.id);
     }

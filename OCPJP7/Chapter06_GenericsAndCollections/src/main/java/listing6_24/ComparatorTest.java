@@ -10,7 +10,8 @@ import java.util.Arrays;
 class ComparatorTest {
 
     public static void main(String[] args) {
-        Student[] students = {new Student("cs011", "Lennon  ", 3.1),
+        Student[] students = {
+            new Student("cs011", "Lennon  ", 3.1),
             new Student("cs021", "McCartney", 3.4),
             new Student("cs012", "Harrison ", 2.7),
             new Student("cs022", "Starr ", 3.7)};

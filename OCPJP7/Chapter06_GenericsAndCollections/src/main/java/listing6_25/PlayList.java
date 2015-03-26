@@ -37,6 +37,7 @@ class PlayList {
 
         System.out.println("\nIs my most favourite song Black Or White - 1991 present in the list?");
         String backOrWhiteSong = "Black Or White - 1991";
+        // List must be sorted, otherwise results are undefined
         int index = Collections.binarySearch(playList, backOrWhiteSong);
         if (index >= 0) {
             System.out.printf("Yes, its the %d song \n", (index + 1));

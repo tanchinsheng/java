@@ -1,1 +1,0 @@
-echo stop >> .\data\work\stop_rtmloader.cmd

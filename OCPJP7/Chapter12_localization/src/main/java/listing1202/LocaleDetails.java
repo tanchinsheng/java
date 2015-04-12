@@ -10,7 +10,10 @@ import java.util.Locale;
 public class LocaleDetails {
 
     public static void main(String args[]) {
-        Locale.setDefault(Locale.CANADA_FRENCH);
+        //Locale.setDefault(Locale.CANADA_FRENCH);
+        Locale.setDefault(Locale.ENGLISH);
+        //Locale newLocale = new Locale("en", "SG", "");
+        //Locale.setDefault(newLocale);
         Locale defaultLocale = Locale.getDefault();
         System.out.printf("The default locale is %s %n", defaultLocale);
         System.out.printf("The default language code is %s and the name is %s %n",

@@ -15,7 +15,7 @@ class PatternStringExample {
         String pattern = "dd-MM-yy"; /* d for day, M for month, y for year */
 
         SimpleDateFormat formatter = new SimpleDateFormat(pattern);
-// the default Date constructor initializes to current date/time
+        // the default Date constructor initializes to current date/time
         System.out.println(formatter.format(new Date()));
     }
 }

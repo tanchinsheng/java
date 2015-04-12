@@ -8,9 +8,10 @@ package listing1203;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class LocalizedHello {
+public class LocalizedCiao {
 
     public static void main(String args[]) {
+        Locale.setDefault(Locale.ITALY);
         Locale currentLocale = Locale.getDefault();
         ResourceBundle resBundle = ResourceBundle.getBundle("ResourceBundle", currentLocale);
         System.out.printf(resBundle.getString("Greeting"));

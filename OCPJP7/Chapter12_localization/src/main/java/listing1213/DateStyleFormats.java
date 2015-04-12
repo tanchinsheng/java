@@ -17,7 +17,7 @@ class DateStyleFormats {
         System.out.println("Today's date in different styles are: ");
 
         // print today's date in all four formats plus
-// the default format in the default Locale
+        // the default format in the default Locale
         for (int dateStyleFormat : dateStyleFormats) {
             DateFormat dateFormat = DateFormat.getDateInstance(dateStyleFormat);
             System.out.println(dateFormat.format(now));

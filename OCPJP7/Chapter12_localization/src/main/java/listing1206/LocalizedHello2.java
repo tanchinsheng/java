@@ -21,10 +21,11 @@ public class LocalizedHello2 {
     public static void main(String args[]) {
         // print the largest box-office hit movie for default (US) locale
         Locale locale = Locale.getDefault();
-        printMovieDetails(ResourceBundle.getBundle("ResBundle", locale));
+        printMovieDetails(ResourceBundle.getBundle("listing1206.ResBundle", locale));
+        //printMovieDetails(ResourceBundle.getBundle("ResBundle", locale));
 
         // print the largest box-office hit movie for Italian locale
         locale = new Locale("it", "IT", "");
-        printMovieDetails(ResourceBundle.getBundle("ResBundle", locale));
+        printMovieDetails(ResourceBundle.getBundle("listing1206.ResBundle", locale));
     }
 }

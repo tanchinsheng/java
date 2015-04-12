@@ -14,14 +14,18 @@ import java.util.ResourceBundle;
 class TalkativeResourceBundleControl extends ResourceBundle.Control {
 
     // override the default getCandidateLocales method to print
-// the candidate locales first
-
+    // the candidate locales first
+    @Override
     public List<Locale> getCandidateLocales(String baseName, Locale locale) {
         List<Locale> candidateLocales = super.getCandidateLocales(baseName, locale);
         System.out.printf("Candidate locales for base bundle name %s and locale %s %n", baseName, locale.getDisplayName());
         for (Locale candidateLocale : candidateLocales) {
             System.out.println(candidateLocale);
         }
+        // functional operation
+        candidateLocales.stream().forEach((candidateLocale) -> {
+            System.out.println(candidateLocale);
+        });
         return candidateLocales;
     }
 }

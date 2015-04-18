@@ -24,7 +24,7 @@ class Player extends Thread {
         for (int i = 0; i < 6; i++) {
             // acquire the lock before proceeding
             synchronized (Dice.class) {
-				// if its not currentPlayer’s turn, then
+                // if its not currentPlayer’s turn, then
                 // wait for otherPlayers’s notification
                 while (!Dice.getTurn().equals(currentPlayer)) {
                     try {

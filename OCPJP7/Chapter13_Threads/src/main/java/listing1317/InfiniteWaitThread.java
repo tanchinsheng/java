@@ -17,6 +17,7 @@ class InfiniteWaitThread extends Thread {
                 // note the call to wait without any timeout value
                 // so it waits forever for some thread to notify it
                 wait();
+                //wait(1000);
             } catch (InterruptedException ie) {
                 // its okay to ignore this exception since we’re not
                 // interrupting exceptions in this code

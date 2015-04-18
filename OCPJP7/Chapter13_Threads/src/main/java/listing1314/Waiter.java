@@ -15,11 +15,12 @@ class Waiter extends Thread {
         synchronized (CoffeeMachine.lock) {
             if (CoffeeMachine.coffeeMade == null) {
                 try {
-                    // wait till the CoffeeMachine says (notifies) that 							// coffee is ready
-                    System.out.println("Waiter: Will get orders till 							coffee machine notifies me ");
+                    // wait till the CoffeeMachine says (notifies) that
+                    // coffee is ready
+                    System.out.println("Waiter: Will get orders till coffee machine notifies me ");
                     CoffeeMachine.lock.wait();
                 } catch (InterruptedException ie) {
-					// its okay to ignore this exception
+                    // its okay to ignore this exception
                     // since we're not using thread interrupt mechanism
                     ie.printStackTrace();
                 }

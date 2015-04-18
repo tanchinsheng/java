@@ -33,6 +33,7 @@ class CoffeeMachine extends Thread {
         }
     }
 
+    @Override
     public void run() {
         while (true) {
             makeCoffee();
@@ -41,7 +42,7 @@ class CoffeeMachine extends Thread {
                 // simulate the time taken to make a coffee by calling sleep method
                 Thread.sleep(10000);
             } catch (InterruptedException ie) {
-				// its okay to ignore this exception
+                // its okay to ignore this exception
                 // since we're not using thread interrupt mechanism
                 ie.printStackTrace();
             }

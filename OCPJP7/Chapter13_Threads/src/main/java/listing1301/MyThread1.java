@@ -7,6 +7,7 @@ package listing1301;
  ------------------------------------------------------------------------------*/
 class MyThread1 extends Thread {
 
+    // Optional to override
     @Override
     public void run() {
         try {
@@ -17,11 +18,15 @@ class MyThread1 extends Thread {
             // very few of the exceptions in Java which is acceptable to ignore
         }
         System.out.println("In run method; thread name is: " + getName());
+        System.out.println("In run method; thread priority is: " + getPriority());
+        System.out.println("In run method; thread toString is: " + toString());
     }
 
     public static void main(String args[]) {
         Thread myThread = new MyThread1();
         myThread.start();
         System.out.println("In main method; thread name is: " + Thread.currentThread().getName());
+        System.out.println("In main method; thread priority is: " + Thread.currentThread().getPriority());
+        System.out.println("In main method; thread toString is: " + Thread.currentThread().toString());
     }
 }

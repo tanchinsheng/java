@@ -10,7 +10,7 @@ package listing1311;
 // For demonstrating deadlock, we call these two methods in the run method,
 // so that locking can be requested in opposite order in these two methods
 class Counter implements Runnable {
-	// this method increments runs variable first and then increments the balls variable
+    // this method increments runs variable first and then increments the balls variable
     // since these variables are accessible from other threads,
     // we need to acquire a lock before processing them
 
@@ -28,14 +28,16 @@ class Counter implements Runnable {
     public void IncrementRunAfterBall() {
         // since we're updating balls variable first, lock the Balls.class reference first
         synchronized (Balls.class) {
-            // now acquire lock on Runs.class variable before updating runs variable  				synchronized(Runs.class) {
-            Balls.balls++;
-            Runs.runs++;
+            // now acquire lock on Runs.class variable before updating runs variable
+            synchronized (Runs.class) {
+                Balls.balls++;
+                Runs.runs++;
+            }
         }
     }
 
     public void run() {
-		// call these two methods which acquire locks in different order
+        // call these two methods which acquire locks in different order
         // depending on thread scheduling and the order of lock acquision,
         // a deadlock may or may not arise
         IncrementBallAfterRun();

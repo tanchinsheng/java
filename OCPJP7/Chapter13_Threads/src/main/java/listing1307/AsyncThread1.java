@@ -5,7 +5,7 @@ package listing1307;
  * A Comprehensive OCPJP 7 Certification Guide
  * by SG Ganesh and Tushar Sharma
  ------------------------------------------------------------------------------*/
-class AsyncThread extends Thread {
+class AsyncThread1 extends Thread {
 
     @Override
     public void run() {
@@ -24,10 +24,15 @@ class AsyncThread extends Thread {
     }
 
     public static void main(String args[]) {
-        AsyncThread asyncThread1 = new AsyncThread();
-        AsyncThread asyncThread2 = new AsyncThread();
+        AsyncThread1 asyncThread1 = new AsyncThread1();
+        AsyncThread1 asyncThread2 = new AsyncThread1();
         // start both the threads around the same time
         asyncThread1.start();
+        try {
+            asyncThread1.join();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
         asyncThread2.start();
     }
 }

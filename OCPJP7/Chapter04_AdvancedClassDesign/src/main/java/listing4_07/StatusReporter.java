@@ -8,8 +8,7 @@ package listing4_07;
 class StatusReporter {
 
     // important to note that the argument "color" is declared final
-// otherwise, the local inner class DescriptiveColor will not be able to use it!!
-
+    // otherwise, the local inner class DescriptiveColor will not be able to use it!!
     static Shape.Color getDesciptiveColor(final Shape.Color color) {
         // local class DescriptiveColor that extends Shape.Color class
         class DescriptiveColor extends Shape.Color {
@@ -22,8 +21,7 @@ class StatusReporter {
     }
 
     public static void main(String[] args) {
-        Shape.Color descriptiveColor
-                = StatusReporter.getDesciptiveColor(new Shape.Color(0, 0, 0));
+        Shape.Color descriptiveColor = StatusReporter.getDesciptiveColor(new Shape.Color(0, 0, 0));
         System.out.println(descriptiveColor);
     }
 }

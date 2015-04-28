@@ -11,7 +11,7 @@ import java.util.List;
 class UtilitiesTest {
 
     public static void main(String[] args) {
-        List<Integer> intList = new ArrayList<Integer>();
+        List<Integer> intList = new ArrayList<>();
         intList.add(10);
         intList.add(20);
         System.out.println("The original list is: " + intList);

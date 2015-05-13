@@ -24,6 +24,7 @@ class Person extends Thread {
         try {
             System.out.println(getName() + " waiting to access an ATM machine");
             machine.lock();
+            //machine.lock();
             System.out.println(getName() + " is accessing an ATM machine");
             Thread.sleep(1000); // simulate the time required for withdrawing amount
         } catch (InterruptedException ie) {
@@ -31,6 +32,7 @@ class Person extends Thread {
         } finally {
             System.out.println(getName() + " is done using the ATM machine");
             machine.unlock();
+            //machine.unlock();
         }
     }
 }

@@ -13,6 +13,7 @@ class MaxPriorityThreadFactory implements ThreadFactory {
 
     private static long count = 0;
 
+    @Override
     public Thread newThread(Runnable r) {
         Thread temp = new Thread(r);
         temp.setName("prioritythread" + count++);

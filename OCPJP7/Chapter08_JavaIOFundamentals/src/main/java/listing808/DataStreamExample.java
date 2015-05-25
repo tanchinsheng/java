@@ -24,12 +24,14 @@ class DataStreamExample {
             // omitting boolean type because an int value cannot
             // be converted to boolean
             for (int i = 0; i < 10; i++) {
+                dos.writeUTF("UTF Data :" + i);
                 dos.writeByte(i);
                 dos.writeShort(i);
                 dos.writeInt(i);
                 dos.writeLong(i);
                 dos.writeFloat(i);
                 dos.writeDouble(i);
+
             }
         } catch (FileNotFoundException fnfe) {
             System.err.println("cannot create a file with the given file name ");
@@ -48,13 +50,15 @@ class DataStreamExample {
                 // %d is for printing byte, short, int or long
                 // %f, %g, or %e is for printing float or double
                 // %n is for printing newline
-                System.out.printf("%d %d %d %d %g %g %n",
+                System.out.printf("%s %d %d %d %d %g %g %n",
+                        dis.readUTF(),
                         dis.readByte(),
                         dis.readShort(),
                         dis.readInt(),
                         dis.readLong(),
                         dis.readFloat(),
                         dis.readDouble());
+
             }
         } catch (FileNotFoundException fnfe) {
             System.err.println("cannot create a file with the given file name ");

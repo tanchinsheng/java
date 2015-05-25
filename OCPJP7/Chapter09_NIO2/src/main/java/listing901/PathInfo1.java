@@ -5,6 +5,10 @@ package listing901;
  * A Comprehensive OCPJP 7 Certification Guide
  * by SG Ganesh and Tushar Sharma
  ------------------------------------------------------------------------------*/
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -13,7 +17,7 @@ public class PathInfo1 {
 
     public static void main(String[] args) {
         // create a Path object by calling static method get() in Paths class
-        Path testFilePath = Paths.get("D:\\test\\testfile.txt");
+        Path testFilePath = Paths.get("testfile.txt");
         //Path testFilePath = Paths.get(".\\testfile.txt");
 
         // retrieve basic information about path
@@ -27,6 +31,17 @@ public class PathInfo1 {
         System.out.println("Printing elements of the path: ");
         for (Path element : testFilePath) {
             System.out.println("\t path element: " + element);
+        }
+
+        // Reading a File by Using Buffered Stream I/O
+        Charset charset = Charset.forName("US-ASCII");
+        try (BufferedReader reader = Files.newBufferedReader(testFilePath, charset)) {
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException x) {
+            System.err.format("IOException: %s%n", x);
         }
     }
 }

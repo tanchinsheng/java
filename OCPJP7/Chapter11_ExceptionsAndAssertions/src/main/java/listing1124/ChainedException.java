@@ -26,6 +26,7 @@ public class ChainedException {
             foo();
         } catch (Exception re) {
             System.out.println(re.getClass());
+            re.printStackTrace();
         }
     }
 

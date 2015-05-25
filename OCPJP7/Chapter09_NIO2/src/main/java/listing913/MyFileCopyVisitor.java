@@ -6,6 +6,7 @@ package listing913;
  * by SG Ganesh and Tushar Sharma
  ------------------------------------------------------------------------------*/
 import java.io.IOException;
+import java.nio.file.FileSystemLoopException;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -43,6 +44,18 @@ class MyFileCopyVisitor extends SimpleFileVisitor<Path> {
             Files.copy(path, newd, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        return FileVisitResult.CONTINUE;
+    }
+
+    //This case can occur only when the program is following symbolic links
+    @Override
+    public FileVisitResult
+            visitFileFailed(Path file, IOException exc) {
+        if (exc instanceof FileSystemLoopException) {
+            System.err.println("cycle detected: " + file);
+        } else {
+            System.err.format("Unable to copy:" + " %s: %s%n", file, exc);
         }
         return FileVisitResult.CONTINUE;
     }

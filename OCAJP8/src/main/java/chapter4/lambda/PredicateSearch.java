@@ -14,7 +14,7 @@ public class PredicateSearch {
     public static void main(String[] args) {
         List<Animal> animals = new ArrayList<>();
         animals.add(new Animal("fish", false, true));
-        print(animals, a -> a.canSwim());
+        // print(animals, a -> a.canSwim());
 
         List<String> bunnies = new ArrayList<>();
         bunnies.add("long ear");

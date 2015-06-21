@@ -25,6 +25,7 @@ public class Animal {
         return canSwim;
     }
 
+    @Override
     public String toString() {
         return species;
     }

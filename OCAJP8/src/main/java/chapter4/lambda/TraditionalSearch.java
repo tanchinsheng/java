@@ -5,16 +5,9 @@
  */
 package chapter4.lambda;
 
-import chapter4.lambda.CheckIfHopper;
-import chapter4.lambda.CheckTrait;
-import chapter4.lambda.Animal;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author cstan
- */
 public class TraditionalSearch {
 
     public static void main(String[] args) {
@@ -34,9 +27,16 @@ public class TraditionalSearch {
     private static void print(List<Animal> animals, CheckTrait checker) {
         for (Animal animal : animals) {
             if (checker.test(animal)) {
-                System.out.println(animal + " ");
+                System.out.println(animal + " "); // Use toString()
             }
         }
+        System.out.println();
+    }
+
+    private static void printLambda(List<Animal> animals, CheckTrait checker) {
+        animals.stream().filter((animal) -> (checker.test(animal))).forEach((animal) -> {
+            System.out.println(animal + " ");
+        });
         System.out.println();
     }
 

@@ -4,8 +4,8 @@
 
   <entry key="DbDriverClass">oracle.jdbc.driver.OracleDriver</entry>
   <entry key="DbUrl">jdbc:oracle:thin:@sgx853:1521:rtmgtest</entry>
-  <entry key="DbUser">rtm</entry>
-  <entry key="DbPassword">rtm</entry>
+  <entry key="DbUser">username</entry>
+  <entry key="DbPassword">password</entry>
   <entry key="MinConnectionsPerPartition">40</entry>
   <entry key="PartitionCount">2</entry>
   <entry key="DbTimeout">0</entry>

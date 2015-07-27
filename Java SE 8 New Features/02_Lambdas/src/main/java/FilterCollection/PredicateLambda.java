@@ -26,10 +26,10 @@ public class PredicateLambda {
 //            }
 //        });
 
-    private static void displayPeople(List<Person> people, Predicate<Person> predOlder) {
+    private static void displayPeople(List<Person> people, Predicate<Person> pred) {
 
         people.forEach(p -> {
-            if (predOlder.test(p)) {
+            if (pred.test(p)) {
                 System.out.println(p);
             }
         });

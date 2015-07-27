@@ -26,5 +26,9 @@ public class PredicateInnerClass {
                 System.out.println(person);
             }
         }
+//        Predicate<Person> pred = (Person p) -> (p.getAge() >= 65);
+//        people.stream().filter((person) -> (pred.test(person))).forEach((person) -> {
+//            System.out.println(person);
+//        });
     }
 }

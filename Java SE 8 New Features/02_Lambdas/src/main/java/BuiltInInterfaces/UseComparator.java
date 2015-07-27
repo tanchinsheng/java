@@ -39,7 +39,7 @@ public class UseComparator {
 //        for (String str : strings) {
 //            System.out.println(str);
 //        }
-        strings.stream().forEach((str) -> {
+        strings.forEach((str) -> {
             System.out.println(str);
         });
     }

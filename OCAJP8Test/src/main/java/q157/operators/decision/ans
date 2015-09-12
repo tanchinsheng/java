@@ -1,0 +1,4 @@
+In the case of i == f, value of i will be promoted to a float i.e. 5.0, and so it returns false.
+(int)f+(int)d =  (int)5.5 + (int) 3.8 => 5 + 3 = 8
+(int)(f + d) => (int) (5.5 + 3.8) => (int)(9.3) => 9, so this also return false.
+So, c is not incremented at all. Hence c remains 'a'.

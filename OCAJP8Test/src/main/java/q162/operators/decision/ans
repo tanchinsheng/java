@@ -1,0 +1,9 @@
+Every case constant expression in a switch block must be assignable to the type of switch expression. Meaning :
+byte by = 10;
+switch(by){
+     case 300 :  //some code;
+     case 56 :   //some code;
+}
+This will not compile as 300 is not assignable to 'by ' which can only hold values from -128 to 127. 
+This gives compile time error as the compiler detects it while compiling. 
+The use of break keyword is not mandatory, and without it the control will simply fall through the labels of the switch statement.

@@ -1,0 +1,11 @@
+The following is the output when the program is run: 
+java.lang.ExceptionInInitializerError 
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0         
+    at AX.<clinit>(SM.java:6) 
+Exception in thread "main" Java Result: 1  
+
+Note that the program ends with ExceptionInInitializerError because any exception thrown in a static block 
+is wrapped into ExceptionInInitializerError and then that ExceptionInInitializerError is thrown. 
+Remember that a static or instance initializer can only throw a RuntimeException. 
+If you try to throw a checked exception from a static or instance initializer block to the outside, 
+the code will not compile.

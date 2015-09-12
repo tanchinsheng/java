@@ -1,0 +1,7 @@
+Note : 
+integral types means byte, short, int, long, and char
+
+As per Section 4.1 of JLS 8 -
+
+The integral types are byte, short, int, and long, whose values are 8-bit, 16-bit, 32-bit and 64-bit 
+signed two's-complement integers, respectively, and char, whose values are 16-bit unsigned integers representing UTF-16 code units.

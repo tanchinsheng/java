@@ -1,0 +1,10 @@
+In such a question it is best to take a sample data such as INT1=1 and INT2=3 and execute the loops mentally. 
+Eliminate the wrong options. In this case, the original loop will print:
+=====ORIGINAL ====
+1
+
+2
+
+Outputs of all the options are given above (Ignoring the line breaks).
+
+Thus, none of them is same as the original.

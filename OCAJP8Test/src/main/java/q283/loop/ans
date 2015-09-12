@@ -1,0 +1,12 @@
+This is a simple while loop nested inside a for loop. The for loop loops three times - once for each value in values array. 
+Since, values.length is 3, x is incremented two times for each for loop iteration before the condition x<values.length returns false. 
+Therefore, it prints: 
+0 10 
+1 10 
+2 10 
+0 30 
+1 30 
+2 30 
+0 50 
+1 50 
+2 50

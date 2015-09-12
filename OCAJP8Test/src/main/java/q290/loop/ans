@@ -1,0 +1,9 @@
+Notice the statement : 
+if(index == 3){                 
+    break;             
+}else {                  
+    continue;             
+} 
+
+In no situation can the control go beyond this statement in the for loop. 
+Therefore,  rest of the statements in the for loop are unreachable and so the code will not compile.

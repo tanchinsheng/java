@@ -1,0 +1,9 @@
+1 and 3 declare a two dimensional array alright but they create the array of size 2, 3. 
+And cA[2][3] means we need an array of size 3, 4 because the numbering starts from 0.
+
+4 : You cannot put array size information on left hand side of equals sign.
+
+5 : This is a one dimensional array and that too of strings. 
+
+Note that a java String is not equivalent to 1 dimensional array of chars.
+This leaves us with only one choice 2.

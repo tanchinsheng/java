@@ -1,0 +1,7 @@
+Comparison operators have lower precedence than mathematical operators. 
+Therefore, 1 + 5 < 3 + 7 is evaluated as (1 + 5) < (3 + 7) i.e. 6<10, which prints true.
+Similarly,  (2 + 2) >= 2 + 3 is evaluated as  (2 + 2) >= (2 + 3) i.e. 4>=5, which prints false.
+
+If you have an expression,  2 + (2 >= 2) + 3, it would be tempting to answer 2true3, 
+but actually, it would not compile because it would resolve to 2 + true + 3 and + operator is not 
+overloaded for anything except String. Here, neither of the operands of + operator is a String. 

@@ -1,0 +1,31 @@
+Which of the following statements are true?
+
+private keyword can never be applied to a class.
+private, protected and public can be applied to a nested class.
+Although not too important for the exam, you should still know the following terminology: 
+A top level class is a class that is not a nested class. 
+A nested class is any class whose declaration occurs within the body of another class or interface.
+
+synchronized keyword can never be applied to a class.// Correct
+
+synchronized keyword may be applied to a non-primitive variable.
+It can only be applied to a method or a block.
+
+final keyword can never be applied to a class.
+
+A final variable can be hidden in a subclass.// Correct
+If the class declares a field with a certain name, then the declaration of that field is said to hide any 
+and all accessible declarations of fields with the same name in superclasses, 
+and superinterfaces of the class. 
+
+For example, 
+class Base{    
+    int i=10; 
+} 
+
+class Sub extends Base{   
+    int i=20; //This i hides Base's i.    
+} 
+... 
+Sub s = new Sub(); 
+int k = s.i; //assigns 20 to k.

@@ -1,0 +1,9 @@
+public > protected > package (i.e. no modifier) > private 
+where public is least restrictive and private is most restrictive.  
+
+Remember: 
+protected is less restrictive than package access. 
+So a method(or field) declared as protected will be accessible from a subclass even if the subclass is not in the same package. 
+The same is not true for package access.
+A top level class can only have either public or no access modifier but a method or field can have all the four. 
+Note that static, final, native and synchronized are not considered as access modifiers.

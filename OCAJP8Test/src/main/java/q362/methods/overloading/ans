@@ -1,0 +1,12 @@
+Overloading of a method occurs when the name of more than one methods is exactly same but the parameter lists are different.
+
+The first and the third pairs of methods will compile correctly as they follow the above stated rule.
+
+The second pair of methods will not compile correctly, since their method signatures are same and the compiler 
+cannot differentiate between the two methods as it does not look for return type. 
+Also, only name and input parameters are the part of method declaration . Names of the parameters don't matter.
+
+Both methods in the first pair are named perform_work but have different parameter list so 
+they overload this method name i.e. perform_work.
+
+The method named 'perform_work' is distinct from the method named 'Perform_work', as identifiers in Java are case-sensitive.

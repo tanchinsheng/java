@@ -1,0 +1,12 @@
+To call myMethod(int m, Object p, double d), you must pass exactly three parameters. 
+If you try to pass less (or more) number of parameters, the code will not compile. 
+Note that method parameters are not assigned default values.  
+
+It is possible to declare a method that can take variable number of parameters. 
+For example:  public static void someMethod(Object... params){         
+    System.out.println(params.length);    
+}  
+
+You can call this method by passing any number of parameters. 
+In this case, calling someMethod() without any parameter will print 0. 
+i.e. the length of params array will be 0. params will NOT be null.

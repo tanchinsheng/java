@@ -1,0 +1,11 @@
+Working with Inheritance
+
+1)Unlike instance method selection, variable (and static method) selection is done on the basis of declared class of the 
+variable and not on the actual class of object that it is referring to.
+
+2) Covariant returns are allowed since Java 1.5, which means that an overriding method can change the
+   return type to a subclass of the return type declared in the overridden method.
+   But remember than covarient returns does not apply to primitives.
+   
+3) You can either call super(<appropriate list of arguments>) or this(<appropriate list of arguments>) 
+but not both from a constructor.

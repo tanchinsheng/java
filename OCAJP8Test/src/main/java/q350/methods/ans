@@ -1,0 +1,14 @@
+To call someMethod(Object parameter), you must pass exactly one parameter. 
+So someMethod() is not a valid call to this method and the code will not compile. 
+Note that parameter will not be assigned a null or default value.  
+However, if the method were declared to take variable number of arguments, 
+it would have been valid to call it without any parameters. 
+
+For example:     
+ 
+public static void someMethod(Object... params){         
+System.out.println(params.length);     
+}  
+
+In this case, calling someMethod() without any parameter will print 0. 
+i.e. the length of params array will be 0. params will NOT be null.

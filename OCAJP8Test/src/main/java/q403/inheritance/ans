@@ -1,0 +1,10 @@
+An overriding method must have a same parameter list and the same return type as that of the overridden method
+
+true
+
+false // correct
+
+This would have been true prior to Java 1.5. But from Java 1.5, an overriding method is allowed to change 
+the return type to any subclass of the original return type, also known as covariant return type. 
+This does not apply to primitives, in which case, the return type of the overriding method must match 
+exactly to the return type of the overridden method.

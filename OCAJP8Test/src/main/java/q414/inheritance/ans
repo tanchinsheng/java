@@ -1,0 +1,14 @@
+protected void setF(float f1){ this.f = 2*f1; } // true
+//protected is less restrictive than default, so it is valid.
+
+public void setF(double f1){ this.f = (float) 2*f1; }
+//Since the parameter type is different, it is overloading not overriding.
+
+public void setF(float f1){ this.f = 2*f1; }//true
+//public is less restrictive than default, so it is valid.
+
+private void setF(float f1){ this.f = 2*f1; }
+//private is more restrictive than default, so it is NOT valid.
+
+float setF(float f1){ this.f = 2*f1; return f;}
+//return types must match.

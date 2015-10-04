@@ -9,3 +9,7 @@ variable and not on the actual class of object that it is referring to.
    
 3) You can either call super(<appropriate list of arguments>) or this(<appropriate list of arguments>) 
 but not both from a constructor.
+
+
+All non-private and non-final instance method calls are potentially polymorphic because there could be 
+multiple versions of the method eligible to be invoked. 

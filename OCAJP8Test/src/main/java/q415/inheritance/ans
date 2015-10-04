@@ -1,0 +1,18 @@
+System.out.println(b.i); will print 10
+//Since variable b is declared as of class A, you cannot do b.i even if the actual object is of class B because i in A is private.
+
+The statement b.f( ); will give compile time error..
+//class A has f() so b.f() is legal.
+
+System.out.println(b.i); will print 20
+//Since variable b is declared as of class A, you cannot do b.i even if the actual object is of class B because i in A is private.
+
+All the above are correct.
+
+None of the above statements is correct.//true
+
+Explanation
+Remember that variables and static methods are not overridden and so access to variables and static methods is 
+determined at compile time based on the type of the variable (instead of type of the object referred to by the variable, 
+as is the case with instance methods.) In the given code, if you declare b to be of type B i.e. B b = new B();, 
+you can access b.i.

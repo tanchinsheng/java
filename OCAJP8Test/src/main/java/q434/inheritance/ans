@@ -1,0 +1,14 @@
+CrazyDrink must either implement getName or be marked abstract.//true
+//Since CrazyDrink says it implements ColdDrink, it must either implement all the abstract methods of the interface or 
+be marked abstract.
+
+CrazyDrink must either implement getName as well as computeAlcoholPercent or be marked abstract.
+//computeAlcoholPercent is a valid static method in Drink. It need not be implemented by CrazyDrink.
+
+CrazyDrink must either implement getName as well as getAlcoholPercent or be marked abstract.
+//Since Drink provides a default implementation for getAlcoholPercent, CrazyDrink need not implement it.
+
+CrazyDrink must either implement getName or be marked abstract. Further, computeAlcoholPercent must be removed from Drink
+//There is no need to remove computeAlcoholPercent from Drink.
+
+

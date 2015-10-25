@@ -13,7 +13,7 @@ import javax.mail.internet.MimeMessage;
 public class SendMail {
 
     private static final String SENDERS_EMAIL = "raohongling1977@gmail.com";
-    private static final String SENDERS_PWD = "rao@hong@ling";
+    private static final String SENDERS_PWD = "xxx";
     private static final String RECIPIENTS_EMAIL = "tanchinsheng@gmail.com";
 
     public static void main(String[] args) {

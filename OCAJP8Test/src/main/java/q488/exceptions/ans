@@ -1,0 +1,11 @@
+When you pass 6 to luckyNumber(), if(seed%2 == 0) throw new Exception("No Even no."); 
+is executed and the exception is caught by the catch block where it tries to return 3; 
+But as there is a finally associated with the try/catch block, it is executed before anything is returned. 
+Now, as finally has return 7;, this value supersedes 3. In fact, this method will always return 7 if seed <= 10.  
+
+Now, in the switch there is no break statement. 
+So both - 
+case 7: amount = amount * 2; 
+and 
+case 6: amount = amount + amount; 
+are executed. so the final amount becomes 400.

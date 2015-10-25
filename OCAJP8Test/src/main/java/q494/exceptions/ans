@@ -1,0 +1,18 @@
+It will not compile because you cannot throw an exception in finally block.//
+You can, but then you have to declare it in the method's throws clause.
+
+It will not compile because you cannot throw an exception in catch block.//
+You can, but then you have to declare it in the method's throws clause.
+
+It will not compile because NullPointerException cannot be created this way.//
+It does have a no args constructor.
+
+It will not compile because of unhandled exception.//true
+
+It will compile but will throw an exception when run.
+
+Explanation
+The catch block is throwing a checked exception (i.e. non-RuntimeException) which must be handled by either a 
+try catch block or declared in the throws clause of the enclosing method.
+Note that finally is also throwing an exception here, but it is a RuntimeException so there is no need to handle it 
+or declare it in the throws clause.

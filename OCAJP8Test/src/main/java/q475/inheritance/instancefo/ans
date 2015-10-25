@@ -1,0 +1,10 @@
+If a.equals(b) returns true, b instanceof ClassOfA must always be true.  //false
+
+ (Assume that ClassOfA is the name of the class of the variable a.)
+
+Explanation
+
+This may not always be correct because equals() method can be overridden. 
+By default, it tests reference assignment, but any subclass of Object is free to redefine equals() as it deems fit. 
+So, it is possible that an equals method may return true even if the class of the passed object has 
+no relation to this object.

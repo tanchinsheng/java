@@ -1,0 +1,20 @@
+Now consider the following 3 options for running the program:
+a: java Test
+b: java Test param1
+c: java Test param1 param2
+Which of the following statements are true?
+
+The program will throw java.lang.ArrayIndexOutofBoundsException on option a.
+
+The program will throw java.lang.NullPointerException on option a.
+
+The program will print Test param1 on option b.
+//Unlike in C++, Name of the file is not passed in args because for a public class it is always same as the name of the class.
+
+It will print param1 param2 on option c. //true
+
+It will not print anything on option a. //true
+
+Explanation
+It will not throw NullPointerException because args[] is never null. 
+If no argument is given (as in option a) then the length of args is 0.

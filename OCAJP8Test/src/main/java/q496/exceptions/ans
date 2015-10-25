@@ -1,0 +1,18 @@
+The program will print m1 Starts. //true
+
+The program will print m1 Starts, 1 and 4, in that order. //true
+
+The program will print m1 Starts, 1 and 2, in that order.
+
+The program will print m1 Starts, 1, 2 and 4 in that order.
+
+END will not be printed.   //true
+
+Explanation
+The IndexOutOfBoundsException is handled by the first catch block. Inside this block, a new NullPointerException is thrown. 
+As this exception is not thrown inside the try block, it will not be caught by any of the remaining catch blocks. 
+It will actually be sent to the caller of the main() method after the finally block is executed. 
+(Hence '4' in the output.)  The code that prints END is never reached, since the NullPointerException 
+remains uncaught after the execution of the finally block.  
+
+At the end a stack trace for the NullPointerException will be printed.

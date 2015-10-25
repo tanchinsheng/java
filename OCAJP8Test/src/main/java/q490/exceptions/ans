@@ -1,0 +1,26 @@
+It will not compile.
+
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4     //true
+at ExceptionTest.doSomething(ExceptionTest.java:12)     
+at ExceptionTest.main(ExceptionTest.java:4)
+
+Exception in thread "main" MySpecialException: 4     
+at ExceptionTest.doSomethingElse(ExceptionTest.java:17)     
+at ExceptionTest.doSomething(ExceptionTest.java:12)     
+at ExceptionTest.main(ExceptionTest.java:4)
+
+Exception in thread "main" MySpecialException: Sorry, can't do something else     
+at ExceptionTest.doSomethingElse(ExceptionTest.java:17)     
+at ExceptionTest.doSomething(ExceptionTest.java:12)     
+at ExceptionTest.main(ExceptionTest.java:4)
+
+Exception in thread "main" MySpecialException: Sorry, can't do something else     
+at ExceptionTest.doSomethingElse(ExceptionTest.java:17)     
+at ExceptionTest.doSomething(ExceptionTest.java:13)     
+at ExceptionTest.main(ExceptionTest.java:4)
+
+Explanation
+Since the lenght of array is only 4, you can't do array[4], because that would access the 5th element. 
+Hence, an ArrayIndexOutOfBoundsException will be thrown at line 12. Line 13 will not even be executed. 
+Since the exception is not caught anywhere, it will be thrown out to the JVM, 
+which will print the stack trace of the exception.

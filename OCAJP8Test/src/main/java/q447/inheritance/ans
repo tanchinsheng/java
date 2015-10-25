@@ -1,0 +1,14 @@
+Which of the following method definitions will prevent overriding of that method?
+
+public final void m1()
+//final methods cannot be overridden. That is the purpose of final keyword.
+
+public static void m1()
+
+public static final void m1()
+//Keep in mind that static methods are not overridden, they are shadowed.
+
+public abstract void m1()
+
+private void m1()
+//private methods are not inherited at all so there is no question of overriding a private method.

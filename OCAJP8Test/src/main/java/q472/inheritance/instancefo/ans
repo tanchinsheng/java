@@ -1,0 +1,27 @@
+Consider the following class hierarchy:
+A
+|
+B1, B2
+|
+C1, C2
+(B1 and B2 are subclasses of A and C1, C2 are subclasses of B1) 
+Which of the following statements are correct? 
+Assume that objectOfA, objectOfC1, etc. are objects of classes A and C1 respectively.
+
+objectOfC2 instanceof B2 will return true.
+// objectOfC2 is an instance of C2 and as C2 extends B1, 
+// it cannot be a subclass of B2 and so objectOfC2 instanceof B2 cannot be true.
+
+objectOfC1 instanceof B1 will return true. // true
+// This is because C1 extends B1. Therefore, anything that is a C1 is a B1. 
+// It is like saying a Dog is a Pet or a Cat is a Pet, if Dog and Cat extend from Pet.
+
+objectOfA instanceof B1 will return true.
+
+C1 c1 = objectOfA; is a valid statement.
+// Since c1 is declared of type C1, an object of class A, cannot be assigned to c1 because A is not a C1. 
+// A C1 is an A. So A a = objectOfC1; would have been valid.
+
+B1 b1 = objectOfB2; is a valid statement.
+//B2 does not extend from B1 and so there is no is-a relation between B1 and B2. 
+// Therefore, an object of class B2 cannot be assigned to a variable of class B1.

@@ -1,21 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q189.operators.decision;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * Note that if and else do not cascade. They are like opening an closing
-     * brackets. So, else at //4 is associated with if at //3 and else at //5 is
-     * associated with if at //2
-     */
     public static void ifTest(boolean flag) {
         if (flag) //1
         {

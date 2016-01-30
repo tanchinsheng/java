@@ -1,15 +1,26 @@
-This question is based on 2 concepts:  
+3
 
-1. i == ++j is not same as i == j++; In the case of i == ++j, j is first incremented and then compared with i. 
-While in the case of i == j++;, j is first compared with i and then incremented.  
+4
 
-2. The | operator, when applied for boolean operands, ensures that both the sides are evaluated. 
-This is opposed to || which does not evaluate the Right Hand Side if the result can be known by just evaluating the Left Hand Side. 
-Now, let us see the values of i and j at each step:  
+5
 
-int i = 1; 
-int j = i++; // j is assigned 1 and i is incremented to 2 
+2
+
+It will not compile
+
+Explanation
+This question is based on 2 concepts:
+
+1. i == ++j is not same as i == j++; In the case of i == ++j, j is first incremented and then compared with i.
+While in the case of i == j++;, j is first compared with i and then incremented.
+
+2. The | operator, when applied for boolean operands, ensures that both the sides are evaluated.
+This is opposed to || which does not evaluate the Right Hand Side if the result can be known by just evaluating the Left Hand Side.
+Now, let us see the values of i and j at each step:
+
+int i = 1;
+int j = i++; // j is assigned 1 and i is incremented to 2
 if( (i==++j) | (i++ == j) )     // increment j (so j becomes 2) and compare with i => return true.         
 //since it is |, evaluate next condition: compare i with 2 and increment i => i becomes 3.{     
-i+=j; //i = 3+2 = 5 
+i+=j; //i = 3+2 = 5
 } System.out.println(i); //prints 5

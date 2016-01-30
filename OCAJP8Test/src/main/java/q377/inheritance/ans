@@ -1,19 +1,36 @@
-Consider this code:  
+When the program is run, the main() method will call the max() method in C with
+parameters 10 and 20 because the actual object referenced by 'c' is of class C. This method will call the max() method in B with the parameters 20 and 40. The max() method in B will in turn call the max() method in A with the parameters 20 and 40. The max() method in A will return 40 to the max() method in B. The max() method in B will return 80 to the max() method in C. And finally the max() of C will return 80 in main() which will be printed out.
+
+D is-a B.
+
+B has-a D.
+//C has-a D.
+
+C is-a A//true
+//Because C 'is-a' B and B 'is-a' A.
+
+C is-a X1//true
+//Because C is-a B and B is-a X1.
+
+C is-a X2//true
+
+Explanation
+Consider this code:
 
 class C extends B implements X2{    
-    D d = new D(); 
-}  
+    D d = new D();
+}
 
-Now, Inheritance defines an is-a relation , so C is-a B because C extends B. 
-This actually means that C can be used in all the places where B is used. C can substitute for B anywhere because C is-a B. 
-As all objects have Object as their super class, every object 'is-a' Object.  
+Now, Inheritance defines an is-a relation , so C is-a B because C extends B.
+This actually means that C can be used in all the places where B is used. C can substitute for B anywhere because C is-a B.
+As all objects have Object as their super class, every object 'is-a' Object.
 
-Since C implements X2, it is sometimes said that C 'is-like-a' X2. 
-That is, although C is not an X2 but for all purposes C is like an X2. 
-The distinction between is-a and is-like-a is not important for the exam. 
-For the purpose of the exam, is-like-a is same as is-a. Therefore, C is-a X2 as well.  
+Since C implements X2, it is sometimes said that C 'is-like-a' X2.
+That is, although C is not an X2 but for all purposes C is like an X2.
+The distinction between is-a and is-like-a is not important for the exam.
+For the purpose of the exam, is-like-a is same as is-a. Therefore, C is-a X2 as well.
 
-Aggregation defines a has-a relation. Here, D is a member object in C. 
-In other words, D is contained within C. It is therefore said that C 'has-a' D.  
+Aggregation defines a has-a relation. Here, D is a member object in C.
+In other words, D is contained within C. It is therefore said that C 'has-a' D.
 
 All Java objects have the class Object as the ultimate superclass, and so Object is always at the root of any inheritance hierarchy.

@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q087.javadatatypes;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // This is valid because 320 is below the maximum value that a char can take,
         // which is 2^16 -1. Remember that char can take only positive values.
@@ -25,7 +13,9 @@ public class app {
         float f1_ = 320.0;
         double d = 320;
         // 320 cannot fit into a byte so you must cast it.: byte b = (byte) 320;
-        byte b = 320;
+        byte b = 127;
+        //b += 1;
+        //System.out.println(b);
         // Since both the operands of / are floats, it will result in a float, which can be assigned to f.
         // If you have, 22.0f/7.0, then it would not compile because 7.0 is a double and so 22.0f/7.0 will
         // return a double, which cannot be assigned to a float.

@@ -1,0 +1,30 @@
+Identify the correct statements about ArrayList?
+
+ArrayList extends java.util.AbstractList. //true
+//ArrayList is a subclass of AbstractList.
+java.lang.Object
+ -  java.util.AbstractCollection<E>
+   -    java.util.AbstractList<E>
+     -      java.util.ArrayList<E>
+All Implemented Interfaces:
+Serializable, Cloneable, Iterable<E>, Collection<E>, List<E>, RandomAccess
+
+It allows you to access its elements in random order //true
+//This is true because you can directly access any element using get(index) method.
+(This is unlike a LinkedList, in which you have to go through all the elements occuring before
+Nth element before you can access the Nth element.)
+
+You must specify the class of objects you want to store in ArrayList when you declare a variable of type ArrayList.
+//This is not true because you can still use non-generic form.
+For example, instead of using ArrayList<String> listOfStrings; you can use: ArrayList listOfStrings;
+Of course, if you use non generic version, you will lose the compile time type checking.
+
+ArrayList does not implement RandomAccess.
+//It does. RandomAccess is a marker interface used by List implementations to indicate that they
+support fast (generally constant time) random access. The primary purpose of this interface is to
+allow generic algorithms to alter their behavior to provide good performance when applied to
+either random or sequential access lists.
+
+You can sort its elements using Collections.sort() method //true
+//An ArrayList is a List so you can use it where ever a List is required.
+This include Collections methods such as sort, reverse, and shuffle.

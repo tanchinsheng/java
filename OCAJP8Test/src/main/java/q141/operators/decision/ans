@@ -1,0 +1,18 @@
+What will be the output when the following class is compiled and run?
+
+It will not compile because line //1 cannot be parsed correctly.
+
+It will not compile because x is used before initialization.
+// It is not.
+
+It will not compile because there is an ambiguous reference to x.
+//There is no conflict for resolution of x.
+The local 'x' simply shadows the member variable 'x'.
+
+It will print 12. //true
+
+It will print 3 .
+
+Explanation
+x is first initialized by x = 3, then the value of this expression (i.e. "x = 3"),
+which is 3, is multiplied by 4 and is again assigned to x. So it prints 12.

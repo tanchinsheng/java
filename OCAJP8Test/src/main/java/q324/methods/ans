@@ -1,10 +1,12 @@
-This question is based on the principle that primitives are always passed by value. 
-Thus, when you pass a to update() method, the value of a is passed. 
-The variable a in update() method is not same as the a in main(). 
-It is a completely different variable and so updating update() method's a does not affect main()'s a. 
-Therefore, we need to return the new value from update() method and assign it to main()'s a.  
+This question is based on the principle that primitives are always passed by value.
+Thus, when you pass a to update() method, the value of a is passed.
+The variable a in update() method is not same as the a in main().
+It is a completely different variable and so updating update() method's a
+does not affect main()'s a.
+Therefore, we need to return the new value from update() method and assign it
+to main()'s a.
 
-The following is the complete code listing:  
+The following is the complete code listing:
 public class Updater {   
     public int update(int a, int offset){     
         a = a + offset;     
@@ -16,5 +18,5 @@ public class Updater {   
         int a = 99;     
         a = u.update(a, 111);     
         System.out.println(a);   
-    } 
+    }
 }

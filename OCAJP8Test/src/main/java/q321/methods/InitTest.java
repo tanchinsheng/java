@@ -1,22 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q321.methods;
 
-/**
- *
- * What will the following program print?
- */
 public class InitTest {
 
-    /**
-     * First, static statements/blocks are called IN THE ORDER they are defined.
-     * Next, instance initializer statements/blocks are called IN THE ORDER they
-     * are defined. Finally, the constructor is called. So, it prints a b c 2 3
-     * 4 1.
-     */
     public InitTest() {
         s1 = sM1("1");
     }

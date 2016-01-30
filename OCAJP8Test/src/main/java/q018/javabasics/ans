@@ -1,0 +1,32 @@
+Which of these statements are true?
+
+A static method can call other non-static methods in the same class by
+using the 'this' keyword.
+//'this' reference is not available within a static method.
+
+A class may contain both static and non-static variables and both static and
+non-static methods.  //true
+
+Each object of a class has its own copy of each non-static member variable.  //true
+
+Instance methods may access local variables of static methods.
+//local variables can only be accessed in the method they are defined.
+So you cannot access them anywhere outside that method.
+
+All methods in a class are implicitly passed a 'this' parameter when called.
+//All non-static/instance methods in a class are implicitly passed a 'this'
+parameter when called.
+
+Explanation
+'this' is assigned a reference to the current object automatically by the JVM.
+Thus, within an instance method foo, calling this.foo(); is same as calling
+foo();  Since there is no current object available for a static method,
+'this' reference is not available in static methods and therefore
+it can only be used within instance methods.
+For the same reason, static methods cannot access non static fields
+or methods of that class directly i.e. without a reference to an instance
+of that class.
+
+Note : you can't reassign 'this' like this: this = new Object();  
+
+

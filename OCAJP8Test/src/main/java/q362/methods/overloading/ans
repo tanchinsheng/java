@@ -1,12 +1,43 @@
+Given the following pairs of method declarations, which of the statements are true?
+
+1.
+void perform_work(int time){ }
+int  perform_work(int time, int speed){ return time*speed ;}
+
+2.
+void perform_work(int time){ }
+int  perform_work(int speed){return speed ;}
+
+3.
+void perform_work(int time){ }
+void Perform_work(int time){ }
+
+The first pair of methods will compile correctly and overload the method
+'perform_work'.//true
+
+The second pair of methods will compile correctly and overload the method 'perform_work'.
+//You cannot have two methods with the same signature (i.e. same name and same
+parameter list) in the same class.
+Note that return type and names of the parameters don't matter while determining
+the signature.
+
+The third pair of methods will compile correctly and overload the method 'perform_work'.
+
+The second pair of methods will not compile correctly.//true
+
+The third pair of methods will not compile correctly.
+//Both have different names (note the capital 'P' ) and so are different methods.
+
+Explanation
 Overloading of a method occurs when the name of more than one methods is exactly same but the parameter lists are different.
 
 The first and the third pairs of methods will compile correctly as they follow the above stated rule.
 
-The second pair of methods will not compile correctly, since their method signatures are same and the compiler 
-cannot differentiate between the two methods as it does not look for return type. 
+The second pair of methods will not compile correctly, since their method signatures are same and the compiler
+cannot differentiate between the two methods as it does not look for return type.
 Also, only name and input parameters are the part of method declaration . Names of the parameters don't matter.
 
-Both methods in the first pair are named perform_work but have different parameter list so 
+Both methods in the first pair are named perform_work but have different parameter list so
 they overload this method name i.e. perform_work.
 
 The method named 'perform_work' is distinct from the method named 'Perform_work', as identifiers in Java are case-sensitive.

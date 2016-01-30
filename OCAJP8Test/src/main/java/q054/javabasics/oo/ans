@@ -1,0 +1,34 @@
+You are assigned the task of refactoring the Square class to make it better
+in terms of encapsulation. What changes will you make to this class?
+
+Add a calculateArea method:  //true
+private void calculateArea(){   
+    this.area = this.side*this.side;
+}
+
+Make side and area fields private.  //true
+
+Change setSide method to:   //true
+public void setSide(double d){
+    this.side = d;
+    calculateArea();
+}
+
+Make the getArea method public.  //true
+
+Add a setArea() method:
+public void setArea(double d){ area = d; }
+//This is not required because area is calculated using the side.
+So if you allow other classes to set the area, it could make side
+and area inconsistent with each other.
+
+Explanation
+There can be multiple ways to accomplish this.
+The exam asks you questions on the similar pattern.
+The key is that your data variable should be private and the
+functionality that is to be exposed outside should be public.
+Further, your setter methods should be coded such that they don't
+leave the data members inconsistent with each other.
+
+
+

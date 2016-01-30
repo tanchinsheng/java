@@ -1,0 +1,20 @@
+Which of the following statements will evaluate to true?
+
+"String".replace('g','G') == "String".replace('g','G')
+//replace creates a new string object.
+
+"String".replace('g','g') == new String("String").replace('g','g')
+
+"String".replace('g','G')=="StrinG"
+//replace creates a new string object.
+
+"String".replace('g','g')=="String"  //true
+//replace returns the same object if there is no change.
+
+None of these
+
+Explanation
+There are 2 points to remember:
+
+1. replace() method creates a new String object.
+2. replace() method returns the same String object if both the parameters are same, i.e. if there is no change.

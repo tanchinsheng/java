@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q360.methods.overloading;
 
-/**
- *
- * Given the following code, which method declarations can be inserted at line 1
- * without any problems?
- */
 public class OverloadTest {
 
-    /**
-     * @param args the command line arguments
-     */
     public int sum(int i1, int i2) {
         return i1 + i2;
     }

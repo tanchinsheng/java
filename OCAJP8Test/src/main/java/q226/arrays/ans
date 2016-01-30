@@ -1,0 +1,19 @@
+What is the result of compiling and running the following program?
+
+Bill Steve Larry null
+
+Bill Steve Larry class java.lang.NullPointerException
+
+class java.lang.Exception Bill Steve Larry
+
+Bill Steve Larry class java.lang.Exception
+
+null Bill Steve Larry //true
+
+Explanation
+Array indexing starts with 0. The first element therefore is at dataArr[0],
+which is not set in this code. It is initialized by default to null.
+Hence, the code prints null Bill Steve Larry.
+
+
+

@@ -1,0 +1,20 @@
+Which statement regarding the following code is correct?
+
+The code will print 10 and 40 if //3 is commented.
+
+The code will print 40 if //2 and //3 are commented//true
+
+The code will not compile because of //1.
+
+The code will compile if the line marked //2 is commented out.
+//Just commenting out //2 is not enough.
+It will still fail compilation because of //3.
+
+None of these.
+
+Explanation
+You cannot access c.i because i is private in B. But you can access ( (A)c).i
+because i is public in A. Remember that member variables are hidden and not
+overridden. So, B's i hides A's i and since B's i is private, you can't access
+A's i unless you cast the reference to A. You cannot access c.j because j is
+private in A.

@@ -1,0 +1,24 @@
+After what line the MyClass object created at line 1 will be eligible
+for garbage collection?
+
+2
+
+5
+
+6 //true
+//At line 6, x starts pointing to a new MyClassObject and no reference
+to the original MyClass object is left.
+
+7
+
+Never till the program ends.
+
+Explanation
+The official exam objectives now explicitly mention Garbage collection.
+All you need to know is:
+
+1. An object can be made eligible for garbage collection by making sure
+there are no references pointing to that object.
+
+2. You cannot directly invoke the garbage collector. You can suggest the
+JVM to perform garbage collection by calling System.gc();

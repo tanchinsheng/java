@@ -1,0 +1,16 @@
+import static X;
+
+import static com.foo.*;
+//Bad syntax. com.foo is a package and you cannot import a package statically.
+You can only import static members of a class statically.
+
+import static com.foo.X.*;//true
+//This static import is required because of Y is accessing LOGICID directly without its class name ( i.e. X.LOGICID).
+
+import com.foo.*;//true
+//This is required because Y also accesses the class X : X x = new X();
+If Y had only one statement, System.out.println(LOGICID); import static com.foo.X.* would suffice.
+
+import com.foo.X.LOGICID;
+//Syntax for importing static fields is:  import static <package>.<classname>.*;
+or import static <package>.<classname>.<fieldname>;

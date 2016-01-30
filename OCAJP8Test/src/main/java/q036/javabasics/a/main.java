@@ -7,11 +7,12 @@ package q036.javabasics.a;
 
 /**
  *
- * The main method should be static.
+ * The options below contain the complete contents of a file. Which of these
+ * options can be run with the following command line once compiled? java main
  */
 class main {
 
-    public void main(String[] args) {
+    public void main(String[] args) { //The main method should be static.
         System.out.println("hello");
     }
 }

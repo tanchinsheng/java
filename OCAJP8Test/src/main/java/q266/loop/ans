@@ -1,0 +1,22 @@
+What will the following program print?
+
+0 3
+
+0 2
+
+3 0
+
+3 3 //true
+
+2 2
+
+Explanation
+The statement:  if(i < j) continue X1; else break X2; only makes sure
+that the inner loop does not iterate more than once. i.e. for each
+iteration of i, j only takes the value of 3 and then the j loop
+terminates, either because of continue X1; or because of break X2;.
+Now, the point to remember here is that when the loop for(i = 0; i < 3; i++) ends,
+ the value of i is 3 and not 2. Similarly, if there were no statement inside
+inner loop, the value of j after the end of the loop would have been 0 and
+not 1.
+

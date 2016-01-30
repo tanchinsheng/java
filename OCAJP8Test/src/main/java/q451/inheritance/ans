@@ -1,0 +1,29 @@
+Which of the following lines of code can be used to complete the above code?
+
+class Shape {
+and
+class Circle  extends Shape {
+//Since there is an abstract method in the first class, the class must be declared abstract.
+
+public class Shape {
+and
+class Circle  extends Shape {
+//class keyword is missing from the first declaration.
+
+public abstract class Shape {
+and
+class Circle  extends Shape {//true
+
+public abstract class Shape {
+and
+class Circle  implements Shape {
+//You can only implement an interface not a class. So Circle implements shape is wrong.
+
+public interface Shape {
+and
+class Circle  implements Shape {
+//By default all the methods of an interface are public and abstract so there
+is no need to explicitly specify the "abstract" keyword for the draw() method
+if you make Shape an interface. But it is not wrong to do so.
+
+

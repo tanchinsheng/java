@@ -1,0 +1,16 @@
+Which of the following access control keywords can be used to enable all
+the subclasses to access a method defined in the base class?
+
+public//true
+//It will allow everybody to access the method.
+
+private
+//It will not allow any other class to access the method.
+
+protected//true
+//It will allow the subclasses (in any package) and all the classes in same
+package to access the method.
+
+No keyword is needed.
+//It will allow only the classes in same package to access the method.
+So Subclasses outside the package will not have access.

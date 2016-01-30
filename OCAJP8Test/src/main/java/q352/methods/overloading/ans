@@ -1,0 +1,18 @@
+What will be the result of compiling and running the class?
+
+It will print Hello World.
+
+It will print Static Hello World.
+
+Compilation error at line 2.
+
+Compilation error at line 3.//true
+//It will say, method sayHello() is already defined.
+
+Runtime Error.
+
+Explanation
+You cannot have two methods with the same signature (name and parameter types)
+in one class. Also, even if you put one sayHello() method in other class which
+is a subclass of this class, it won't compile because you cannot override/hide
+a static method with a non static method and vice versa.

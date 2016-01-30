@@ -1,23 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q106.javadatatypes;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Integer a = new Integer(1);
         Integer b = new Integer(2);
         Integer c = new Integer(3);
+        Float d = new Float(3.0f);
 
         if (a.equals(a)) {
             System.out.println("true1");
@@ -29,6 +18,9 @@ public class app {
         // to compare the actual value instead of the reference.
         if (a.equals(b)) {
             System.out.println("true3");
+        }
+        if (c.equals(d)) {
+            System.out.println("true4");
         }
     }
 

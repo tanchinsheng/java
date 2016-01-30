@@ -1,0 +1,21 @@
+Which lines contain a valid constructor in the following code?
+
+Line // 1 //true
+
+Line // 2
+//Constructors cannot return anything. Not even void.
+
+Line // 3
+//Constructors cannot have empty bodies (i.e. they cannot be abstract)
+
+Line // 4
+//You can apply public, private, protected to a constructor.
+But not static, final, synchronized, native and abstract.
+
+Line // 5
+//The compiler ignores the extra semi-colon.
+
+Explanation
+It is interesting to note that public void TestClass(int a) {}
+// 2 will actually compile. It is not a constructor,
+but compiler considers it as a valid method!

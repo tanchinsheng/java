@@ -1,0 +1,26 @@
+Which statements about the output of the following programs are true?
+
+1 will be the part of the output.//true
+//& (unlike &&), when used as a logical operator, does not short circuit
+the expression, which means it always evaluates both the operands even if
+the result of the whole expression can be known by just evaluating the left operand.
+
+2 will be the part of the output.
+
+3 will be the part of the output.//true
+//& and | (unlike && and ||), when used as logical operators,
+do not short circuit the expression, which means they always evaluate
+both the operands even if the result of the whole expression can be
+known by just evaluating the left operand.
+
+4 will be the part of the output
+
+None of the above
+
+Explanation
+& and | do not short circuit the expression.
+The value of all the expressions ( 1 through 4) can be determined
+just by looking at the first part. && and || do not evaluate the
+ rest of the expression if the result of the whole expression can
+be known by just evaluating the left operand, so method1() is not
+called for 2 and 4.

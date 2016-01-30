@@ -1,0 +1,12 @@
+Which of the following lines creates an Employee instance?
+
+Employee e;
+//This declares a variable of class Employee but does not create any object.
+
+Employee e = new Employee(); //true
+//Using the new operator is the right way to create an object.
+
+Employee e = Employee.new();
+
+Employee e = Employee();
+

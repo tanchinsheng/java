@@ -1,0 +1,14 @@
+What will the following program print?
+
+0
+
+-1
+
+255
+
+-128
+
+It will not compile. //true
+//There no unsigned keyword in java! A char can be used as an unsigned integer.
+
+

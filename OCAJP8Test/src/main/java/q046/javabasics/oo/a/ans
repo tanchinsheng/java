@@ -1,0 +1,18 @@
+a: //true
+
+b: //true
+//protected is also a valid way to encapsulate a field because only a subclass is able to inherit and access the field.
+
+c:
+//No access modifer to age means it has default access i.e. all the members of the package can access it. This breaks encapsulation.
+
+d:
+//If you make getAge and setAge private, you cannot call them from Employee class.
+
+e:
+
+Explanation
+This is a ambiguous question because it doesn't give all the information.
+It really depends on the business logic of the class and the whole application whether the accessor methods
+(and specially the setter) should be public or protected or even private. The field should either be private or protected.
+Expect such questions in the exam.

@@ -1,0 +1,20 @@
+What will be the result of attempting to compile and run the following class?
+
+The code will print i = 1 iArr[0] = 1
+
+The code will print i = 1 iArr[0] = 2//true
+
+The code will print i = 2 iArr[0] = 1
+
+The code will print i = 2 iArr[0] = 2
+
+The code will not compile.
+//There is no problem with the code.
+
+Explanation
+Arrays are proper objects (i.e. iArr instanceof Object returns true)
+and Object references are passed by value (so effectively, it seems as though
+objects are being passed by reference). So the value of reference of iArr
+is passed to the method incr(int[] i); This method changes the actual value
+of the int element at 0.
+

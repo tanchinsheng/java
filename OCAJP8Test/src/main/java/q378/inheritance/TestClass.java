@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q378.inheritance;
 
-/**
- *
- * What, if anything, is wrong with the following code?
- */
 interface T1 {
 
     int VALUE = 1;
@@ -25,9 +16,6 @@ interface T2 {
 
 class TestClass implements T1, T2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public void m1() {
     }
 

@@ -1,0 +1,15 @@
+Identify the correct statements.
+
+Line 3 is not valid. //true
+
+Line 2 is not valid. //true
+
+It will compile because both short and char can hold 10.
+
+None of the lines 1, 2 and 3 is valid.
+//Line 1 is valid because 10 is a constant and can fit into a short.
+
+Explanation
+Not all short values are valid char values, and neither are all char values
+valid short values, therefore compiler complains for both the lines 2 and 3.
+They will require an explicit cast.

@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q181.operators.decision;
 
-/**
- *
- * Which of the lines will cause a compile time error in the following program?
- */
 public class MyClass {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         char c;
         int i;
@@ -22,6 +10,11 @@ public class MyClass {
         i++;    //3
         c = i;  //4
         c++;    //5
+        System.out.println(c);
+        char a = 1;
+        char b = 1L;
+        char e = 1.0f;
+        char f = 1.0;
     }
 
 }

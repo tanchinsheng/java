@@ -1,0 +1,17 @@
+What will be the output if you run the following program?
+
+0 0 will be printed twice.
+
+1 1 will be printed once.
+
+0 1 will be printed followed by 1 2.
+
+0 0 will be printed followed by 1 1.//true
+
+It will print 0 0 and then 0 1.
+
+Explanation
+j will be less than 1 for only the first iteration.
+So, first it will print 0, 0. Next, i and j are incremented.   
+Because j is not less than 1 at the start of the loop, the condition fails
+and it comes out of the loop. Finally, it will print 1,1.

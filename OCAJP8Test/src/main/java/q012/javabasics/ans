@@ -1,0 +1,18 @@
+import java.lang.*;//true
+Although this package is automatically imported, it is not an error to import it explicitly.
+
+package p.util;//true
+It is a perfectly valid package statement.
+
+public class MyClass{ }
+//There can be only 1 "public" class within package scope in a file.
+You can have additional inner classes that are public though.
+
+abstract class MyClass{ }
+//You can have more than one classes in a file but at most one of them can be public.
+
+Explanation
+To make a class abstract, you only need to mark it abstract as shown in Option 4.
+You don't necessarily need to put an abstract method in a class.
+
+

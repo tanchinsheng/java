@@ -1,0 +1,11 @@
+It will not compile.
+
+It will print a RuntimeException stack trace from the catch clause.
+
+It will throw an error at runtime that will not be caught by the catch block.//true
+//It will throw a java.lang.OutOfMemoryError. Note that this is not a subclass of RuntimeException or even Exception.
+It is a subclass of java.lang.Error.
+
+It will print a stack trace from the catch clause and a number depending on the memory available in the system.
+
+It will only print a number depending on the memory available in the system.

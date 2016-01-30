@@ -1,0 +1,12 @@
+Which of these methods are not a part of the String class?
+
+trim
+
+length
+
+concat
+
+hashcode
+
+reverse //true
+//The String class has no reverse( ) method but StringBuffer (and StringBuilder) do have this method.

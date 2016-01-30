@@ -1,21 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q371.inheritance;
 
-/**
- *
- * Here are some points to remember: A class is uninstantiable if the class is
- * declared abstract. If a method has been declared as abstract, it cannot
- * provide an implementation (i.e. it cannot have a method body ) and the class
- * containing that method must be declared abstract). If a method is not
- * declared abstract, it must provide a method body (the class can be abstract
- * but not necessarily so). If any method in a class is declared abstract, then
- * the whole class must be declared abstract. An class can still be made
- * abstract even if it has no abstract method.
- */
 abstract class Automobile2 {
 
     void honk();   //(2):It will not compile as the method doesn't have the body and also is not declared abstract.

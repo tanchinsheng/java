@@ -1,0 +1,15 @@
+The code will compile but will always throw a DateTimeException (or its subclass) at run time.
+//Note that LocalDateTime class does not contain Zone information but ISO_ZONED_DATE_TIME requires it.
+Thus, it will throw the following exception:
+
+Exception in thread "main" java.time.temporal.UnsupportedTemporalTypeException:
+
+Unsupported field: OffsetSeconds  UnsupportedTemporalTypeException extends DateTimeException.
+
+DateTimeException must either be caught or declared in the throws clause of this method.
+//DateTimeException extends RuntimeException, so it need not be caught or declared in the throws clause.
+
+The method parameter type must be changed from LocalDateTime to ZonedDateTime for it to compile.
+//Although it is true that this code will never work at runtime, it will compile fine as it is.
+
+It will return the date string as per the default time zone of the system on which it is run.

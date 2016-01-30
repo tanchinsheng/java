@@ -1,0 +1,13 @@
+Which variables are not accessible from anywhere within given class code except from the scope in which they are declared?
+
+base, height, area
+
+area, b, h
+
+base, height
+
+b, h, a //true
+b and h are method parameters and are only accessible in the method setBase and setHeight respectively.
+a is a local variable and is accessible only in updateArea method.
+
+base, height, and area are instance level and can be accessed from anywhere within the class where "this" is accessible.

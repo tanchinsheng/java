@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q362.methods.overloading;
 
-/**
- *
- * Given the following pairs of method declarations, which of the statements are
- * true?
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     void perform_work_1(int time) {
     }
 

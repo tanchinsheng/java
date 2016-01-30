@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q162.operators.decision;
 
-/**
- *
- * Which line, if any, will give a compile time error ?
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     void test(byte x) {
         switch (x) {
             case 'a':   // 1

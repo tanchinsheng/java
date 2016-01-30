@@ -1,0 +1,20 @@
+When a class whose members should be accessible only to members of that class is coded such a way that its members are
+accessible to other classes as well, this is called ...
+
+strong coupling
+
+weak coupling
+
+strong typing
+
+weak encapsulation //true
+
+weak polymorphism
+
+high cohesion
+
+low cohesion
+
+Explanation
+When a class is properly encapsulated, only the members that are part of its public API are publicly accessible to other classes.
+Rest is all private.

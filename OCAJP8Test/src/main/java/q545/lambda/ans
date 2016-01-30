@@ -1,0 +1,25 @@
+What will the following code print when run?
+
+You had to select 1 option
+
+It will fail to compile at line marked //1
+//No problem here. age will automatically be initialized to 0 because it is an instance field of the class.
+
+It will fail to compile at line marked //2
+//No problem here. Employee class will get a default no-args constructor because it doesn't define any constructor explicitly.
+Therefore, new Employee() is valid.
+
+It will fail to compile at line marked //3
+//Remember that the parameter list part of a lambda expression declares new variables that are used in the body part of that
+lambda expression. However, a lambda expression does not create a new scope for variables.
+Therefore, you cannot reuse the local variable names that have already been used in the enclosing method to
+declare the variables in you lambda expression. It would be like declaring the same variable twice.
+Here, the main method has already declared a variable named e.
+Therefore, the parameter list part of the lambda expression must not declare another variable with the same name.
+You need to use another name. For example, if you change //3 to the following, it will work.         
+    System.out.println(validateEmployee(e, x->x.age<10000));
+It would print true.
+
+It will compile fine and print true when run.
+
+It will compile fine and print false when run.

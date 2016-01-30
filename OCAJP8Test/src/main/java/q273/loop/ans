@@ -1,0 +1,19 @@
+In the following code what will be the output if 0 (integer value zero) is passed
+to loopTest()?
+
+The program will not compile.
+
+It will print 1 2 3 4//true
+
+It will print 1 1 2 3 4
+
+It will print 1 1 2 2 3 3 4 4
+
+Produces no output
+
+Explanation
+When x is 0, the statement continue loop; is executed. Note that loop: is for
+the outer loop. So, only one iteration (that too not full) is performed for the
+inner loop.
+So, the inner loop prints the value of i only once and then next iteration of
+outer loop starts. 'j' is never printed. So, it prints 1 2 3 4.

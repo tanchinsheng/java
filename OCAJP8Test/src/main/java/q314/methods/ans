@@ -1,9 +1,31 @@
+What will the following class print when compiled and run?
+
 It will not compile because 'a' is final.
-'a' is final is true, but that only means that a will keep pointing to the same object for the entire life of the program. 
+//'a' is final is true, but that only means that a will keep pointing to the same
+object for the entire life of the program. The object's internal fields,
+however, can change.
+
+It will not compile because method setIt() cannot change x.link.
+//Since x and y are final, the method cannot change x and y to point to
+some other object but it can change the objects' internal fields.
+
+It will print 5, 10.
+
+It will print 10, 10.
+
+It will throw an exception when run.//true
+//When method setIt() executes, x.link = y.link, x.link becomes null because
+y.link is null so a.link.value throws NullPointerException.
+
+Explanation
+It will not compile because 'a' is final.
+'a' is final is true, but that only means that a will keep pointing to
+the same object for the entire life of the program.
 The object's internal fields, however, can change.
 
 It will not compile because method setIt() cannot change x.link.
-Since x and y are final, the method cannot change what x and y to point to some other object 
+Since x and y are final, the method cannot change what x and y to point
+to some other object
 but it can change the objects' internal fields.
 
 It will print 5, 10.
@@ -11,4 +33,5 @@ It will print 5, 10.
 It will print 10, 10.
 
 It will throw an exception when run.//Correct
-When method setIt() executes, x.link = y.link, x.link becomes null because y.link is null so a.link.value throws NullPointerException.
+When method setIt() executes, x.link = y.link, x.link becomes null because
+y.link is null so a.link.value throws NullPointerException.

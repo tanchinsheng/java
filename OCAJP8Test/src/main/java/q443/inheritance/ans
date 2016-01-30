@@ -1,0 +1,16 @@
+ What will the program print when compiled and run?
+
+jumping...0
+
+jumping...1
+
+This program will not compile.  //true
+
+It will throw an exception at runtime.
+
+Explanation
+Fields defined in an interface are ALWAYS considered as public, static, and final.
+Even if you don't explicitly define them as such.
+In fact, you cannot even declare a field to be private or protected in an interface.
+Therefore, you cannot assign any value to 'type' outside the interface definition.
+

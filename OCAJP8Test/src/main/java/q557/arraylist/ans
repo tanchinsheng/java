@@ -1,0 +1,14 @@
+It will not compile.
+
+It will throw a NullPointerException at run time.
+
+It will throw an IndexOutOfBoundsException at run time.//true
+//size() method of ArrayList returns the number of elements.
+Here, it returns 2. Since numbering in ArrayList starts with 0. al.get(2) will cause an IndexOutOfBoundsException
+to be thrown because only 0 and 1 are valid indexes for a list of size 2.
+
+
+222
+
+null
+

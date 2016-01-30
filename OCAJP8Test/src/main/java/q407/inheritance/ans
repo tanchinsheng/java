@@ -1,0 +1,17 @@
+What will the following program print when run?
+
+It will print "good bye".
+
+It will print "hello world".
+
+It will print "good bye world". //true
+
+It will print "good bye" followed by "hello world".
+
+It will print "hello world" followed by "good bye".
+
+Explanation
+new B("good bye"); will call class B's one args constructor which in turn
+calls super(s, " world"); (i.e. class A's two args constructor) which in
+turn calls this(s1 + s2); (i.e. class A's one arg constructor with parameter
+"good bye world") which prints it.

@@ -1,0 +1,16 @@
+What will the following code print?
+
+It will not compile.//true
+//Because break JILL; would be valid only when it is within the block of
+code under the scope of the label JILL. In this case, the scope of JILL
+extends only up till System.out.println(c); and break JILL; is out of the
+scope of the label. 
+
+It will throw an exception at runtime.
+
+It will print numbers from 0 to 8
+
+It will print numbers from 0 to 3
+
+It will print numbers from 0 to 4
+

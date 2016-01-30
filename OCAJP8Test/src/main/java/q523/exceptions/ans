@@ -1,0 +1,13 @@
+If input is 0.1 then it will return 0.1 and print finally.
+
+If input is 0x.1 then it will return Float.NaN and print Invalid input 0x.1 and finally.
+
+If input is 1 then it will return 1.0 and print finally.
+
+If input is 0x1 then it will return 0.0 and print Invalid input 0x1 and finally.
+
+The code will not compile. // true
+//Note that the return statement after finally block is unreachable.
+Otherwise, if this line were not there, choices 1, 2, 3 are valid.
+
+

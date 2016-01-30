@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q150.operators.decision;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * All an if(...) needs is a boolean. x = 3 is not valid because the return
-     * value of this expression is 3 which is not a boolean.
-     */
     public static void main(String[] args) {
         if (8 == 81) {
             System.out.println("true1");

@@ -1,0 +1,17 @@
+What can XXX be?
+
+int
+
+long
+
+only double //true
+
+double or float
+
+float
+
+Explanation
+There is no need for analyzing the whole code. XXX amount = 1000.0;
+will be valid only if XXX is double.
+Note that the options do not include wrapper classes.
+Otherwise, Double is also valid because of auto boxing.

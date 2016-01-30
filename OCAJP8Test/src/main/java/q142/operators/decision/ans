@@ -1,0 +1,16 @@
+Which of the following are valid operators in Java?
+
+! //true
+//operates only on booleans
+
+~ //true
+//bitwise negation. Operates only on integral types.
+
+& //true
+//bitwise AND
+
+%= //true
+//similar to += or /=
+
+$
+//It is not an operator!

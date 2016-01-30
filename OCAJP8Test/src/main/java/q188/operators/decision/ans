@@ -1,0 +1,40 @@
+What type can be inserted in the code above so that the above code compiles
+and runs as expected ?
+
+int condition;
+//It will not compile because condition is not initialized
+before it is used in the switch.
+
+long condition = 2;
+//long, float, double, and boolean can never be used as a switch variable.
+
+Integer condition = new Integer("1");
+
+String condition = "1";
+//Although a String can be used in a switch statement,
+it will not work here because the case statements in the given code do not use Strings.
+
+short condition = new Short(1);
+//This is almost a valid option but for the fact that 1 is an int and
+you can't instantiate a Short object with an int argument.
+It will, therefore, not compile. short condition = new Short((short)1);
+would have been valid.
+
+Byte condition = 1;
+
+Explanation
+Here are the rules for a switch statement:
+1. Only String, byte, char, short, int, (and their wrapper classes Byte,
+Character, Short, and Integer), and enums can be used as types of a switch variable.
+(String is allowed only since Java 7).
+2. The case constants must be assignable to the switch variable.
+For example, if your switch variable is of class String,
+your case labels must use Strings as well.
+3. The switch variable must be big enough to hold all the case constants.
+For example, if the switch variable is of type char, then none of the case
+constants can be greater than 65535 because a char's range is from 0 to 65535.
+4.  All case labels should be COMPILE TIME CONSTANTS.
+5. No two of the case constant expressions associated with a switch
+statement may have the same value.
+6. At most one default label may be associated with the same switch statement.
+

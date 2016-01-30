@@ -1,0 +1,18 @@
+After which line will the object created at line XXX be eligible for garbage collection?
+
+//2
+
+//3
+
+//4
+
+Never in this method. //true
+
+Cannot be determined.
+
+Explanation
+Note that at line 2, c is assigned the reference of b. i.e. c starts pointing
+to the object created at //XXX. So even if at //3 b and a are set to null,
+the object is not without any reference.
+Also, at //4 c is being returned. So the object referred to by c cannot be
+garbage collected in this method!

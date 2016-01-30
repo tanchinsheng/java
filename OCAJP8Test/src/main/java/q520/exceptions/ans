@@ -1,0 +1,18 @@
+add throws IOException to the main method.
+
+add throws IOException to PortConnector constructor.
+
+add throws IOException to the main method as well as to PortConnector constructor. // true
+
+Change RuntimeException to java.io.IOException.
+
+add throws Exception to PortConnector constructor and change catch(RuntimeException re)
+to catch(Exception re) in the main method. // true
+
+Explanation
+
+
+IOException is a checked exception and since the PortConnector constructor throws IOException,
+this exception (or its superclass) must be present in the throws clause of the constructor.
+Now, the main method has two options, either catch IOException (or whatever exception PortConnector throws)
+in its catch block (i.e. option 5) or put that exception in its throws clause (i.e. option 3).

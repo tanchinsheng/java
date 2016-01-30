@@ -1,0 +1,15 @@
+import java.lang.*;
+
+import java.lang.ArrayList;
+
+import java.util.ArrayList;//true
+
+import java.collections.ArrayList;
+
+No import is necessary.
+
+Explanation
+Only java.lang package and the package in which the current class exists are automatically imported.
+Class ArrayList is in java.util package, which is not imported automatically.
+Note that classes in the default package (i.e. the package with no name) cannot be imported by classes in other
+(i.e. non default) packages. This is why you should not use the default package for creating classes.

@@ -1,7 +1,22 @@
-++i < 5 means, increment the value of i and then compare with 5. 
-Now, Try to work out the values of i and j at every iteration. To start with, i=0 and j=11. 
+What will the following program snippet print?
+
+5 5
+
+5 6
+
+6 6
+
+6 5
+
+4 5
+
+Explanation
+++i < 5 means, increment the value of i and then compare with 5.
+Now, Try to work out the values of i and j at every iteration.
+To start with, i=0 and j=11.
 At the time of evaluation of the while condition, i and j are as follows:
-j = 10 and i=1 (loop will continue because i<5) (Remember that comparison will happen AFTER increment i because it is ++i and not i++.
+j = 10 and i=1 (loop will continue because i<5) (Remember that comparison
+will happen AFTER increment i because it is ++i and not i++.
 j = 9 and i=2 (loop will continue because i<5).
 j = 8 and i=3 (loop will continue because i<5).
 j = 7 and i=4 (loop will continue because i<5).

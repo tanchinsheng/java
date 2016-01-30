@@ -1,0 +1,18 @@
+Consider the following class...
+
+By declaring x as static, main can access this.x
+
+By declaring x as public, main can access this.x
+
+By declaring x as protected, main can access this.x
+
+main cannot access this.x as it is declared now.//true
+//Because main() is a static method. It does not have 'this'!
+
+By declaring x as private, main can access this.x
+
+Explanation
+It is not possible to access x from main without making it static.
+Because main is a static method and only static members are accessible
+from static methods. There is no 'this' available in main so none of the
+this.x are valid.

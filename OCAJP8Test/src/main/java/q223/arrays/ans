@@ -1,8 +1,22 @@
-Note that whenever you create an array all of its elements are automatically given defaults values. 
-Numeric types are initialized to 0, objects are initialized to null, and booleans to false.
+Which of the following options can be used in the code above so that the init method
+initializes each table element to the sum of its row and column number and the multiply
+method just multiplies the element value by 2?
 
-So if you have, float[ ] f = new float[3]; f[0], f[1] and f[2] will all be 0.0.
-if you have Object[ ] o = new String[3]; o[0], o[1] and o[2] will all be null.
-In this case, b1[0] and b1[1] are false.
-whereas b2[0] and b2[1] are true and false.
-So the answer is false and true.
+table[x, y] = x+y;
+and
+table[x, y] = table[x, y]*2;
+
+table[x][y] = x+y;
+and
+table[x][y] = table[x][y]*2; //true
+//This code snippet illustrates correct syntax for accessing array elements
+in a multi dimensional array. All other options are syntactically incorrect
+and will not compile.
+
+table[[x] [y]] = x+y;
+and
+table[[x] [y]] = table[[x] [y]]*2;
+
+table(x, y) = x+y;
+and
+table(x, y) = table(x, y)*2;

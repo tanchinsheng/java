@@ -1,0 +1,31 @@
+You want to find out whether two strings are equal or not,  in terms of the actual characters within the strings.
+What is the best way to do this?
+
+
+use String's equals method. //true
+For example: String x1 = "a";
+String x2 = new String("a");
+x1.equals(x2) will return true.
+Because even though x1 and x2 are pointing to different objects, the content of the objects are same,
+which is what String's equals method checks.
+ x1 == x2 will return false, because == only checks
+if the two references are pointing to the same object or not. In this case, they are not.
+
+use String's equalsIgnoreCase method.
+//If you use this method, "a" will be considered equal to "A", which is not what the question is asking for.
+
+Use == operator.
+//== checks for the equality of the references and not for the equality of the objects themselves.
+Therefore, this will return true only if two string references are pointing to the same String object,
+which is not what the question is asking for.
+
+
+Use String's match method.
+//There is no method named match in String class.
+There is a matches method,
+which checks whether the String matches a regular expression but that is beyond the scope of this exam.
+
+public boolean matches(String regex)
+Tells whether or not this string matches the given regular expression.
+An invocation of this method of the form str.matches(regex) yields exactly
+the same result as the expression Pattern.matches(regex, str)

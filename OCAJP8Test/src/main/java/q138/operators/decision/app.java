@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q138.operators.decision;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // int m = 1; // m can hold all the case values.
         // long m;  // long, float, double, and boolean can never be used as a switch variable.

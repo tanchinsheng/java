@@ -1,0 +1,20 @@
+What will the following program print?
+
+111 //true
+
+222
+
+It will not compile as bA[0] is uninitialized
+
+It will throw an exception at runtime.
+
+None of the above.
+
+Explanation
+All the arrays are initialized to contain the default values of their type.
+This means, int[] iA = new int[10]; will contain 10 integers with a value of 0.
+Object[] oA = new Object[10]; will contain 10 object references pointing to null.
+boolean[] bA = new boolean[10] will contain 10 booleans of value false.
+So, as bA[0] is false, the if condition fails and str remains 111.
+
+

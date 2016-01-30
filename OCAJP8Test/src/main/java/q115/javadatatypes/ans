@@ -1,0 +1,16 @@
+Which of the following can be valid declarations of an integer variable?
+
+global int x = 10;
+//global is an invalid modifier. There is nothing like global in java.
+The closest you can get is static.
+
+final int x = 10; //true
+
+public Int x = 10;
+//Int with a capital I is invalid.
+
+Int x = 10;
+//Int with a capital I is invalid.
+
+static int x = 10; //true
+

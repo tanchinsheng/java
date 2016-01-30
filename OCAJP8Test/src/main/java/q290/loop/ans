@@ -1,9 +1,22 @@
-Notice the statement : 
+What will the following code print when compiled and run?
+
+wed
+
+thu
+
+fri
+
+It will not compile.//true
+
+It will throw an exception at run time.
+
+Explanation
+Notice the statement :
 if(index == 3){                 
     break;             
 }else {                  
     continue;             
-} 
+}
 
-In no situation can the control go beyond this statement in the for loop. 
+In no situation can the control go beyond this statement in the for loop.
 Therefore,  rest of the statements in the for loop are unreachable and so the code will not compile.

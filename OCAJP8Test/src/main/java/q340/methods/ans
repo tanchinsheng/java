@@ -1,0 +1,35 @@
+Which of the following options when applied individually will change the Data
+object currently referred to by the variable d to contain 2, 2 as values for its
+data fields?
+
+Add the following two statements : d.x = 2; d.y = 2;
+//Note that x and y are private in class Data. Therefore,
+you cannot access these members from any other class.
+
+Add the following statement: d = new Data(2, 2);
+//This will create a new Data object and will not change the original
+Data object referred to be d.
+
+Add the following two statements: d.x += 1; d.y += 1;
+//Note that x and y are private in class Data.
+Therefore, you cannot access these members from any other class.
+
+Add the following method to Data class:
+public void setValues(int x, int y){   
+this.x.setInt(x);   this.y.setInt(y);
+}
+Then add the following statement: d.setValues(2, 2);
+//x is primitive int.You cannot call any methods on a primitive.
+so this.x.setInt(...) or this.y.setInt(...) don't make any sense.
+
+Add the following method to Data class:
+public void setValues(int x, int y){   
+this.x = x;   this.y = y;
+}
+Then add the following statement: d.setValues(2, 2);//true
+//This is a good example of encapsulation where the data members of Data
+class are private and there is a method in Data class to manipulate its data.
+Compare this approach to making x and y as public and letting other
+classes directly modify the values.
+
+

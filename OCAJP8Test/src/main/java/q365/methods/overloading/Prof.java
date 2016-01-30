@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q365.methods.overloading;
 
-/**
- *
- * Which of the following methods can be inserted at line //1 ?
- */
 class Teacher {
 
     void teach(String student) {
@@ -18,11 +9,6 @@ class Teacher {
 
 class Prof extends Teacher {
 
-    /**
-     * Note that 'protected' is less restrictive than default 'no modifier'. So
-     * choice 3 is valid. "public abstract void teach(String s)" would have been
-     * valid if class Prof had been declared abstract.
-     */
     //1
     public void teach()
             throws Exception {

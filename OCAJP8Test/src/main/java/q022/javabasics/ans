@@ -1,0 +1,22 @@
+How can you declare a method someMethod() such that an instance of the class
+is not needed to access it and all the members of the same package
+have access to it.
+
+public static void someMethod()//true
+
+static void someMethod()//true
+
+protected static void someMethod()//true
+
+void someMethod()
+
+protected void someMethod()
+
+public abstract static void someMethod()
+//static methods can't be abstract.
+
+Explanation
+Since the question says, "...an instance of the class is not needed...",
+the method has to be static.
+Also, as the question does not say that other packages should
+have access to the method so public or protected is also correct.

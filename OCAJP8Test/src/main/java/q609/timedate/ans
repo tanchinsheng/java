@@ -1,0 +1,18 @@
+Which of the following are valid ways to create a LocalDateTime?
+
+java.time.LocalDate.parse("2015-01-02");
+//To create an instance of LocalDateTime, you need to use the methods in LocalDateTime class.
+Methods in LocalDate class create LocalDate instances. Similarly, methods in LocalTime class create LocalTime instances.
+
+java.time.LocalDateTime.parse("2015-01-02");
+//LocalDateTime requires date as well as time.
+Here, you just have a date in the input so it will throw a java.time.format.DateTimeParseException.
+java.time.LocalDateTime.parse("2015-01-02T17:13:50"); would be valid.
+
+
+java.time.LocalDateTime.of(2015, 10, 1, 10, 10); //true
+
+java.time.LocalDateTime.of(2015, "January", 1, 10, 10);
+//All parameters should be ints.
+For the month argument, you can either pass the numbers 1 to 12  (and not 0 to 11)
+or use constants such as java.time.Month.JANUARY.

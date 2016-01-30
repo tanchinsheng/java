@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q130.operators.decision;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void out1() {
         System.out.println("out1");
     }
@@ -32,6 +20,7 @@ public class app {
         System.out.println(i < 20 ? b : c);
         System.out.println(i < 20 ? null : c);
         System.out.println(i < 20 ? out1() : out2());
+        System.out.println(Integer k = i < 20 ? out1() : out2(););
 
     }
 

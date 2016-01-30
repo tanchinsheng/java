@@ -1,0 +1,34 @@
+Executed independent of each other,
+what will be the value of k (for //1, //2, and //3) and m (for //4)
+after execution of each of these statements?
+
+12
+will not compile
+will not compile
+12
+
+will not compile
+will not compile
+will not compile
+12
+
+12 //true
+12
+12
+12
+
+will not compile
+will not compile
+will not compile
+will not compile
+
+12
+12
+12
+will not compile
+
+Explanation
+In all of these statements, auto-unboxing of integers will occur.
+For the last statement, after unboxing a and b,
+the value 12 will be boxed into an Integer object.
+

@@ -1,7 +1,19 @@
+What is the result of executing the following code when the value of i is 5:
+
+It will print 1 0 2 //true
+
+It will print 1 0 2 3
+
+It will print 1 0
+
+It will print 1
+
+Nothing will be printed.
+
 Here are the rules:
 
-The type of the switch expression must be String, char, byte, short, or int (and their wrapper classes), 
-or an enum or a compile-time error occurs. 
+The type of the switch expression must be String, char, byte, short, or int (and their wrapper classes),
+or an enum or a compile-time error occurs.
 
 All of the following must be true, or a compile-time error will result:
 1. Every case constant expression associated with a switch statement must be assignable (5.2) to the type of the switch Expression.
@@ -13,9 +25,9 @@ Then it executes the statements till it reaches a break or end of the switch sta
 Here, it goes to default and executes till it reaches first break. So it prints 1 0 2.
 
 
-Note that the switch statement compares the String object in its expression with the expressions 
-associated with each case label as if it were using the String.equals method; consequently, 
-the comparison of String objects in switch statements is case sensitive. 
-The Java compiler generates generally more efficient bytecode from switch statements 
+Note that the switch statement compares the String object in its expression with the expressions
+associated with each case label as if it were using the String.equals method; consequently,
+the comparison of String objects in switch statements is case sensitive.
+The Java compiler generates generally more efficient bytecode from switch statements
 that use String objects than from chained if-then-else statements.
 

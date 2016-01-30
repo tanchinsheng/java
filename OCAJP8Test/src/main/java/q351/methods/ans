@@ -1,0 +1,24 @@
+Which of the statements regarding the following code are correct?
+
+The code will fail to compile because the constructor is trying to access static members.
+//A constructor (or any other method) can access static members.
+
+The code will fail to compile because the constructor is trying to use static
+member variable a before it has been initialized.
+//static fields are always initialized automatically if you do not initialize
+them explicitly. So are instance fields.
+
+The code will fail to compile because the constructor is trying to use member
+variable b before it has been initialized.
+
+The code will fail to compile because the constructor is trying to use
+local variable c before it has been initialized.
+////c is getting initialized at line 2: c = a;
+
+The code will compile and run without any problem. //true
+
+Explanation
+All the instance or static variables are given a default values if not explicitly
+initialized. All numeric variable are given a value of zero or equivalent to zero
+(i.e. 0.0 for double or float ).
+booleans are initialized to false and objects references are initialized to null.

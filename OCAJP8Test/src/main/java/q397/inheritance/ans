@@ -1,0 +1,22 @@
+What will the following code print when compiled and run?
+
+class java.lang.String
+class java.util.List
+
+class java.lang.String
+class java.util.Collection
+
+class java.lang.String
+class java.util.ArrayList//true
+
+class java.lang.Object
+class java.util.ArrayList
+
+class java.lang.Object
+class java.util.List
+
+Explanation
+The getClass method always returns the Class object for the actual object on which
+the method is called irrespective of the type of the reference.
+Since s refers to an object of class String, s.getClass returns Class object for String  
+and similarly list.getClass returns Class object for ArrayList.

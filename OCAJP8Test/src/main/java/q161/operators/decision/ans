@@ -1,0 +1,31 @@
+Which of the following statements will compile without any error?
+
+System.out.println("a"+'b'+63); //true
+//Since the first operand is a String all others (one by one) will be converted
+to String."ab" + 63 => "ab63"
+
+System.out.println("a"+63); //true
+//Since the first operand is a String all others (one by one) will be
+converted to String."a" + 63 => "a63"
+
+System.out.println('b'+new Integer(63)); //true
+//Since the first operand of + one is of numeric type,
+its numeric value of 98 will be used.
+Integer 63 will be unboxed and added to 98.
+Therefore, the final value will be int 161.
+
+String s = 'b'+63+"a"; //true
+//Since the first one is numeric type so, 'b'+63 = 161, 161+"a" = 161a.
+
+String s = 63 + new Integer(10);
+//Since neither of the operands of + operator is a String,
+it will not generate a String. However, due to auto-unboxing of 10,
+it will generate an int value of 73.
+
+Explanation
++ is overloaded such that if any one of its two operands is a String then
+it will convert the other operand to a String and create a new string by
+concatenating the two.
+Therefore, in 63+"a" and "a"+63, 63 is converted to "63" and 'b' +"a" and
+"a"+'b', 'b' is converted to "b".
+Note that in 'b'+ 63 , 'b' is promoted to an int i.e. 98 giving 161.

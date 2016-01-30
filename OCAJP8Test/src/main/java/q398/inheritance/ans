@@ -1,0 +1,11 @@
+What will the following code print when compiled and run?
+
+sub - MethodA and sub - MethodB
+
+base - MethodA and sub - MethodB
+
+Compile time error at //1
+
+Compile time error at //2
+
+Compile time error at //3

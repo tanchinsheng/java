@@ -1,0 +1,14 @@
+Given the following line of code:     
+List students = new ArrayList();
+Identify the correct statement:
+
+The reference type is List and the object type is ArrayList. //true
+//Since you are doing new ArrayList, you are creating an object of class ArrayList.
+You are assigning this object to variable "students", which is declared of class List.
+Reference type means the declared type of the variable.
+
+The reference type is ArrayList and the object type is ArrayList.
+
+The reference type is ArrayList and the object type is List.
+
+The reference type is List and the object type is List.

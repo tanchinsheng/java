@@ -1,17 +1,4 @@
- c/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q339.methods;
-
-/**
- *
- * Which of the following options when applied individually will change the Data
- * object currently referred to by the variable d to contain 2, 2 as values for
- * its data fields?
- */
-
 
 class Data {
 
@@ -25,9 +12,6 @@ class Data {
 
 public class TestClass {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Data d = new Data(1, 1);
         //add code here

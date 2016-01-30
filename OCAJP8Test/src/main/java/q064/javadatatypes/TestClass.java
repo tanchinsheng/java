@@ -43,12 +43,11 @@ public class TestClass {
         long x5 = 0b10000L;
         // A floating point number written in binary or hex cannot use any suffix for float.
         // But a floating point number written in decimal can use the floating point suffices f, F, d, and D.
-        Thus
-        ,   // float dx = 0xff; is valid but the f here is not for indicating that it is a float
+        // Thus float dx = 0xff; is valid but the f here is not for indicating that it is a float
         // but is interpreted as the hex digit F.
 
         double x6 = 0b10_000D;
-
+        //INSERT CODE HERE
         System.out.println(x1);
     }
 

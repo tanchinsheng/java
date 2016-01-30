@@ -1,0 +1,22 @@
+Given the following classes, what will be the output of compiling and running the class Truck?
+
+Compiler error at line 3.
+
+Runtime error at line 3.
+
+It will print:  Automobile: drive Truck: drive Automobile: drive in that order.
+
+It will print: Automobile: drive Truck: drive Truck: drive in that order.
+
+It will print: Automobile: drive Automobile: drive Automobile: drive in that order.
+
+Explanation
+Since Truck is a subclass of Automobile, a = t will be valid at compile time
+as well at runtime. But a cast is needed to make t = (Truck) a; work.
+This will be ok at compile time but if at run time 'a' does not refer to
+an object of class Truck, a ClassCastException will be thrown.
+Now, method to be executed is decided at run time and it depends
+on the actual class of object referred to by the variable.
+Here, at line 4, variable a refers to an object of class Truck.
+So Truck's drive() will be called which prints Truck: drive.
+This is polymorphism in action!

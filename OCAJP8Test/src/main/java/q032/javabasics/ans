@@ -1,0 +1,17 @@
+The program will fail to compile.
+
+The program will throw a NullPointerException when run with zero arguments.
+
+The program will print no arguments when called with zero arguments and 1 arguments  when called with one argument. //true
+//The word java and class name are not a part of the argument list.
+
+The program will print no arguments and 2 arguments when called with zero and one arguments.
+
+The program will print no arguments and 3 arguments when called with zero and one arguments.
+// When the program is called with no arguments, the args array will be of length zero.
+
+Explanation
+When the program is called with no arguments, the args array will be of length zero.
+Unlike in C/C++, args[0] is not the name of the program or class.
+This is because the name of the class is always the same as defined in the java file.
+So there is no need for passing its name as an argument to main method.

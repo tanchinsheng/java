@@ -1,0 +1,18 @@
+Which of the following are features of Java?
+(Some candidates have reported a similar question being asked with a slightly different (and ambiguous) wording -
+Which of the following are objected oriented features of Java?
+
+Object is the root class of all the classes. //true
+
+Objects cannot be reused.
+//Not sure what "reuse" really means here but our guess is that it is incorrect.
+One can certainly call methods on the same object again and again.
+One can also keep a reference to an object as long as needed.
+
+Objects can share behavoir with other objects.  //true
+//Another very vague statement but it is probably true because two objects of two different classes may share
+some behavior if the two classes inherit from the same super class.
+
+Everything in Java is an Object.
+//This is not  true because Java does have primitives as well (byte, short, char, int, long, float, double, boolean),
+which are not Objects.

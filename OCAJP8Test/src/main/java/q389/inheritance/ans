@@ -1,15 +1,17 @@
+Which of the following methods can be inserted in class Y?
+
 public C getB(){ return new B(); } // Wrong
 Its return type is specified as C, but it is actually returning an object of type B. Since B is NOT a C, this will not compile.
 
 protected B getB(){ return new C(); } // Correct
-Since C is-a B, this is valid. Also, an overriding method can be made less restrictive. 
+Since C is-a B, this is valid. Also, an overriding method can be made less restrictive.
 protected is less restrictive than 'default' access.
 
 C getB(){ return new C(); }// Correct
-Covariant returns are allowed in Java 1.5, which means that an overriding method can change the return type of the 
+Covariant returns are allowed in Java 1.5, which means that an overriding method can change the return type of the
 overridden method to a subclass of the original return type. Here, C is a subclass of B. So this is valid.
 
 A getB(){ return new A(); } // Wrong
-An overriding method cannot return a superclass object of the return type defined in the overridden method. 
+An overriding method cannot return a superclass object of the return type defined in the overridden method.
 A subclass is allowed in Java 1.5.
 

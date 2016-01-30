@@ -1,0 +1,31 @@
+How many objects have been created by the time the main method reaches
+its end in the following code?
+
+
+2
+
+3
+
+4 //true
+
+5
+
+6
+
+Explanation
+When a Noobs object is created, a MyException object is also created.
+Therefore a total of 4 objects are created.
+The line Noobs c = a; just assigns an existing Noobs object to c.
+No new object is created.
+
+Note: Some candidates have reported getting a similar question.
+The question is ambiguous because two Class objects
+(one for Noobs and one for MyException) are also created.
+If you consider those, then the answer would be 6.
+If you consider the String[] object referred to by args,
+the answer would then be 8. Further, several Thread objects are
+also created (although not directly by this code.)
+Since this is out of scope for the exam,
+it is best to ignore these kind of objects and consider only
+the objects created directly by the code.
+

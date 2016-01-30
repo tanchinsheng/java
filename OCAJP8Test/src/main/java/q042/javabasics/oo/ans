@@ -1,0 +1,29 @@
+You are asked to develop an application for a car rental company.
+As a part of that, you are given the following requirements -
+
+1. Implement three classes -  Car, SUV, and MiniVan, where the Car class is the super class of SUV as well as MiniVan.
+2. Implement method int getDailyRate()  that returns the daily price of the car.
+3. Implement method void printDetails() that prints the details of a the car.
+
+Which of the following definition of Car class adds a valid layer of abstraction to the class hierachy?
+
+Car1:
+Since Car class does not know the details of SUV and MiniVan, you can't provide the code for them in this class.
+Therefore, you should make this method abstract.
+
+Car2: //true
+This is invalid because of the lack of abstract keyword on the methods.
+This will not compile and is, therefore, an obviously wrong answer.
+
+Car3:
+As per the given information, Car could be an abstract class with two methods.
+You need to make these two methods abstract so that concrete classes such as SUV and MiniVan will be forced
+to provide appropriate implementations of these methods.
+
+car4:
+A method that has code cannot be abstract and vice-versa. This will not compile and is, therefore, an obviously wrong answer.
+
+Explanation
+The problem statement is very ambiguous and there are multiple valid implementations.
+You will need to draw clues from the options and select the best option by eliminating options that are obviously wrong.
+Expect such questions in the exam.

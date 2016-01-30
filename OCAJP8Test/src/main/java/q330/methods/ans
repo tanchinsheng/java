@@ -1,0 +1,17 @@
+Identify the correct statements:
+
+It will not compile because it does not implement setAngle method.
+//There is no requirement that a class has to have a setter as well as a getter.
+
+It will not compile because ANGLE cannot be private.
+//Any field can be made private.
+
+It will not compile because getAngle() has no body.//true
+
+It will not compile because ANGLE field is not initialized.
+//Since it is a static field, it will get a default value of 0.0.
+
+It will not compile because of the name of the method Main instead of main.
+//A class can have a method named Main. Although, since it is not same as main,
+it will not be considered the standard main method that the JVM can invoke when
+the program is executed.

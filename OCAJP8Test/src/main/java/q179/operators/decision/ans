@@ -1,0 +1,22 @@
+What will the above program print if compiled and run using the following command line:
+java Switcher 1 2 3
+
+It will print 1
+
+It will print 2
+
+It will print 3
+
+It will not print anything.
+
+It will not compile because of //1.
+//There is no problem here because Integer.parseInt() returns an int.
+
+It will not compile because of //2.
+//There is no problem here. b is in scope for the rest of the switch block.
+
+It will not compile for some other reason.
+//It will not compile because of if(b) because b is declared in the
+switch block and it is out of scope after the switch block ends.
+Pay close attention to question text. It may seem to test you on one
+concept but actually it could be testing something entirely different.

@@ -1,10 +1,22 @@
-1. Defining i as char doesn't mean that it can only hold characters (a, b, c etc). 
+What letters wil
+
+A
+
+B
+
+C
+
+D
+
+F
+
+1. Defining i as char doesn't mean that it can only hold characters (a, b, c etc).
 It is an integral data type which can take any +ive integer value from 0 to 2^16 -1.
 
 2. Integer 0 or 1, 2 etc. is not same as char '0', '1' or '2' etc.
 so when i is equal to 0, nothing gets printed and i is incremented to 1 (due to i++ in the switch).
  i is then incremented again by the for loop for next iteration. so i becomes 2.
-when i = 2, "C" is printed and i is incremented to 3 (due to i++ in the switch) and 
+when i = 2, "C" is printed and i is incremented to 3 (due to i++ in the switch) and
 then i is incremented to 4 by the for loop so i becomes 4.
 when i = 4, "E" is printed and since there is no break, it falls through to case '5' and "F" is printed.
 i is incremented to 5  (due to i++ in the switch) and then it is again incremented to 6 by the for loop.

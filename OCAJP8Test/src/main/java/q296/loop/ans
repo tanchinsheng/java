@@ -1,0 +1,33 @@
+What will the following code print when compiled and run?
+
+7
+
+8
+
+9
+
+10//true
+
+11
+
+Explanation
+The point to note here is that a break without any label breaks the innermost outer loop.
+So in this case, whenever k>j, the C loop breaks.
+You should run the program and follow it step by step to understand how it progresses.
+
+i,j,k
+0,0,0 c=1
+0,0,1 c=2
+0,0,2
+
+0,1,0 c=3
+0,1,1 c=4
+0,1,2 c=5
+
+1,0,0 c=6
+1,0,1 c=7
+1,0,2
+
+1,1,0 c=8
+1,1,1 c=9
+1,1,2 c=10

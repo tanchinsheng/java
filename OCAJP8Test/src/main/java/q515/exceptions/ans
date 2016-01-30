@@ -1,0 +1,11 @@
+The main declares that it throws SomeThrowable but throws MyThrowable.
+//That's OK. You can put a Super class in the throws clause and then you can throw any subclass exception.
+
+You cannot have more than 2 classes in one file.
+//You sure can. The only limitation is you can have only one top level public class in a file.
+
+The catch block in the main method must declare that it catches MyThrowable rather than SomeThrowable.
+//You can catch a subclass exception in the catch clause that catches a super class.
+
+There is nothing wrong with the code and Done will be printed.//true
+//Done will be followed by an exception. Finally is always executed (Only exception is System.exit();)

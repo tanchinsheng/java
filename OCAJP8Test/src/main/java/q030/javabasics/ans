@@ -1,0 +1,11 @@
+It will print Problem in 0
+
+It will throw an exception and end without printing anything.
+
+It will not even compile.//true
+//Because 'i' is defined in try block and so it is not visible in the catch block.
+
+It will not print anything if the argument is '1' instead of 'one'.
+
+None of the above.
+

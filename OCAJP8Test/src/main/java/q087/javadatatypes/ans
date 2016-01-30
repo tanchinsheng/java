@@ -1,0 +1,25 @@
+Which of the following is illegal ?
+
+char c = 320;
+//This is valid because 320 is below the maximum value that a char can take,
+which is 2^16 -1. Remember that char can take only positive values.
+
+float f = 320;
+//320 is an int and any valid int can be assigned to a float or a double
+variable without a cast. Note that f = 320.0 is not valid as 320.0
+would be a double and a double can only be assigned to a double without a cast.
+
+double d = 320;
+//This is valid because any valid int can be assigned to a double or
+even a float without any cast.
+
+double d = 320;
+/320 cannot fit into a byte so you must cast it.: byte b = (byte) 320;
+
+float f = 22.0f/7.0f;
+//Since both the operands of / are floats, it will result in a float,
+which can be assigned to f. If you have, 22.0f/7.0,
+then it would not compile because 7.0 is a double and so 22.0f/7.0
+will return a double, which cannot be assigned to a float. 
+
+None of the above is illegal.

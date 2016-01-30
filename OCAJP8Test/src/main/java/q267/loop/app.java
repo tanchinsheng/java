@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q267.loop;
 
-/**
- *
- * Which of the following code snippets will compile without any errors?
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         int x1 = 0;
         while (false) { // unreachable statement

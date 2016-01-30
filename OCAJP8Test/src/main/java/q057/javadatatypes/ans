@@ -1,0 +1,29 @@
+What will be the result of attempting to compile and run the following class?
+
+The code will not compile because unlike in c++, operator '=' cannot be chained
+i.e. a = b = c = d is invalid.
+//= can be chained. For example, assuming all the variables are declared
+appropriately before hand, a = b = c = d; is valid.
+However, chaining to use a value of a variable at the time of declaration
+is not allowed. For example, int a = b = c = 100; is invalid if b and c are
+not already declared. Had b and c been already declared, int a = b = c = 100;
+would have been valid.
+
+The code will not compile as 'j' is being used before getting initialized.
+//j is being initialize by the expression k = 9, which evaluates to 9.
+
+The code will compile correctly and will display '9' when run. //true
+
+The code will not compile as 'j' and 'i' are being used before getting initialized.
+
+All the variables will get a value of 9. //true
+
+Explanation
+Every expression has a value, in this case the value of the expression is the value
+that is assigned to the right hand side of the equation. k has a value of 9 which
+is assigned to j and then to i.  Another implication of this is : boolean b = false;
+if( b = true) { System.out.println("TRUE");} The above code is valid and will print TRUE
+Because b = true has a boolean value, which is what an if statement expects.
+Note that if( i = 5) { ... } is not valid because the value of the expression
+i = 5 is an int (5) and not a boolean.
+

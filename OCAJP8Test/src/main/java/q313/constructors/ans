@@ -1,0 +1,19 @@
+Which line contains a valid constructor in the following class definition?
+
+Line 1
+//This cannot be a constructor because even the name of the method
+( getInstance ) is not same as the class name!
+
+Line 2
+//Constructors cannot return anything. Not even void.
+
+Line 3
+//Constructors cannot return anything. Not even void.
+
+Line 4
+//This could have been a destructor in C++ world.
+And there nothing like this in java. Java has a finalize() method,
+which is similar to a destructor but does not work exactly as a destructor.
+
+None of the above.//true
+

@@ -1,0 +1,11 @@
+Which of the following statements are correct regarding the field value?
+
+It cannot be accessed from any other class.
+
+It can be read but cannot be modified from any other class.
+
+It can be modified but only from a subclass of MyClass.
+//It can also be modified from any class defined in the same package.
+
+It can be read and modified from any class within the same package or
+from any subclass of MyClass.//true

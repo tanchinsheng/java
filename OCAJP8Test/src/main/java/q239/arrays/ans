@@ -1,0 +1,24 @@
+What would be the result of trying to compile and run the following program?
+
+The program will fail to compile, because of uninitialized variable 'bool'.
+//No, All the instance variables are initialized by default values.
+
+The program will throw a java.lang.NullPointerException when run.
+//No reason for this at all.
+
+The program will print "0 null false".//true
+
+The program will print "0 null true".
+//All the variables, including the array elements, will be initialized to
+their default values.
+
+The program will print null and false but will print junk value for ia[0].
+//All the elements of the arrays of primitives are initialized to default values.
+
+Explanation
+Following are the default values that instance variables are initialized
+with if not initialized explicitly:
+types (byte, short, char, int, long, float, double) to 0 ( or 0.0 ).
+All Object types to null.
+boolean to false.
+

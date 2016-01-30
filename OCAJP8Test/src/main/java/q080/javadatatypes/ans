@@ -1,0 +1,22 @@
+The compiler will refuse to compile it because i and b are of different types
+cannot be assigned to each other.
+
+The program will compile and will print -128 and -128 when run //true
+//A byte can ALWAYS be assigned to an int.
+
+The compiler will refuse to compile it because -128 is outside the
+legal range of values for a byte.
+//Range of byte is -128 to 127
+
+The program will compile and will print 128 and -128 when run.
+
+The program will compile and will print 255 and -128 when run.
+
+Explanation
+byte and int both hold signed values. So when b is assigned to i,
+the sign is preserved.
+
+
+
+
+

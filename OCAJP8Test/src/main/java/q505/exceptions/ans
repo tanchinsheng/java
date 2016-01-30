@@ -1,0 +1,22 @@
+Syntax of try/catch/finally is:
+
+try{
+}
+catch(Exception1 e) {... }
+catch(Exception2 e) {... }
+... catch(ExceptionN e) {... }
+finally { ...  }
+With a try, either a catch and or finally or both can occur.
+A try MUST be followed by at least one catch or finally. (Unless it is a try with resources statement,
+which is not in scope for this exam.)
+
+In Java 7, you can collapse the catch blocks into a single one:
+
+try {        
+...
+} catch (SQLException | IOException | RuntimeException e) {        
+
+//In this block, the class of the actual exception object will be whatever exception is thrown at runtime.   
+//But the class of the reference e will be the closest common super class of all the exceptions in the catch block.   
+//In this case, it will be java.lang.Exception because that is the most specific class that is a
+//super class for all the three exceptions.   e.printStackTrace(); }

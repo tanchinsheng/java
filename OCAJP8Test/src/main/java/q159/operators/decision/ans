@@ -1,0 +1,37 @@
+What, if anything, is wrong with the following code?
+
+Data Type of 'x' is not valid to be used as an expression for the switch clause.
+//x is an int and int is perfectly valid. long, double, boolean, and float are not valid.
+
+The case label 0 must precede case label 1.
+//While ordering may be important for the logic being implemented in the code,
+technically, any order is valid.
+
+Each case section must end with a break keyword.
+//This is not necessary. If there is no break at the end of a case section,
+the control will fall through to the next case section
+(even if the case label doesn't match).
+
+The default label must be the last label in the switch statement.
+//Any order of case statements is valid.
+
+There is nothing wrong with the code.//true
+
+Explanation
+Here are the rules for a switch statement:
+1. Only String, byte, char, short, int, (and their wrapper classes Byte,
+Character, Short, and Integer), and enums can be used as types of a switch variable.
+(String is allowed only since Java 7).
+2. The case constants must be assignable to the switch variable.
+For example, if your switch variable is of class String,
+your case labels must use Strings as well.
+3. The switch variable must be big enough to hold all the case constants.
+For example, if the switch variable is of type char, then none of the case
+constants can be greater than 65535 because a char's range is from 0 to 65535.
+4.  All case labels should be COMPILE TIME CONSTANTS.
+5. No two of the case constant expressions associated with a switch
+statement may have the same value.
+6. At most one default label may be associated with the same switch statement.
+
+
+

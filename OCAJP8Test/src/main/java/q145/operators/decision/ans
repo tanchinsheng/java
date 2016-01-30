@@ -1,0 +1,18 @@
+What will the following program print?
+
+true //true
+
+false
+
+It will not compile.
+
+It will compile but throw an exception at run time.
+
+None of the above.
+
+Explanation
+Object class's equals() method just checks whether the two references are
+pointing to the same location or not. In this case they really are pointing
+to the same location because of obj2 = obj1; so it returns true.
+
+

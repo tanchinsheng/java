@@ -1,0 +1,16 @@
+Note: This question may be considered too advanced for this exam.
+Which statements can be inserted at line 1 in the following code to
+make the program write x on the standard output when run?
+
+c = c;
+//It will reassign 'temp' to c!
+
+c = this.a;
+//It will assign "y" to c.
+
+c = ""+AccessTest.b; //true
+//Because b is static.
+
+c = AccessTest.this.a; //true
+
+c = ""+b; //true

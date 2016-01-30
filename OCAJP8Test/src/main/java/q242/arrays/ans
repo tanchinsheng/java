@@ -1,0 +1,36 @@
+What can be inserted at //1 and //2?
+
+return a(x)*b(y);
+and
+matrix(x, y) = compute(x, y);
+//( and ) are used to call a method on an object.
+To access array elements, you need to use [ and ].
+
+return a[x]*b[y];
+and
+matrix[x, y] = compute(x, y);
+
+return a[x]*b[y];
+and
+matrix[x][y] = compute(x, y);//true
+
+return a(x)*b(y);
+and
+matrix(x)(y) = compute(x, y);
+//a(x), b(y), and matrix(x)(y) are invalid because a, b, and matrix are not methods.
+
+return a[x]*b[y];
+and
+matrix[[x][y]] = compute(x, y);
+//[[x][y]] is invalid syntax.
+
+Explanation
+The correct syntax to access any element within an array is to use
+the square brackets - [ ]. Thus, to access the first element in an array,
+you would use array[0].  For a multi dimensional array,
+to reach an individual item, you need to specify index for each dimension.
+For example, since matrix is a two dimensional array, matrix is an
+array of array and matrix[0] will give you the first array of the arrays.
+matrix[0][0] will give you the first element of the first array of the arrays.
+
+

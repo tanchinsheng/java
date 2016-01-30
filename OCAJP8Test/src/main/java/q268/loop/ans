@@ -1,0 +1,18 @@
+What will be the result of attempting to compile and run the following program?
+
+The code will fail to compile, 'while' has an invalid condition expression.
+//It is perfectly valid because b = !b; returns a boolean,
+which is what is needed for while condition.
+
+It will compile but will throw an exception at runtime.
+
+It will print 3.//true
+//The loop body is executed twice and the program will print 3.
+
+It will go in an infinite loop.
+
+It will print 1.
+
+Explanation
+Unlike the 'while(){}' loop, the 'do {} while()' loop executes at least once
+because the condition is checked after the iteration.

@@ -1,14 +1,16 @@
-private //correct
-Note that the question does not require that 'i' should be accessible from test package. So private is fine.
+How can you declare 'i' so that it is not visible outside the package test.
 
-public 
-Marking it public will make it accessible from all classes in all packages.
+private //correct
+//Note that the question does not require that 'i' should be accessible from test package. So private is fine.
+
+public
+//Marking it public will make it accessible from all classes in all packages.
 
 protected
-It will make it available to a subclass even if the subclass is in a different package.
+//It will make it available to a subclass even if the subclass is in a different package.
 
 No access modifier //correct
 
 friend
-There is no such modifier in Java.
+//There is no such modifier in Java.
 

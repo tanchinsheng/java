@@ -1,0 +1,24 @@
+Given the following interface definition, which definitions are valid?
+
+class A extends I1{    
+    String s;    
+    void setValue(String val) { s = val; }    
+    String getValue() { return s; }
+}
+//Classes do not extend interfaces, they implement interfaces.
+
+interface I2 extends I1{    void analyse(); }
+
+abstract class B implements I1{    int getValue(int i) { return 0; } }
+
+interface I3 implements I1{    void perform_work(); }
+//Interfaces do not implement anything, they can extend multiple interfaces.
+
+Explanation
+The getValue(int i) method of class B in option c, is different than the method
+defined in the interface because their parameters are different. Therefore, this
+class does not actually implement the method of the interface and that is why it
+needs to be declared abstract.
+
+
+

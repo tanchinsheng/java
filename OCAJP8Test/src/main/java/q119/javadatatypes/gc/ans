@@ -1,0 +1,19 @@
+In the following code, after which statement (earliest),
+the object originally held in s, may be garbage collected ?
+
+It will not be Garbage Collected till the end of the program.
+
+Line 5
+
+Line 6
+
+Line 7
+
+Line 10
+
+Explanation
+In this case, since there is only one reference to Student object,
+as soon as it is set to null, the object held by the reference is
+eligible for GC, here it is done at line 6.
+Note that although an object is created at line 7 with same parameters,
+it is a different object and it will be eligible for GC after line 10.

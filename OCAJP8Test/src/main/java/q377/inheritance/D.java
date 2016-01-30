@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q377.inheritance;
 
-/**
- *
- * Which of the following statements are true?
- */
 interface X1 { // C is-a X1: Because C is-a B and B is-a X1.
 }
 
@@ -28,9 +19,6 @@ class C extends B implements X2 { // C is-a A: Because C 'is-a' B and B 'is-a' A
 
 class D {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
     }

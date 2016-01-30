@@ -1,18 +1,18 @@
 Compared to public, protected and private accessibility, default accessibility is....
 
 Less restrictive than public
-public is least restrictive.
+//public is least restrictive.
 
 More restrictive than public, but less restrictive than protected.
 
-More restrictive than protected, but less restrictive than private.//Correct
-The default accessibility is more restrictive than protected, but less restrictive than private. 
-Members with default accessibility are only accessible within the class itself and from other classes in the same package. 
-protected members are in addition accessible from subclasses in any other package as well. 
-Members with private accessibility are only accessible within the class itself. 
+More restrictive than protected, but less restrictive than private.//true
+//The default accessibility is more restrictive than protected, but less restrictive than private.
+Members with default accessibility are only accessible within the class itself and from other classes in the same package.
+protected members are in addition accessible from subclasses in any other package as well.
+Members with private accessibility are only accessible within the class itself.
 
 More restrictive than private.
-private is most restrictive.
+//private is most restrictive.
 
 Less restrictive than protected from within a package, and more restrictive than protected from outside a package.
 

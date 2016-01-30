@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q334.methods;
 
-/**
- *
- * Which of the following code fragments are valid method declarations?
- */
 public class app {
 
-    /**
-     * A valid method declaration MUST specify a return type, all other things
-     * are optional.
-     */
 
 
 

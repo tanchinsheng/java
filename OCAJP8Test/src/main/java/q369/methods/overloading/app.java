@@ -1,23 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q369.methods.overloading;
 
-/**
- *
- * Which of the following methods correctly overload the above method?
- */
 public class app {
 
-    /**
-     * A method is said to be overloaded when the other method's name is same
-     * and parameters ( either the number or their order) are different. Option
-     * 2 is not valid Because of the line: return this(a, c, b); This is the
-     * syntax of calling a constructor and not a method. It should have been:
-     * return this.setVar(a, c, b);
-     */
     public int setVar(int a, int b, float c) {
         return 0;
     }

@@ -1,0 +1,27 @@
+Given:
+
+interface Runner {   
+    public void run();
+}
+
+Which of the following is/are valid lambda expression(s) that capture(s) the above interface?
+
+Please select 2 options
+
+ -> System.out.println("running...");
+
+void -> System.out.println("running...")
+
+() -> System.out.println("running...") //true
+
+() -> { System.out.println("running..."); return; } //true
+
+(void) -> System.out.println("running...")
+
+-> System.out.println("running...")
+
+Explanation
+Runner is a valid functional interface because it has exactly one abstract method. 
+Since this method does not take any parameter, the parameter list part of the lambda expression must be ().
+Further, since it does not return anything, the body part must be such that it does not return anything either.
+Thus, you can either use a method call that returns void or some code enclosed within { and } that does not return anything.

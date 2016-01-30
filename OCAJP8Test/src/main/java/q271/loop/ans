@@ -1,4 +1,18 @@
-In such type of questions, you will need to work out the values of the loop variables for every iteration 
+What is the result?
+
+6 4 5
+
+6 5 5
+
+6 5 6
+
+6 4 6
+
+5 5 5//true
+
+Explanation
+In such type of questions, you will need to work out the values of the loop
+variables for every iteration
 (unless you can recognize the pattern) on your worksheet.
 Beginning i=0, j=10, count = 0
 Iteration 1: i<j is true, i becomes 1, j becomes 9, count becomes 1

@@ -1,0 +1,14 @@
+In Java, Strings are immutable. A direct implication of this is...
+
+you cannot call methods like "1234".replace('1', '9'); and expect to change the original String. //true
+//calling such methods do not change this object. They create a new String object.
+
+you cannot change a String object, once it is created. //true
+
+you can change a String object only by the means of its methods.
+
+you cannot extend String class. 
+//That's because it is final, not because it is immutable. You can have a final class whose objects are mutable.
+
+you cannot compare String objects.
+//String class implements Comparable interface.

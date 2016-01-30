@@ -7,7 +7,9 @@ package q010.javabasics;
 
 /**
  *
- * @author cstan
+ * java and classname are not part of the args array. So tom gets "111", dick
+ * gets "222" and harry gets "333".java and classname are not part of the args
+ * array. So tom gets "111", dick gets "222" and harry gets "333".
  */
 public class TestClass {
 

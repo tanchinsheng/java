@@ -1,0 +1,20 @@
+Which of the following lambda expressions can be used to invoke a method that accepts a java.util.function.Predicate as an argument?
+
+Please select 2 options
+
+x -> System.out.println(x)
+//The body part of the lambda expression that is meant to capture the Predicate interface must return a boolean
+(because the only abstract method in this interface returns boolean) but here, it returns void.
+
+x -> System.out.println(x);
+//1. The body part must return a boolean but this returns void.
+2. This is syntactically invalid as well because of the semi-colon.
+
+
+x -> x == null //true
+
+() -> true
+//The implementation of Predicate interface must have a method that takes exactly one parameter. Here, the parameter list is empty.
+
+x->true //true
+

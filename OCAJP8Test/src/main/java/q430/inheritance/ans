@@ -1,0 +1,25 @@
+What can be done to make this code compile?
+
+Nothing, it will compile as it is.
+
+Make Eagle class declaration public: public class Eagle { ... }
+
+Make the Eagle constructor private: private Eagle(String name){ ... } //true
+
+Make Bird constructor public: public Bird() { ... }
+Insert super(); as the first line in Eagle constructor:     
+public Eagle(String name){         
+    super();         
+    his.name = name;     
+}
+//If a subclass class constructor doesn't explicitly call the super class constructor,
+the compiler automatically inserts super(); as the first statement of the subclass
+constructor. So this option is not needed.
+
+Explanation
+Since the constructor of Bird is private, the subclass cannot access it and therefore,
+it needs to be made public. protected or default access is also valid.
+
+
+
+

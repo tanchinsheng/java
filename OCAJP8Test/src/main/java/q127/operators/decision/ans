@@ -1,20 +1,34 @@
-It will say the following when compiled:  
-TestClass.java: incompatible types 
-found   : boolean required: int 
-case x < 5 :        System.out.println("BIG"); break;   
+Assuming that a valid integer will be passed in the command line
+as first argument, which statements regarding the following code are correct?
 
-TestClass.java: incompatible types 
-found   : boolean 
-required: int case x > 5 :        System.out.println("SMALL");  
+BIG will never be followed by SMALL.
 
-This is because the type of the case labels must be consistent with the type of the switch condition. 
-Here, switch condition is an int, so the case label values must be assignable to the switch condition variable. 
-The expression x<5 is of type boolean, which cannot be assigned it x (since it is an int).  
+SMALL will never follow anything else.
 
-Further, the expression in a switch statement must be of the type 
-char, byte, short, int, Character, Byte, Short, Integer, String, or an enum. 
-It cannot be a boolean. This is another reason the given code will not compile.  
+SMALL will always be followed by CORRECT.
 
-Further more, the expression in case must generate a constant value. 
-Here, the value of the expression x<5 is not constant. 
+It will not compile.
+
+It will throw an exception at runtime.
+
+Explanation
+It will say the following when compiled:
+TestClass.java: incompatible types
+found   : boolean required: int
+case x < 5 :        System.out.println("BIG"); break;
+
+TestClass.java: incompatible types
+found   : boolean
+required: int case x > 5 :        System.out.println("SMALL");
+
+This is because the type of the case labels must be consistent with the type of the switch condition.
+Here, switch condition is an int, so the case label values must be assignable to the switch condition variable.
+The expression x<5 is of type boolean, which cannot be assigned it x (since it is an int).
+
+Further, the expression in a switch statement must be of the type
+char, byte, short, int, Character, Byte, Short, Integer, String, or an enum.
+It cannot be a boolean. This is another reason the given code will not compile.
+
+Further more, the expression in case must generate a constant value.
+Here, the value of the expression x<5 is not constant.
 It is variable. So it is invalid.

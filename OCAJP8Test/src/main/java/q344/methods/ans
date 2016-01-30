@@ -1,0 +1,22 @@
+Select the correct order of restrictiveness for access modifiers...
+(First one should be least restrictive)
+
+public < protected < package (i.e. no modifier) < private//true
+//That's right, protected is less restrictive than package.
+
+public < package (i.e. no modifier) < protected < private
+
+public < protected < private < package (i.e. no modifier)
+//The default accessibility is more restrictive than protected,
+but less restrictive than private.
+
+protected < package (i.e. no modifier) < private < public
+
+depends on the implementation of the class or method.
+
+Explanation
+Members with default accessibility are only accessible within the class
+itself and from classes in the same package.
+Protected members are in addition accessible from subclasses. Members with
+private accessibility are only accessible
+within the class itself.

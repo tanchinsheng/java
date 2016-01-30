@@ -1,0 +1,20 @@
+Which of the following calls will work without throwing an exception?
+
+saveObject( new ArrayList() ); //true
+//Because an ArrayList is a List.
+
+Collection c = new ArrayList(); saveObject( c );
+//saveObject() cannot accept c because c is declared of type Collection,
+//which is a super interface of List, but the saveObject() method expects a List.
+
+List l = new ArrayList(); saveObject(l); //true
+
+saveObject(null); //true
+In this case prevObj will be set to null.
+
+saveObject(0); //The argument is the number zero and not the letter o
+//0 is an int, which means it is a primitive. So it will be boxed into an Integer object when you pass it to a method
+that expects an Object. However, Integer cannot be passed to a method that expects a List.
+Therefore, this option is not valid. Had the method bean saveObject(Object obj),
+it would have been valid because an Integer is an Object.
+

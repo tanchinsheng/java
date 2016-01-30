@@ -1,0 +1,17 @@
+Which of the following is not a primitive data value in Java?
+
+"x" //true
+This is a string containing x. String is not a primitive data type.
+
+'x'
+//This is a char.
+
+10.2F
+
+Object
+
+false
+
+Explanation
+Java has only the following primitive data types:
+boolean, byte, short, char, int, long, float and double.

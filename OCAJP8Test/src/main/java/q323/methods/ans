@@ -1,0 +1,18 @@
+What is the correct declaration for an abstract method 'add' in a class that is
+accessible to any class, takes no arguments and returns nothing?
+
+public void add();
+//An abstract method must have the abstract keyword and must not have a method body
+i.e. { }.
+
+abstract add();
+//A method that is not supposed to return anything must specify void as its return type.
+
+abstract null add();
+//A method that is not supposed to return anything must specify void as its return type.
+null is not a  type, though it is a valid return value for any reference type.
+
+abstract public void add(){ }
+//It is invalid because has a method body i.e. { }.
+
+abstract public void add() throws Exception;//true

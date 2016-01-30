@@ -1,0 +1,27 @@
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10     
+    at exceptions.TestClass.doTest(TestClass.java:24)     
+    at exceptions.TestClass.main(TestClass.java:14)
+//You are creating an array of length 7. Since array numbering starts with 0, the first element would be array[0].
+So ArrayIndexOutOfBoundsException will NOT be thrown.
+
+Error in thread "main" java.lang.ArrayIndexOutOfBoundsException
+//java.lang.ArrayIndexOutOfBoundsException extends java.lang.RuntimeException, which in turn extends java.lang.Exception.
+Therefore, ArrayIndexOutOfBoundsException is an Exception and not an Error.
+
+exceptions.MyException: Exception from foo //true
+
+exceptions.MyException: Exception from foo     
+    at exceptions.TestClass.foo(TestClass.java:29)     
+    at exceptions.TestClass.hello(TestClass.java:25)     
+    at exceptions.TestClass.main(TestClass.java:14)
+//me.printStackTrace() would have produced this output.
+
+Explanation
+Note that there are a few questions in the exam that test your knowledge about how exception messages are printed.
+
+When you use System.out.println(exception), a stack trace is not printed. Just the name of the exception class and
+the message is printed. When you use exception.printStackTrace(), a complete chain of the names of the methods called,
+along with the line numbers, is printed. It contains the names of the methods in the chain of method calls
+that led to the place where the exception was created going back up to the point where the thread,
+in which the exception was created, was started.
+

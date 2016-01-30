@@ -1,0 +1,33 @@
+Consider the following class written by a novice programmer.
+
+After some time, the requirements changed and the programmer now wants to make
+sure that radiusB is always (200 - radiusA) instead of (100 - radiusA)
+without breaking existing code that other people have written.
+Which of the following will accomplish his goal?
+
+Make sum = 200;
+
+Make sum = 200 and make it private.
+
+Make sum = 200 and make all fields (radiusA, radiusB, and sum) private.
+//This should have been done when the class was first written.
+
+Write another method setRadius2(int r) and set radiusB accordingly in this method.
+
+His goal cannot be accomplished. //true
+
+This class will not compile.
+//There is no problem with the code. Remember, IllegalArgumentException extends
+from RuntimeException and is a super class of NumberFormatException
+
+Explanation
+setRadius method makes sure that radiusB is set to sum - radiusA.
+So changing sum to 200 should do it. However, note that radiusA, radiusB,
+and sum are public which means that any other class can access these fields
+directly without going through the setRadius method. So there is no way to
+make sure that the value of radiusB is correctly set at all times.
+If you make them private now, other classes that are accessing the
+fields directly will break.
+
+The class should have been coded with proper encapsulation of the fields
+in the first place.

@@ -18,7 +18,7 @@ class A {
     }
 }
 
-class B {
+public class B {
 
     static A s1 = new A(1);
     A a = new A(2);

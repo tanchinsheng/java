@@ -1,0 +1,27 @@
+5
+
+null
+
+-1
+
+It will throw an ArrayIndexOutOfBoundsException.
+
+It will throw a StringOutOfBoundsException.
+//There is no such exception. The correct name is StringIndexOutOfBoundsException. But that is also not the correct answer.
+
+It will throw an IndexOutOfBoundsException
+//As per the API documentation of this method ( http://docs.oracle.com/javase/6/docs/api/java/lang/String.html#charAt(int) ),
+this method throws IndexOutOfBoundsException.
+Although, in practice the method throws StringIndexOutOfBoundsException,
+which is a subclass of IndexOutOfBoundsException,
+the implementation is free to throw some other subclass of IndexOutOfBoundsException.
+Thus, you should rely only on the published API documentation instead of what it actually throws.
+
+Explanation
+Since indexing starts with 0, the maximum value that you can pass to charAt is length-1.
+As per the API documentation for charAt, it throws IndexOutOfBoundsException if you pass an invalid value
+(that is, if the index argument is negative or not less than the length of this string).
+Both - ArrayIndexOutOfBoundsException and StringIndexOutOfBoundsException,
+extend IndexOutOfBoundsException and although in practice, the charAt method throws StringIndexOutOfBoundsException,
+it is not a valid option because the implementation is free to throw some other exception as long as
+it is an IndexOutOfBoundsException.  (There are questions on the exam on this aspect.)

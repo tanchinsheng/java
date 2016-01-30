@@ -1,0 +1,15 @@
+Which of the following statements will set the side of Square object
+referred by mysq to 20?
+
+mysq.side = 20;
+//Since side is a private variable, you cannot access it from outside Square class.
+
+mysq = new Square(20);
+//This will create a new Square object.
+
+mysq.setSide(20); //true
+
+side = 20;
+
+Square.mysq.side = 20;
+

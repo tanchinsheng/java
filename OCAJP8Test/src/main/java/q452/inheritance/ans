@@ -1,0 +1,20 @@
+What will the following code print when run?
+
+It will not compile.
+
+It will throw ClassCastException at runtime.
+
+a = class AA
+aa = class AA//true
+
+a = class A
+aa = class AA
+
+Explanation
+getClass is a public instance method in Object class. That means it is polymorphic.
+In other words, this method is bound at run time and so it returns the name of
+the class of the actual object to which the reference points.
+Here, at run time, both - a and aa, point to an object of class AA. So both will
+print AA.
+
+

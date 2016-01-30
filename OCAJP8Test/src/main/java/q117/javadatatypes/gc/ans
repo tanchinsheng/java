@@ -1,0 +1,20 @@
+Which is the earliest line in the following code after which the object
+created on line // 1 can be garbage collected, assuming no compiler
+optimizations are done?
+
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6 //true
+//Before this line the object is being pointed to by at least one variable.
+
+Explanation
+The official exam objectives now explicitly mention Garbage collection.  
+All you need to know is:
+
+1. An object can be made eligible for garbage collection by making
+sure there are no references pointing to that object.
+2. You cannot directly invoke the garbage collector.
+You can suggest the JVM to perform garbage collection by calling System.gc();

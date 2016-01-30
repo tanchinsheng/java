@@ -1,0 +1,25 @@
+What will the following code print when run?
+
+In int
+In char//true
+
+In char
+In int
+
+In int
+In int
+
+In char
+In char
+
+It will not compile.
+
+Explanation
+It looks confusing but it is a simple question.
+Remember that whenever two methods are applicable for a method call,
+the one that is most specific to the argument is chosen.
+In case of m(a), a is an int, which cannot be passed as a char
+(because an int cannot fit into a char). Therefore, only m(int) is applicable.
+In case of m(c), c is a char, which can be passed as an int as well as a char.
+Therefore, both the methods are applicable. However, m(char) is most specific
+therefore that is chosen over m(int).

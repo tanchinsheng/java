@@ -1,0 +1,12 @@
+It will throw AssertionError out of the main method. //true
+//A subclass of Error cannot be caught using a catch block for Exception because java.lang.Error does not extend java.lang.Exception.
+
+It will print EXCEPTION.
+//The catch block will not be able to catch the Error thrown by methodX().
+
+It will not compile because of the throws clause in methodX().
+//The throws clause is valid even though unnecessary in this case.
+
+It will end without printing anything because assertions are disabled by default.
+//It is true that assertions are disabled by default however, methodX is throwing an
+//AssertionError explicitly like any other Throwable. Here, the assertion mechanism is not even used.

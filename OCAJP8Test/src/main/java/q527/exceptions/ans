@@ -1,0 +1,16 @@
+You have a method that currently does not handle any exception thrown from the code contained in its method body.
+You are now changing this method to call another method that throws IOException.
+
+What changes, independent of each other, can you make to your method so that it will compile?
+
+Set the exception to null and don't rethrow it.
+//This option doesn't make sense. To get the exception, you first need to catch it.
+
+Declare IOException in the throws clause of your method.//true
+
+Wrap the call to another method within a try-catch block that catches RuntimeException.
+//java.io.IOException extends Exception. It cannot be caught by a catch block that catches RuntimeException.
+
+
+Wrap the call to another method within a try-catch block that catches Exception.//true
+//Since IOException is an Exception, you can catch it with a catch block that catches Exception.

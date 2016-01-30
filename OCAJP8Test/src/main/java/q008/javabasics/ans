@@ -1,0 +1,15 @@
+What does the zeroth element of the string array passed to the standard main method contain?
+
+The name of the class.
+
+The string "java".
+
+The number of arguments.
+
+The first argument of the argument list, if present. //true
+
+None of the above.
+
+Explanation
+Note that if no argument is passed to the program,
+the args parameter is NOT null but a non-null array of Strings of length zero.

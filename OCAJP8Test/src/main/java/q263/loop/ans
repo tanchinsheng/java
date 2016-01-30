@@ -1,11 +1,28 @@
-The while loop runs three times for each element in the dataList. So it will print 2 three times. 
+Given the following code fragment, which of the following lines would be a
+part of the output?
+
+0
+
+1
+
+2
+
+3 //true
+
+4
+
+It will fail to compile.
+
+Explanation
+The while loop runs three times for each element in the dataList.
+So it will print 2 three times.
 Here is the complete output:
-x, 0 
-x, 1 
-x, 2 
-y, 0 
-y, 1 
-y, 2 
-z, 0 
-z, 1 
+x, 0
+x, 1
+x, 2
+y, 0
+y, 1
+y, 2
+z, 0
+z, 1
 z, 2

@@ -1,0 +1,27 @@
+What will be the result of attempting to compile the following program?
+
+A compilation error will be encountered at (1), since constructors should not
+specify a return value.
+//But it becomes a valid method if you give a return type.
+
+A compilation error will be encountered at (2), since the class does not have
+a default constructor.
+//The class has an implicit default constructor since the class doesn't have
+any constructor defined.
+
+A compilation error will be encountered at (3).
+//Because (1) is a method and not a constructor.
+So there is no constructor that take a parameter.
+
+The program will compile correctly.
+
+It will not compile because parameter type of the constructor is different
+than the type of value passed to it.
+//If (1) was a valid constructor 'int' would be promoted to long at the time of passing.
+
+Explanation
+The declaration at (1) declares a method, not a constructor because it has a return value.
+The method happens to have the same name as the class, but that is ok.
+The class has an implicit default constructor since the class contains
+no constructor declarations. This allows the instantiation at (2) to work.
+

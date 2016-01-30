@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q149.operators.decision;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     // The if statement does not return any value so it can not be used the way it is used in (1).
     int max1(int x, int y) {
         return (

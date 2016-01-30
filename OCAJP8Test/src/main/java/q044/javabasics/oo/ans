@@ -1,0 +1,17 @@
+Which of the following are correct about "encapsulation"?
+
+Encapsulation is same as polymorphism.
+
+It helps make sure that clients have no accidental dependence on the choice of representation //true
+
+It helps avoiding name clashes as internal variables are not visible outside. //true
+
+Encapsulation makes sure that messages are sent to the right object at run time.
+//This is dynamic binding, an outcome of polymorphism.
+
+Encapsulation helps you inherit the properties of another class.
+
+Explanation
+Encapsulation is the technique used to package the information in such a way as to hide what should be hidden,
+and make visible what is intended to be visible. In simple terms, encapsulation generally means making the data
+variables private and providing public accessors.

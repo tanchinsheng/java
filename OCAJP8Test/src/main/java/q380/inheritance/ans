@@ -1,0 +1,20 @@
+What will be the result of compiling and running the following code?
+
+It will print the hash code of the object.
+
+It will print hello.//true
+//Covariant returns are allowed since Java 1.5, which means that an overriding
+method can change the return type to a subclass of the return type declared in
+the overridden method. But remember than covarient returns does not apply to
+primitives.
+
+Compile time error at //1.
+
+Compile time error at //2.
+
+Compile time error at //3.
+
+Explanation
+Observe that at run time b points to an object of class Base2.
+Further, Base2 overrides getValue(). Therefore, Base2's getValue() will
+be invoked and it will return hello.

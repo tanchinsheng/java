@@ -1,12 +1,28 @@
-Notice that class A does not define a no-argument constructor. 
-Also note that the class B does not define a constructor. Thus, class B relies on the default constructor B(). 
-Class B's default constructor looks like this: public B() {} 
-However, Constructors implicitly (if an explicit call to the superclass's constructor is not present) 
-call their superclass's constructor super(). So, class B's default constructor actually looks like this:
+Which of the following would be a valid class that can be inserted at //1 ?
+
+class B {}
+
+class B extends A {}
+
+class B extends A {  B()  {  System.out.println("i = " + i); }  }
+
+class B { B() {} }
+
+Explanation
+Notice that class A does not define a no-argument constructor.
+Also note that the class B does not define a constructor.
+Thus, class B relies on the default constructor B().
+Class B's default constructor looks like this: public B() {}
+However, Constructors implicitly (if an explicit call to the superclass's
+constructor is not present)
+call their superclass's constructor super(). So, class B's default constructor
+actually looks like this:
+
 public B(){
   super();
 }
-Now, since class A does not define a no-argument constructor the above code will not compile. 
+
+Now, since class A does not define a no-argument constructor the above code will not compile.
 However, class B would be correct if changed to:
 class B extends A{
   B(){

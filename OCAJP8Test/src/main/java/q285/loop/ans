@@ -1,0 +1,11 @@
+Using a continue in a while loop causes the loop to break the current iteration
+and start the next iteration of the loop.
+
+True//true
+
+False
+
+Explanation
+A continue causes the next iteration of the loop to start without executing
+the remaining statements in the loop.
+

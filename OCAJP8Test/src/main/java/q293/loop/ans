@@ -1,0 +1,18 @@
+What will be the output when the following program is run?
+
+0 0 will be printed twice.
+
+0 0 will be printed once.//true
+
+It will keep on printing 0 0
+
+It will not compile.
+
+It will print 0 0 and then 0 1.
+
+Explanation
+++j and i++ do not matter in this case.
+The loop will not execute even once since j is not less than i at the start of
+the loop so the condition fails and the program will print 0 0 just once.
+
+

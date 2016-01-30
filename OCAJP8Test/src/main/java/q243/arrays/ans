@@ -1,0 +1,29 @@
+What can be inserted in the above code to make it print Sun5c?
+
+for(String[] row : table){     
+    System.out.print(row[row.length]);
+}
+//Remember that since indexing starts with 0, length is always 1
+greater than the last index. Therefore, row[row.length] will throw
+ArrayIndexOutOfBoundsException.
+
+int i = 0;     
+for(String[] col : table){     
+    i++;     
+    if(i==col.length){         
+        System.out.print(table[col.length][i]);     
+    }
+}
+
+for(String[] row : table){     
+    System.out.print(row[row.length-1]);
+}//true
+
+
+for(int i=0; i<table.length-1; i++){     
+    int j = table[i].length-1;     
+    System.out.print(table[i][j]);
+}
+//This is almost correct. Since the for condition is i < table.length-1
+It will only print Sun5 and leave out the c.
+

@@ -1,9 +1,22 @@
-The values of i and j in the inner most for loop change as follows: 
-i = 0 j = 5 
+What will the following code print?
+
+i = 1, j = -1
+
+i = 1, j = 4
+
+i = 0, j = 4
+
+i = 0, j = -1 //true
+
+It will not compile.
+
+Explanation
+The values of i and j in the inner most for loop change as follows:
+i = 0 j = 5
 i = 0 j = 4 
-i = 0 j = 3 
-i = 0 j = 2 
-i = 0 j = 1 
-i = 0 j = 0 
-i = 0 j = -1 
+i = 0 j = 3
+i = 0 j = 2
+i = 0 j = 1
+i = 0 j = 0
+i = 0 j = -1
 Therefore, the final println prints i = 0, j = -1

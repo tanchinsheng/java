@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q220.arrays;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         //int[][] array2D = new int[][]{{0, 1, 2, 4} {5, 6}};
         // It is missing a comma between 4} and {5.

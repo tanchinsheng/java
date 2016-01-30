@@ -1,17 +1,7 @@
 package q223.arrays;
 
-/**
- *
- * @author cstan
- */
 public class ArrayTest {
 
-    /**
-     * Which of the following options can be used in the code above so that the
-     * init method initializes each table element to the sum of its row and
-     * column number and the multiply method just multiplies the element value
-     * by 2?
-     */
     static int[][] table = new int[2][3];
 
     public static void init() {

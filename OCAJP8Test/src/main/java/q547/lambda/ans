@@ -1,0 +1,28 @@
+How can you use a lambda expression to achieve the same result?
+
+Please select 1 option
+
+Replace the line at //1 with:
+filterData(al, x -> x.value==0); 
+//This would not work because MyFilter is not a functional interface.
+
+Add implements java.util.function.Predicate to MyFilter definition and replace the line at //1 with:
+filterData(al, x -> x.value==0);  
+//This would not work because MyFilter would still not be a functional interface.
+
+Add implements java.util.function.Predicate<Data> to MyFilter definition and replace the line at //1 with:
+filterData(al, x -> x.value==0);  
+//This would not work because MyFilter would still not be a functional interface.
+
+Remove MyFilter class altogether.
+Change type of f from MyFilter to java.util.function.Predicate in filterData method and replace the line at //1 with:
+filterData(al, x -> x.value==0); 
+//Predicate is a generified interface. So you need to type it to Data before you can use this lambda expression.
+Otherwise, the compiler will assume that the type of x is Object and since value is not a valid field in Object class,
+x.value will cause a the compilation to fail.
+
+Remove MyFilter class altogether.
+Change type of f from MyFilter to java.util.function.Predicate<Data> in filterData method and replace the line at //1 with:
+filterData(al, x -> x.value==0);  //true
+
+

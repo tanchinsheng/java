@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q314.methods;
 
-/**
- *
- * What will the following class print when compiled and run?
- */
 public class Holder {
 
-    /**
-     * @param args the command line arguments
-     */
     int value = 1;
     Holder link;
 

@@ -1,0 +1,25 @@
+What can be inserted in the above code so that it can compile without any error?
+
+al.add(111);
+//You cannot box an int into a Double object.
+
+System.out.println(al.indexOf(1.0));
+//indexOf's accepts Object as a parameter.
+Although 1.0 is not an object, it will be boxed into a Double object.
+
+System.out.println(al.contains("string"));
+
+Double d = al.get(al.length);
+//ArrayList does not have a field named length.
+It does have a method named size() though.
+So you can do: Double d = al.get(al.size());
+It will compile but will throw IndexOutOfBoundsException at run time in this case
+because al.size() will return 0 and al.get(0) will try to get
+the first element in the list.
+
+Explanation
+Note that al is declared as ArrayList<Double>,
+therefore the add method is typed to accept only a Double.
+
+
+

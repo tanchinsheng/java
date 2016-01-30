@@ -22,7 +22,7 @@ public class ArgsPrinter {
      * wraps the arguments into a String[] and invokes the String[] method. The
      * JVM has no idea about String.... It sees only String[].
      */
-    public static void main(String[] args) {
+    public static void main(String args) {
         for (int i = 0; i < 3; i++) {
             System.out.print(args + " ");
         }

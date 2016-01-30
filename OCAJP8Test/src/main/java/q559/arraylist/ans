@@ -1,0 +1,14 @@
+It will not compile.
+
+It will throw an exception at run time because of line //1
+
+It will throw an exception at run time because of line //2
+//This line is trying to put a value in an ArrayList at index 2 (i.e. 3rd position).
+To be able to put a value at index 2, the ArrayList must have at least 2 values already.
+Therefore, it will throw java.lang.IndexOutOfBoundsException exception.
+
+
+It will throw an exception at run time because of line //3
+
+null
+

@@ -1,0 +1,14 @@
+What class of objects can be declared by the throws clause?
+
+Exception //true
+
+Error //true
+
+Event
+
+Object
+
+RuntimeException //true
+
+Explanation
+You can declare anything that is a Throwable or a subclass of Throwable, in the throws clause.

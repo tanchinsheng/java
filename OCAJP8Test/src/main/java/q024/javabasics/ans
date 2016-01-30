@@ -1,0 +1,14 @@
+i = this.i1; //true
+//As i1 is an instance variable, it is accessible through 'this'.
+
+i = this.i2; //true
+//Although 'this' is not needed to access i2, it is not an error to do so.
+
+this = new Test( );
+//Nope, you can't change this.
+
+this.i = 4;
+//You cannot do this.i as i is a local variable.
+
+this.i1 = i2; //true
+//You are just assigning a static field's value to non-static field.

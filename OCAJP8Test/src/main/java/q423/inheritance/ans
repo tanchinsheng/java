@@ -1,0 +1,21 @@
+How can you let perform_work() method of A to be called from an instance method in C?
+
+( (A) this ).perform_work( );
+
+super.perform_work( );
+
+super.super.perform_work( );
+
+this.super.perform_work( );
+
+It is not possible.
+
+Explanation
+The method in C needs to call a method in a superclass two levels up.
+But super is a keyword and not an attribute so super.super.perform_work( )
+strategy will not work. There is no way to go more than one level up for methods
+ Remember that this problem doesn't occur for instance variables because
+variable are never overridden. They are shadowed. So to access any of the
+super class's variable, you can unshadow it using a cast.
+For example, ((A) c).data; This will give you the data variable defined in A even
+if it is shadowed in B as well as in C.

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q002.javabasics;
 
 /**
@@ -15,8 +10,8 @@ public class B {
      * final only means that subclasses cannot shadow (in case of static
      * methods) or override (in case of instance methods) it.
      */
-    final public static void main(String[] args) {
-        // TODO code application logic here
+    public void static main(String[] args) {
+        // Remember, return type (i.e. void) and method name (i.e. main) are NEVER separated. They are always together.
     }
 
 }

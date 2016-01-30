@@ -1,0 +1,21 @@
+What will be printed when you try to compile and run class B?
+
+It will print A.
+
+It will print B.
+
+It will not compile.//true
+//Because A() is not accessible in B.
+
+It will compile but will not run.
+
+None of the above.
+
+Explanation
+Note that there is no modifier for A's constructor. So it has default access.
+This means only classes in package a can use it. Also note that class B is in
+a different package and is extending from A. In B's constructor the compiler
+will automatically add super() as the first line. But since A() is not accessible in B,
+this code will not compile.
+
+

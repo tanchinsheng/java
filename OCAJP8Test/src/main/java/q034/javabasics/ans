@@ -1,0 +1,18 @@
+What should be inserted at //1 so that TestClass will compile and run?
+
+import static x.y.*;
+//x.y.* means all the classes in package x.y. Classes cannot be imported using "import static".
+You must do import x.y.* for importing class. Further, importing a class will not give you a direct access
+to the members of the class. You will need to do SM.foo(), if you import SM.
+
+import static x.y.SM;
+//x.y.SM means you are trying to import class SM that belongs to package x.y. A class cannot be imported statically.
+
+import static x.y.SM.foo; //true
+//This is valid because this statement is importing the static member foo of class x.y.SM.
+
+import static x.y.SM.foo();
+//Even though foo is a method, you cannot put () in the import statement.
+
+import static x.y.SM.*; //true
+//This is valid because this statement is importing all the static members of class x.y.SM.

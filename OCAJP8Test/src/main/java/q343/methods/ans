@@ -1,9 +1,32 @@
-public > protected > package (i.e. no modifier) > private 
-where public is least restrictive and private is most restrictive.  
+Given the following definition of class, which member variables are accessible
+from OUTSIDE the package com.enthu.qb?
 
-Remember: 
-protected is less restrictive than package access. 
-So a method(or field) declared as protected will be accessible from a subclass even if the subclass is not in the same package. 
+Member variable i.
+//No modifier means package( or default access) and is only accessible
+inside the package.
+
+Member variable j.//true
+public things (classes, methods and fields) are accessible from anywhere.
+
+Member variable k.
+//Only if the accessing class is a subclass of TestClass.
+
+Member variable k, but only for subclasses.//true
+protected things (methods and fields) can be accessed from within the package
+and from subclasses
+
+Member variable l.
+//private things are accessible only from the class that has it.
+
+Explanation
+public > protected > package (i.e. no modifier) > private
+where public is least restrictive and private is most restrictive.
+
+Remember:
+protected is less restrictive than package access.
+So a method(or field) declared as protected will be accessible from a subclass
+even if the subclass is not in the same package.
 The same is not true for package access.
-A top level class can only have either public or no access modifier but a method or field can have all the four. 
+A top level class can only have either public or no access modifier but a method
+or field can have all the four.
 Note that static, final, native and synchronized are not considered as access modifiers.

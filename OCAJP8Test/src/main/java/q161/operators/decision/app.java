@@ -1,23 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q161.operators.decision;
 
-/**
- *
- * @author cstan
- */
 public class app {
 
-    /**
-     * + is overloaded such that if any one of its two operands is a String then
-     * it will convert the other operand to a String and create a new string by
-     * concatenating the two. Therefore, in 63+"a" and "a"+63, 63 is converted
-     * to "63" and 'b' +"a" and "a"+'b', 'b' is converted to "b". Note that in
-     * 'b'+ 63 , 'b' is promoted to an int i.e. 98 giving 161.
-     */
     public static void main(String[] args) {
         System.out.println("a" + 'b' + 63); // ab63
         System.out.println("a" + 63); // a63

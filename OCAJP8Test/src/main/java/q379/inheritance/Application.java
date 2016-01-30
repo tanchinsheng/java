@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q379.inheritance;
 
-/**
- *
- * What will be the output of the following program ?
- */
 class CorbaComponent {
 
     String ior;
@@ -43,9 +34,6 @@ class OrderManager extends CorbaComponent {
 
 public class Application {
 
-    /**
-     * @param args the command line arguments
-     */
     static void start(CorbaComponent cc) {
         cc.print();
     }

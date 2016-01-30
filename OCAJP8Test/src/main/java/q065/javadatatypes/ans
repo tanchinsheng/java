@@ -1,0 +1,20 @@
+Compilation error at //1
+
+Compilation error at //2
+
+Compilation error at //3
+
+Compilation error at //1 and //3
+
+10003 103 3.234567
+
+13 13 3.234567 //true
+//The number at //1 and //2 are actually the same.
+Although confusing, it is legal to have multiple underscores between two digits.
+
+Explanation
+You may use underscore for all kinds of numbers including long,
+double, float, binary, as well as hex.  For example, the following
+are all valid numbers - int hex = 0xCAFE_BABE; float f = 9898_7878.333_333f;
+int bin = 0b1111_0000_1100_1100;
+

@@ -1,0 +1,9 @@
+You are writing a class named Bandwidth for an internet service provider that keeps track of number of bytes consumed by a user.
+The following code illustrates the expected usage of this class -
+
+Your goal is to implement a method addUsage (and other methods,
+if required) in Bandwidth class such that all the bandwidth used by a User is
+reflected by the totalUsage field and totalBill is always equal to totalUsage*costPerByte.
+Further, that a User should not be able to tamper with the totalBill value and is also not able to reduce it.
+Which of the following implementation(s) accomplishes the above?
+

@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q205.operators.decision;
 
-/**
- *
- * Which line in the following code will cause the compilation to fail?
- */
 public class TestClass {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) throws Exception {
         work();//LINE 10
         int j = j1;//LINE 11
@@ -25,6 +13,8 @@ public class TestClass {
         // You cannot assign a double to an int without casting it to int.
         // For example, int j1 = (int) x; is valid.
         // but int j1 = (double) (int) x; or int j1 = x; are not valid.
+        int j2 = (double) (int) x;
+        int j3 = x;
     }
 
     public static void work() throws Exception {

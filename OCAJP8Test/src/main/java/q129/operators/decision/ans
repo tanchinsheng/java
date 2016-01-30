@@ -1,0 +1,21 @@
+Which code fragments will print the last argument given on the command line
+to the standard output, and exit without any output or exception stack trace
+if no arguments are given?
+
+1 //true
+
+2 //true
+
+3 //true
+
+4
+//if there is only one argument, i will be 1-1 = 0. And the if condition will fail.
+
+5
+
+Explanation
+If no argument is given, a String array of length Zero is received in
+the main method. So, there is no NullPointerException on accessing
+args even if no argument is given.
+Indexing in java starts from zero. So the last element will be at args.length-1.
+

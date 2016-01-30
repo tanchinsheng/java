@@ -1,0 +1,12 @@
+What will the following code print?
+
+It will not compile.
+
+It will throw an exception at runtime.
+
+It will print 0.
+
+It will print 5.
+
+None of these.//true
+//This program will compile and run but will never terminate.

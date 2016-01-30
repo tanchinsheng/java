@@ -1,0 +1,19 @@
+Which of the following statements are true?
+
+As such, the class will compile and print "20 "
+(without quotes) at the end of its output.//true
+
+It will not compile if line 3 is removed.//true
+
+It will not compile if line 3 is removed and placed before line 1.//true
+
+It will not compile if line 4 is removed and placed before line 3.//true
+
+Only Option 2, 3, and 4 are correct.
+
+Explanation
+The scope of a local variable declared in 'for' statement is the rest of the
+'for' statement, including its own initializer. So, when line 3 is placed
+before line 1, there is a redeclaration of i in the first for() which is not legal.
+As such, the scope of i's declared in for() is just within the 'for' blocks.
+So placing line 4 before line 3 will not work since 'i' is not in scope there.

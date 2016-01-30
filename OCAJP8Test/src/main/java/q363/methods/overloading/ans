@@ -1,0 +1,19 @@
+What should be placed in the two blanks so that the following code will compile
+without errors:
+
+XXX and YYY
+
+XXX and XXX
+
+YYY and YYY
+
+YYY and XXX
+
+None of the options will make the code compile.//true
+//Remember that an overriding method can only throw a subset of checked exceptions
+declared in the throws clause of the overridden method.
+Here, method m in XXX does not declare any checked exception in its throws clause,
+therefore, method m in YYY cannot declare any checked exception in its throws
+clause either.
+Class YYY will, therefore, not compile.
+

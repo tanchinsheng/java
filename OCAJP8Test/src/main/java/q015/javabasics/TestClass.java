@@ -1,15 +1,10 @@
 package q015.javabasics;
 
-
 import java.util.*;
 
-package javabasics
+package q015
 
-
-
-
-
-.q015;
+.javabasics;
 
 /**
  *

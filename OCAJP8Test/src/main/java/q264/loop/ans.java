@@ -1,26 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q264.loop;
 
-/**
- *
- * Which of these for statements are valid?
- */
 public class ans {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
         for (int i1 = 5; i1 = 0; i1--) {
         }
 
         int j2 = 5;
-        // for (int i2 = 0, j2 += 5; i2 < j2 ; i++) {j2--;}
+        for (int i2 = 0, j2     += 5; i2 < j2 ;
+        i2++
+
+
+            ) {j2--;
+        }
 
         int i3, j3;
         for (j3 = 10; i3 < j3; j3--) { // i3 not initialized

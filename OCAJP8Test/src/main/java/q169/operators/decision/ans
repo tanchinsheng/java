@@ -1,0 +1,19 @@
+What will be printed by the following code if it is run with command line:
+java TestClass -0.50 ?
+
+Hello
+
+World
+
+Hello World
+
+Hello World Good Bye
+
+None of the above. //true
+
+Explanation
+Observe that the method getSwitch() has been declared to return a double.
+Its return value is being used in the switch statement.
+Therefore, the program will not even compile because
+double/float/long/boolean cannot be used in a switch statement.
+

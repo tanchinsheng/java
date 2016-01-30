@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package q174.operators.decision;
 
-/**
- *
- * Which of the following lines of code may throw a NullPointerException in
- * certain situations?
- */
 public class app {
 
-    /**
-     * If s is null, s.length would throws NullPointerException
-     */
     public static void main(String[] args) {
         int i = 0;
         String s = "";

@@ -1,9 +1,0 @@
-Replace the method body of m2() with a ; (semi-colon). //true
-
-Replace the ; at the end of m1() with a method body.
-
-Remove abstract from m2(). // true
-//A method that has a body cannot be abstract. In other words, an abstract method cannot have a body. 
-So either remove the method body (as in m1()) or remove abstract keyword.
-
-Remove abstract from the class declaration.

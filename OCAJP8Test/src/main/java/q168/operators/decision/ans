@@ -1,8 +1,0 @@
-Observe that the method parameter k in checkIt shadows the instance variable k. 
-Therefore, any changes made to k in checkIt will not affect the instance variable k. 
-For checkIt method to access the instance variable k, you need to do this.k.  k-->0 means, 
-first compare the value of k with 0, and then reduce it by 1. (As opposed to --k>0, which means, 
-first reduce the value of k by 1 and then compare with 0).  
-In the printThem method, k refers to the instance variable. 
-You need to reduce it by 1 after each iteration. 
-Therefore, System.out.print(k--); will do.

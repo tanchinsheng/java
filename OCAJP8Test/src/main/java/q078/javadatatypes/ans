@@ -1,9 +1,0 @@
-All ans is 12
-
-Explanation
-In all of these cases, auto-unboxing of integers will occur.
-For the last statement, after unboxing a and b,
-the value 12 will be boxed into an Integer object.
-
-
-
